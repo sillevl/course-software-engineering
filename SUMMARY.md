@@ -5,7 +5,7 @@
 * [Designing Classes with a Single Response](designing_classes_with_a_single_response.md)
 * [Managing Dependencies](managing_dependencies.md)
 * [Creating Flexible Interfaces](creating_flexible_interfaces.md)
-* Reducing Costs with Duck Typing
+* [Reducing Costs with Duck Typing](reducing_costs_with_duck_typing.md)
 * Acquiring Behavior Through Inheritance
 * Sharing Role Behavior with Modules
 * Combining Objects with Composition
