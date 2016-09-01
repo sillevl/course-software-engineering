@@ -7,4 +7,5 @@
 * Creating Flexible Interfaces
 * Reducing Costs with Duck Typing
 * Acquiring Behavior Through Inheritance
+* Sharing Role Behavior with Modules
 
