@@ -6,4 +6,5 @@
 * Managing Dependencies
 * Creating Flexible Interfaces
 * Reducing Costs with Duck Typing
+* Acquiring Behavior Through Inheritance
 
