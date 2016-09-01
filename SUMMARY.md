@@ -9,4 +9,5 @@
 * Acquiring Behavior Through Inheritance
 * Sharing Role Behavior with Modules
 * Combining Objects with Composition
+* Design Cost-Effective Tests
 
