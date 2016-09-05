@@ -86,10 +86,9 @@ irb(main):009:0> Math.sqrt(a+b)
 => 5.0
 ```
 
+As great as this is for a calculator, we’re getting away from the traditional `Hello World` message that beginning tutorials are supposed to focus on… so let’s go back to that.
 
 ## Traditional "Hello World"
-
-As great as this is for a calculator, we’re getting away from the traditional `Hello World` message that beginning tutorials are supposed to focus on… so let’s go back to that.
 
 What if we want to say “Hello” a lot without getting our fingers all tired? We need to define a method!
 
