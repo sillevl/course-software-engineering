@@ -172,3 +172,8 @@ The new keyword here is `class`. This defines a new class called Greeter and a b
 
 So how do we get this Greeter class set in motion? Create an object.
 
+
+## Creating Objects
+
+
+
