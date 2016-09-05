@@ -116,7 +116,7 @@ Hello World!
 
 Well, that was easy. Calling a method in Ruby is as easy as just mentioning its name to Ruby. If the method doesn’t take parameters that’s all you need. You can add empty parentheses if you’d like, but they’re not needed.
 
-What if we want to say hello to one person, and not the whole world? Just redefine hi to take a name as a parameter.
+What if we want to say hello to one person, and not the whole world? Just redefine `hi` to take a name as a parameter.
 
 ```Ruby
 irb(main):015:0> def hi(name)
@@ -132,7 +132,7 @@ So it works… but let’s take a second to see what’s going on here.
 
 
 ## Holding Spots in a String
-What’s the #{name} bit? That’s Ruby’s way of inserting something into a string. The bit between the braces is turned into a string (if it isn’t one already) and then substituted into the outer string at that point. You can also use this to make sure that someone’s name is properly capitalized:
+What’s the `#{name}` bit? That’s Ruby’s way of inserting something into a string. The bit between the braces is turned into a string (if it isn’t one already) and then substituted into the outer string at that point. You can also use this to make sure that someone’s name is properly capitalized:
 
 ```Ruby
 irb(main):019:0> def hi(name = "World")
@@ -147,7 +147,7 @@ Hello World!
 => nil
 ```
 
-A couple of other tricks to spot here. One is that we’re calling the method without parentheses again. If it’s obvious what you’re doing, the parentheses are optional. The other trick is the default parameter World. What this is saying is “If the name isn’t supplied, use the default name of "World"”.
+A couple of other tricks to spot here. One is that we’re calling the method without parentheses again. If it’s obvious what you’re doing, the parentheses are optional. The other trick is the default parameter `World`. What this is saying is “If the name isn’t supplied, use the default name of `"World"`”.
 
 
 ## Evolving Into a Greeter
@@ -168,7 +168,7 @@ irb(main):034:1> end
 => :say_bye
 ```
 
-The new keyword here is class. This defines a new class called Greeter and a bunch of methods for that class. Also notice @name. This is an instance variable, and is available to all the methods of the class. As you can see it’s used by say_hi and say_bye.
+The new keyword here is `class`. This defines a new class called Greeter and a bunch of methods for that class. Also notice `@name`. This is an instance variable, and is available to all the methods of the class. As you can see it’s used by `say_hi` and `say_bye`.
 
 So how do we get this Greeter class set in motion? Create an object.
 
