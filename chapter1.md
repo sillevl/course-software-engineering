@@ -1,2 +1,85 @@
 # Object-Oriented Design
-qsdf
+
+
+## In Praise of Design
+
+
+### The Problem Design Solves
+
+
+
+### Why Change Is Hard
+
+
+
+### A Practical Definition of Design
+
+
+## The Tools of Design
+
+
+### Design Principles
+
+
+### Design Patterns
+
+
+## The Act of Design
+
+
+###  How Design Fails
+
+
+### When to Design
+
+
+### Judging Design
+
+
+## A Brief Introduction to Object-Oriented Programming
+
+
+### Procedural Languages
+
+
+### Object Oriented Languages
+
+
+## Summary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
