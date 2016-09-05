@@ -87,7 +87,7 @@ irb(main):009:0> Math.sqrt(a+b)
 ```
 
 
-## Traditional `Hello World`
+## Traditional "Hello World"
 
 As great as this is for a calculator, we’re getting away from the traditional `Hello World` message that beginning tutorials are supposed to focus on… so let’s go back to that.
 
