@@ -86,6 +86,9 @@ irb(main):009:0> Math.sqrt(a+b)
 => 5.0
 ```
 
+
+## Traditional `Hello World`
+
 As great as this is for a calculator, we’re getting away from the traditional `Hello World` message that beginning tutorials are supposed to focus on… so let’s go back to that.
 
 What if we want to say “Hello” a lot without getting our fingers all tired? We need to define a method!
@@ -99,7 +102,8 @@ irb(main):012:1> end
 
 The code def hi starts the definition of the method. It tells Ruby that we’re defining a method, that its name is hi. The next line is the body of the method, the same line we saw earlier: puts "Hello World". Finally, the last line end tells Ruby we’re done defining the method. Ruby’s response => :hi tells us that it knows we’re done defining the method. This response could be => nil for Ruby 2.0 and earlier versions. But, it’s not important here, so let’s go on.
 
-The Brief, Repetitive Lives of a Method
+
+## The Brief, Repetitive Lives of a Method
 Now let’s try running that method a few times:
 
 ```Ruby
@@ -127,7 +131,8 @@ Hello Matz!
 
 So it works… but let’s take a second to see what’s going on here.
 
-Holding Spots in a String
+
+## Holding Spots in a String
 What’s the #{name} bit? That’s Ruby’s way of inserting something into a string. The bit between the braces is turned into a string (if it isn’t one already) and then substituted into the outer string at that point. You can also use this to make sure that someone’s name is properly capitalized:
 
 ```Ruby
@@ -145,7 +150,8 @@ Hello World!
 
 A couple of other tricks to spot here. One is that we’re calling the method without parentheses again. If it’s obvious what you’re doing, the parentheses are optional. The other trick is the default parameter World. What this is saying is “If the name isn’t supplied, use the default name of "World"”.
 
-Evolving Into a Greeter
+
+## Evolving Into a Greeter
 What if we want a real greeter around, one that remembers your name and welcomes you and treats you always with respect. You might want to use an object for that. Let’s create a “Greeter” class.
 
 ```Ruby
