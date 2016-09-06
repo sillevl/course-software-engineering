@@ -11,5 +11,5 @@
 * [Combining Objects with Composition](combining_objects_with_composition.md)
 * [Design Cost-Effective Tests](design_cost-effective_tests.md)
 * [Ruby in Twenty Minutes](ruby_in_twenty_minutes.md)
-* Ruby From Other Languages
+* [Ruby From Other Languages](ruby_from_other_languages.md)
 
