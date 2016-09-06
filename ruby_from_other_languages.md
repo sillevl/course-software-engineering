@@ -344,11 +344,14 @@ class Fixnum
 end
 ```
 
-You don’t need C++’s operator+, etc.
+You don’t need C++’s `operator+`, etc.
 
-You can even have array-style access if you define the [] and []= methods. To define the unary + and - (think +1 and -2), you must define the +@ and -@ methods, respectively. The operators below are not syntactic sugar, though. They are not methods, and cannot be redefined:
+You can even have array-style access if you define the `[]` and `[]=` methods. To define the unary + and - (think +1 and -2), you must define the `+@` and `-@` methods, respectively. The operators below are **not** syntactic sugar, though. They are not methods, and cannot be redefined:
 
+```Ruby
 =, .., ..., not, &&, and, ||, or, ::
+```
+
 In addition, +=, *= etc. are just abbreviations for var = var + other_var, var = var * other_var, etc. and therefore cannot be redefined.
 
 Finding Out More
