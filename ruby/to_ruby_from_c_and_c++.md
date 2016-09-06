@@ -46,25 +46,25 @@ Unlike C, in Ruby,…
 Objects are strongly typed (and variable names themselves have no type at all).
 * There’s no macros or preprocessor. No casts. No pointers (nor pointer arithmetic). No typedefs, sizeof, nor enums.
 * There are no header files. You just define your functions (usually referred to as “methods”) and classes in the main source code files.
-* There’s no #define. Just use constants instead.
+* There’s no `#define`. Just use constants instead.
 * All variables live on the heap. Further, you don’t need to free them yourself—the garbage collector takes care of that.
 * Arguments to methods (i.e. functions) are passed by value, where the values are always object references.
-* It’s require 'foo' instead of #include <foo> or #include "foo".
+* It’s `require 'foo'` instead of `#include <foo>` or `#include "foo"`.
 * You cannot drop down to assembly.
 * There’s no semicolons ending lines.
-* You go without parentheses for if and while condition expressions.
+* You go without parentheses for `if` and `while` condition expressions.
 * Parentheses for method (i.e. function) calls are often optional.
-* You don’t usually use braces—just end multi-line constructs (like while loops) with an end keyword.
-* The do keyword is for so-called “blocks”. There’s no “do statement” like in C.
+* You don’t usually use braces—just end multi-line constructs (like `while` loops) with an ´end` keyword.
+* The `do` keyword is for so-called “blocks”. There’s no “do statement” like in C.
 * The term “block” means something different. It’s for a block of code that you associate with a method call so the method body can call out to the block while it executes.
 * There are no variable declarations. You just assign to new names on-the-fly when you need them.
-* When tested for truth, only false and nil evaluate to a false value. Everything else is true (including 0, 0.0, and "0").
-* There is no char—they are just 1-letter strings.
+* When tested for truth, only `false` and `nil` evaluate to a false value. Everything else is true (including `0`, `0.0`, and `"0"`).
+* There is no `char`—they are just 1-letter strings.
 * Strings don’t end with a null byte.
 * Array literals go in brackets instead of braces.
 * Arrays just automatically get bigger when you stuff more elements into them.
 * If you add two arrays, you get back a new and bigger array (of course, allocated on the heap) instead of doing pointer arithmetic.
-* More often than not, everything is an expression (that is, things like while statements actually evaluate to an rvalue).
+* More often than not, everything is an expression (that is, things like `while` statements actually evaluate to an rvalue).
 
 ## Differences from C++
 
