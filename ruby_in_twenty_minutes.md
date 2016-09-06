@@ -177,6 +177,7 @@ So how do we get this Greeter class set in motion? Create an object.
 
 Now let’s create a greeter object and use it:
 
+```
 irb(main):035:0> greeter = Greeter.new("Pat")
 => #<Greeter:0x16cac @name="Pat">
 irb(main):036:0> greeter.say_hi
@@ -185,7 +186,9 @@ Hi Pat!
 irb(main):037:0> greeter.say_bye
 Bye Pat, come back soon.
 => nil
-Once the greeter object is created, it remembers that the name is Pat. Hmm, what if we want to get at the name directly?
+```
+
+Once the `greeter` object is created, it remembers that the name is Pat. Hmm, what if we want to get at the name directly?
 
 
 ```Ruby
