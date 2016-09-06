@@ -7,7 +7,7 @@
    * [To Ruby From Java](ruby/to_ruby_from_java.md)
    * [To Ruby From PHP](ruby/to_ruby_from_php.md)
    * [To Ruby From C and C++](ruby/to_ruby_from_c_and_c++.md)
-* Practical Object-Oriented Design
+* [Practical Object-Oriented Design](practical_object-oriented_design.md)
    * [Object-Oriented Design](POODR/chapter1.md)
    * [Designing Classes with a Single Response](POODR/designingclasses_with_a_single_response_md.md)
    * [Managing Dependencies](POODR/managing_dependencies.md)
