@@ -242,12 +242,18 @@ end
 Time.mktime(2006, 01, 01) + 14.hours # => Sun Jan 01 14:00:00
 ```
 
-Funny method names
-In Ruby, methods are allowed to end with question marks or exclamation marks. By convention, methods that answer questions end in question marks (e.g. Array#empty?, which returns true if the receiver is empty). Potentially “dangerous” methods by convention end with exclamation marks (e.g. methods that modify self or the arguments, exit!, etc.). Not all methods that change their arguments end with exclamation marks, though. Array#replace replaces the contents of an array with the contents of another array. It doesn’t make much sense to have a method like that that doesn’t modify self.
 
-Singleton methods
+### Funny method names
+
+In Ruby, methods are allowed to end with question marks or exclamation marks. By convention, methods that answer questions end in question marks (e.g. `Array#empty?`, which returns `true` if the receiver is empty). Potentially “dangerous” methods by convention end with exclamation marks (e.g. methods that modify `self` or the arguments, `exit!`, etc.). Not all methods that change their arguments end with exclamation marks, though. `Array#replace` replaces the contents of an array with the contents of another array. It doesn’t make much sense to have a method like that that **doesn’t** modify self.
+
+
+### Singleton methods
+
+
 Singleton methods are per-object methods. They are only available on the Object you defined it on.
 
+```Ruby
 class Car
   def inspect
     "Cheap car"
@@ -265,6 +271,8 @@ porsche.inspect # => Expensive car
 # Other objects are not affected
 other_car = Car.new
 other_car.inspect # => Cheap car
+```
+
 Missing methods
 Ruby doesn’t give up if it can’t find a method that responds to a particular message. It calls the method_missing method with the name of the method it couldn’t find and the arguments. By default, method_missing raises a NameError exception, but you can redefine it to better fit your application, and many libraries do. Here is an example:
 
