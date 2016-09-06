@@ -19,7 +19,7 @@
    * [Design Cost-Effective Tests](POODR/design_cost-effective_tests.md)
 * Software Testing
 * UML
-* Design Patterns
+* [Design Patterns](design_patterns.md)
 * Code Documentation
 * Agile Software Development
 * C++
