@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "callouts"
+        "callouts",
+        "richquotes"
     ],
     "pluginsConfig": {}
 }
