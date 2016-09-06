@@ -9,12 +9,6 @@ This is a small Ruby tutorial that should take no more than 20 minutes to comple
 > 
 > You can also try out Ruby in the browser at [tryruby.org](http://tryruby.org/)
 
-TEST
-
-> **Note** Note
->
-> You can also try out Ruby in the browser at [tryruby.org](http://tryruby.org/)
-
 ## Interactive Ruby
 Ruby comes with a program that will show the results of any Ruby statements you feed it. Playing with Ruby code in interactive sessions like this is a terrific way to learn the language.
 
