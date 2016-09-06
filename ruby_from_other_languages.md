@@ -273,9 +273,12 @@ other_car = Car.new
 other_car.inspect # => Cheap car
 ```
 
-Missing methods
-Ruby doesn’t give up if it can’t find a method that responds to a particular message. It calls the method_missing method with the name of the method it couldn’t find and the arguments. By default, method_missing raises a NameError exception, but you can redefine it to better fit your application, and many libraries do. Here is an example:
 
+### Missing methods
+
+Ruby doesn’t give up if it can’t find a method that responds to a particular message. It calls the `method_missing` method with the name of the method it couldn’t find and the arguments. By default, method_missing raises a NameError exception, but you can redefine it to better fit your application, and many libraries do. Here is an example:
+
+```Ruby
 # id is the name of the method called, the * syntax collects
 # all the arguments in an array named 'arguments'
 def method_missing(id, *arguments)
@@ -286,17 +289,22 @@ end
 __ :a, :b, 10
 # => Method __ was called, but not found. It has these
 # arguments: a, b, 10
+```
 The code above just prints the details of the call, but you are free to handle the message in any way that is appropriate.
 
-Message passing, not function calls
-A method call is really a message to another object:
 
+### Message passing, not function calls
+A method call is really a **message** to another object:
+
+```Ruby
 # This
 1 + 2
 # Is the same as this ...
 1.+(2)
 # Which is the same as this:
 1.send "+", 2
+
+```
 Blocks are Objects, they just don’t know it yet
 Blocks (closures, really) are heavily used by the standard library. To call a block, you can either use yield, or make it a Proc by appending a special argument to the argument list, like so:
 
