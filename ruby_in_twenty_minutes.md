@@ -196,6 +196,7 @@ Instance variables are hidden away inside the object. They’re not terribly hid
 
 So what methods do exist for Greeter objects?
 
+```Ruby
 irb(main):039:0> Greeter.instance_methods
 => [:say_hi, :say_bye, :instance_of?, :public_send,
     :instance_variable_get, :instance_variable_set,
@@ -209,7 +210,9 @@ irb(main):039:0> Greeter.instance_methods
     :tainted?, :untaint, :untrust, :trust, :untrusted?, :methods,
     :protected_methods, :frozen?, :public_methods, :singleton_methods,
     :!, :==, :!=, :__send__, :equal?, :instance_eval, :instance_exec, :__id__]
-Whoa. That’s a lot of methods. We only defined two methods. What’s going on here? Well this is all of the methods for Greeter objects, a complete list, including ones defined by ancestor classes. If we want to just list methods defined for Greeter we can tell it to not include ancestors by passing it the parameter false, meaning we don’t want methods defined by ancestors.
+``` 
+    
+Whoa. That’s a lot of methods. We only defined two methods. What’s going on here? Well this is **all** of the methods for Greeter objects, a complete list, including ones defined by ancestor classes. If we want to just list methods defined for Greeter we can tell it to not include ancestors by passing it the parameter `false`, meaning we don’t want methods defined by ancestors.
 
 ```Ruby
 irb(main):040:0> Greeter.instance_methods(false)
