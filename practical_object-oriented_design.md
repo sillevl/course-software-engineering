@@ -1,2 +1,0 @@
-# Practical Object-Oriented Design
-
