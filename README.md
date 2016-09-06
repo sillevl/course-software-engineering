@@ -20,9 +20,6 @@ For source code management wil will use GIT. Download and install GIT from the o
 > #### Note::Installation settings
 > Use default settings in the installation wizard, except the "Adjust your PATH environment" settings MUST be set using the third option "Use Git and optional Unix tools from the Windows Command Prompt"
 
-
-
-
 https://git-scm.com/
 
 ### Ruby 
