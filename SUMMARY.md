@@ -13,5 +13,5 @@
 * [Ruby in Twenty Minutes](ruby_in_twenty_minutes.md)
 * [Ruby From Other Languages](ruby_from_other_languages.md)
 * [To Ruby From Java](to_ruby_from_java.md)
-* To Ruby From PHP
+* [To Ruby From PHP](to_ruby_from_php.md)
 
