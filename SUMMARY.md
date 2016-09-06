@@ -14,5 +14,5 @@
 * [Ruby From Other Languages](ruby_from_other_languages.md)
 * [To Ruby From Java](to_ruby_from_java.md)
 * [To Ruby From PHP](to_ruby_from_php.md)
-* To Ruby From C and C++
+* [To Ruby From C and C++](to_ruby_from_c_and_c++.md)
 
