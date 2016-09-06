@@ -107,11 +107,14 @@ def Constant
 end
 ```
 
-Now Constant is 10, but Constant() is 11.
+Now `Constant` is 10, but `Constant()` is 11.
 
-Keyword arguments
+
+### Keyword arguments
+
 Like in Python, since Ruby 2.0 methods can be defined using keyword arguments:
 
+```Ruby
 def deliver(from: "A", to: nil, via: "mail")
   "Sending from #{from} to #{to} via #{via}."
 end
@@ -120,32 +123,47 @@ deliver(to: "B")
 # => "Sending from A to B via mail."
 deliver(via: "Pony Express", from: "B", to: "A")
 # => "Sending from B to A via Pony Express."
-The universal truth
-In Ruby, everything except nil and false is considered true. In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered false. Take a look at the following Python code (the example applies to other languages, too):
+```
 
+
+### The universal truth
+
+In Ruby, everything except `nil` and `false` is considered true. In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered false. Take a look at the following Python code (the example applies to other languages, too):
+
+```Python
 # in Python
 if 0:
   print("0 is true")
 else:
   print("0 is false")
+ ``` 
+ 
 This will print “0 is false”. The equivalent Ruby:
 
+```Ruby
 # in Ruby
 if 0
   puts "0 is true"
 else
   puts "0 is false"
 end
+```
+
 Prints “0 is true”.
 
-Access modifiers apply until the end of scope
+
+### Access modifiers apply until the end of scope
+
 In the following Ruby code,
 
+```Ruby
 class MyClass
   private
   def a_method; true; end
   def another_method; false; end
 end
+```
+
 You might expect another_method to be public. Not so. The private access modifier continues until the end of the scope, or until another access modifier pops up, whichever comes first. By default, methods are public:
 
 class MyClass
