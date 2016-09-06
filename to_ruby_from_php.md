@@ -5,9 +5,6 @@
 > Source: https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/
 
 
-
-
-
 PHP is in widespread use for web applications, but if you want to use Ruby on Rails or just want a language that’s more tailored for general use, Ruby is worth a look.
 
 Similarities
