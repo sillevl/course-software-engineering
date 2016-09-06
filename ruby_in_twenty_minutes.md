@@ -187,11 +187,17 @@ Bye Pat, come back soon.
 => nil
 Once the greeter object is created, it remembers that the name is Pat. Hmm, what if we want to get at the name directly?
 
+
+```Ruby
 irb(main):038:0> greeter.@name
 SyntaxError: (irb):38: syntax error, unexpected tIVAR, expecting '('
+```
+
 Nope, can’t do it.
 
-Under the Object’s Skin
+
+## Under the Object’s Skin
+
 Instance variables are hidden away inside the object. They’re not terribly hidden, you see them whenever you inspect the object, and there are other ways of accessing them, but Ruby uses the good object-oriented approach of keeping data sort-of hidden away.
 
 So what methods do exist for Greeter objects?
