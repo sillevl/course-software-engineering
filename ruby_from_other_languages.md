@@ -89,11 +89,14 @@ MyClass = Class.new do
 end
 ```
 
-Variable Constants
-Constants are not really constant. If you modify an already initialized constant, it will trigger a warning, but not halt your program. That isn’t to say you should redefine constants, though.
+### Variable Constants
 
-Naming conventions
-Ruby enforces some naming conventions. If an identifier starts with a capital letter, it is a constant. If it starts with a dollar sign ($), it is a global variable. If it starts with @, it is an instance variable. If it starts with @@, it is a class variable.
+Constants are not really constant. If you modify an already initialized constant, it will trigger a warning, but not halt your program. That isn’t to say you **should** redefine constants, though.
+
+
+### Naming conventions
+
+Ruby enforces some naming conventions. If an identifier starts with a capital letter, it is a constant. If it starts with a dollar sign (`$`), it is a global variable. If it starts with `@`, it is an instance variable. If it starts with `@@`, it is a class variable.
 
 Method names, however, are allowed to start with capital letters. This can lead to confusion, as the example below shows:
 
