@@ -352,10 +352,10 @@ You can even have array-style access if you define the `[]` and `[]=` methods. T
 =, .., ..., not, &&, and, ||, or, ::
 ```
 
-In addition, +=, *= etc. are just abbreviations for var = var + other_var, var = var * other_var, etc. and therefore cannot be redefined.
+In addition, `+=`, `*=` etc. are just abbreviations for `var = var + other_var`, `var = var * other_var`, etc. and therefore cannot be redefined.
 
 Finding Out More
-When you are ready for more Ruby knowledge, see our Documentation section.
+When you are ready for more Ruby knowledge, see the Ruby [Documentation](https://www.ruby-lang.org/en/documentation/) section.
 
 
 
