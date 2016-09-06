@@ -5,7 +5,8 @@ Source: https://www.ruby-lang.org/en/documentation/quickstart/
 ## Introduction
 This is a small Ruby tutorial that should take no more than 20 minutes to complete. It makes the assumption that you already have Ruby installed. (If you do not have Ruby on your computer install it before you get started.)
 
-
+> #### type::title
+> 
 > Note! You can also try out Ruby in the browser at [tryruby.org](http://tryruby.org/)
 
 ## Interactive Ruby
