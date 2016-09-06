@@ -376,6 +376,7 @@ So, looking deeper at our new program, notice the initial lines, which begin wit
 
 Our say_hi method has become a bit trickier:
 
+```Ruby
 # Say hi to everybody
 def say_hi
   if @names.nil?
@@ -389,23 +390,30 @@ def say_hi
     puts "Hello #{@names}!"
   end
 end
-It now looks at the @names instance variable to make decisions. If it’s nil, it just prints out three dots. No point greeting nobody, right?
+```
 
-Cycling and Looping—a.k.a. Iteration
-If the @names object responds to each, it is something that you can iterate over, so iterate over it and greet each person in turn. Finally, if @names is anything else, just let it get turned into a string automatically and do the default greeting.
+It now looks at the `@names` instance variable to make decisions. If it’s nil, it just prints out three dots. No point greeting nobody, right?
+
+
+## Cycling and Looping—a.k.a. Iteration
+
+If the `@names` object responds to `each`, it is something that you can iterate over, so iterate over it and greet each person in turn. Finally, if `@names` is anything else, just let it get turned into a string automatically and do the default greeting.
 
 Let’s look at that iterator in more depth:
 
+```Ruby
 @names.each do |name|
   puts "Hello #{name}!"
 end
-each is a method that accepts a block of code then runs that block of code for every element in a list, and the bit between do and end is just such a block. A block is like an anonymous function or lambda. The variable between pipe characters is the parameter for this block.
+```
 
-What happens here is that for every entry in a list, name is bound to that list element, and then the expression puts "Hello #{name}!" is run with that name.
+`each` is a method that accepts a block of code then runs that block of code for every element in a list, and the bit between `do` and `end` is just such a block. A block is like an anonymous function or `lambda`. The variable between pipe characters is the parameter for this block.
 
-Most other programming languages handle going over a list using the for loop, which in C looks something like:
+What happens here is that for every entry in a list, `name` is bound to that list element, and then the expression `puts "Hello #{name}!"` is run with that name.
 
-```Ruby
+Most other programming languages handle going over a list using the `for` loop, which in C looks something like:
+
+```C
 for (i=0; i<number_of_elements; i++)
 {
   do_something_with(element[i]);
