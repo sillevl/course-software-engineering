@@ -232,6 +232,7 @@ irb(main):046:1> end
 => nil
 In Ruby, you can open a class up again and modify it. The changes will be present in any new objects you create and even available in existing objects of that class. So, let’s create a new object and play with its @name property.
 
+```Ruby
 irb(main):047:0> greeter = Greeter.new("Andy")
 => #<Greeter:0x3c9b0 @name="Andy">
 irb(main):048:0> greeter.respond_to?("name")
@@ -250,9 +251,13 @@ irb(main):053:0> greeter.name
 irb(main):054:0> greeter.say_hi
 Hi Betty!
 => nil
+```
+
 Using attr_accessor defined two new methods for us, name to get the value, and name= to set it.
 
-Greeting Anything and Everything, MegaGreeter Neglects None!
+
+## Greeting Anything and Everything, MegaGreeter Neglects None!
+
 This greeter isn’t all that interesting though, it can only deal with one person at a time. What if we had some kind of MegaGreeter that could either greet the world, one person, or a whole list of people?
 
 Let’s write this one in a file instead of directly in the interactive Ruby interpreter IRB.
