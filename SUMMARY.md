@@ -8,8 +8,8 @@
    * [To Ruby From PHP](ruby/to_ruby_from_php.md)
    * [To Ruby From C and C++](ruby/to_ruby_from_c_and_c++.md)
 * Practical Object-Oriented Design
-   * [Object-Oriented Design](POODR/chapter1.md)
-   * [Designing Classes with a Single Response](POODR/designingclasses_with_a_single_response_md.md)
+   * [Object-Oriented Design](POODR/object-oriented_design.md)
+   * [Designing Classes with a Single Response](POODR/designing_classes_with_a_single_response.md)
    * [Managing Dependencies](POODR/managing_dependencies.md)
    * [Creating Flexible Interfaces](POODR/creating_flexible_interfaces.md)
    * [Reducing Costs with Duck Typing](POODR/reducing_costs_with_duck_typing.md)
@@ -24,7 +24,4 @@
 * Agile Software Development
 * C++
 * Real-Time Operating System (on mbed)
-* test
-   * hallp
-   * sqdmfkjsd
 
