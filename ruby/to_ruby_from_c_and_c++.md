@@ -72,19 +72,19 @@ Unlike C++, in Ruby,…
 
 * There’s no explicit references. That is, in Ruby, every variable is just an automatically dereferenced name for some object.
 * Objects are strongly but dynamically typed. The runtime discovers at runtime if that method call actually works.
-* The “constructor” is called initialize instead of the class name.
+* The “constructor” is called `initialize` instead of the class name.
 * All methods are always virtual.
-* “Class” (static) variable names always begin with @@ (as in @@total_widgets).
+* “Class” (static) variable names always begin with `@@` (as in @@total_widgets).
 * You don’t directly access member variables—all access to public member variables (known in Ruby as attributes) is via methods.
-* It’s self instead of this.
+* It’s `self` instead of `this`.
 * Some methods end in a ’?’ or a ’!’. It’s actually part of the method name.
 * There’s no multiple inheritance per se. Though Ruby has “mixins” (i.e. you can “inherit” all instance methods of a module).
 * There are some enforced case-conventions (ex. class names start with a capital letter, variables start with a lowercase letter).
 * Parentheses for method calls are usually optional.
 * You can re-open a class anytime and add more methods.
 * There’s no need of C++ templates (since you can assign any kind of object to a given variable, and types get figured out at runtime anyway). No casting either.
-* Iteration is done a bit differently. In Ruby, you don’t use a separate iterator object (like vector<T>::const_iterator iter). Instead you use an iterator method of the container object (like each) that takes a block of code to which it passes successive elements.
-* There’s only two container types: Array and Hash.
+* Iteration is done a bit differently. In Ruby, you don’t use a separate iterator object (like `vector<T>::const_iterator iter`). Instead you use an iterator method of the container object (like `each`) that takes a block of code to which it passes successive elements.
+* There’s only two container types: `Array` and `Hash`.
 * There’s no type conversions. With Ruby though, you’ll probably find that they aren’t necessary.
 * Multithreading is built-in, but as of Ruby 1.8 they are “green threads” (implemented only within the interpreter) as opposed to native threads.
 * A unit testing lib comes standard with Ruby.
