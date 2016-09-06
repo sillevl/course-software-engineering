@@ -100,10 +100,13 @@ Ruby enforces some naming conventions. If an identifier starts with a capital le
 
 Method names, however, are allowed to start with capital letters. This can lead to confusion, as the example below shows:
 
+```Ruby
 Constant = 10
 def Constant
   11
 end
+```
+
 Now Constant is 10, but Constant() is 11.
 
 Keyword arguments
