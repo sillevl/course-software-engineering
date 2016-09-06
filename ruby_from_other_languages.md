@@ -66,17 +66,20 @@ irb(main):002:0> "george".object_id == "george".object_id
 irb(main):003:0>
 ```
 
-The object_id methods returns the identity of an Object. If two objects have the same object_id, they are the same (point to the same Object in memory).
+The `object_id` methods returns the identity of an Object. If two objects have the same `object_id`, they are the same (point to the same Object in memory).
 
-As you can see, once you have used a Symbol once, any Symbol with the same characters references the same Object in memory. For any given two Symbols that represent the same characters, the object_ids match.
+As you can see, once you have used a Symbol once, any Symbol with the same characters references the same Object in memory. For any given two Symbols that represent the same characters, the `object_id`s match.
 
-Now take a look at the String (“george”). The object_ids don’t match. That means they’re referencing two different objects in memory. Whenever you use a new String, Ruby allocates memory for it.
+Now take a look at the String (“george”). The `object_id`s don’t match. That means they’re referencing two different objects in memory. Whenever you use a new String, Ruby allocates memory for it.
 
 If you’re in doubt whether to use a Symbol or a String, consider what’s more important: the identity of an object (i.e. a Hash key), or the contents (in the example above, “george”).
 
-Everything is an Object
+
+### Everything is an Object
+
 “Everything is an object” isn’t just hyperbole. Even classes and integers are objects, and you can do the same things with them as with any other object:
 
+```Ruby
 # This is the same as
 # class MyClass
 #   attr_accessor :instance_var
@@ -84,6 +87,8 @@ Everything is an Object
 MyClass = Class.new do
   attr_accessor :instance_var
 end
+```
+
 Variable Constants
 Constants are not really constant. If you modify an already initialized constant, it will trigger a warning, but not halt your program. That isn’t to say you should redefine constants, though.
 
