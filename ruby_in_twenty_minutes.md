@@ -405,13 +405,18 @@ What happens here is that for every entry in a list, name is bound to that list 
 
 Most other programming languages handle going over a list using the for loop, which in C looks something like:
 
+```Ruby
 for (i=0; i<number_of_elements; i++)
 {
   do_something_with(element[i]);
 }
-This works, but isn’t very elegant. You need a throw-away variable like i, have to figure out how long the list is, and have to explain how to walk over the list. The Ruby way is much more elegant, all the housekeeping details are hidden within the each method, all you need to do is to tell it what to do with each element. Internally, the each method will essentially call yield "Albert", then yield "Brenda" and then yield "Charles", and so on.
+```
 
-Blocks, the Highly Sparkling Glint on the Edge of Ruby
+This works, but isn’t very elegant. You need a throw-away variable like `i`, have to figure out how long the list is, and have to explain how to walk over the list. The Ruby way is much more elegant, all the housekeeping details are hidden within the each method, all you need to do is to tell it what to do with `each` element. Internally, the `each` method will essentially call `yield "Albert"`, then `yield "Brenda"` and then `yield "Charles"`, and so on.
+
+
+## Blocks, the Highly Sparkling Glint on the Edge of Ruby
+
 The real power of blocks is when dealing with things that are more complicated than lists. Beyond handling simple housekeeping details within the method, you can also handle setup, teardown, and errors—all hidden away from the cares of the user.
 
 ```Ruby
