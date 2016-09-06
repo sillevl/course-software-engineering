@@ -1,5 +1,12 @@
 # To Ruby From C and C++
 
+> #### Info::Source
+> Source: https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/
+
+
+
+
+
 It’s difficult to write a bulleted list describing how your code will be different in Ruby from C or C++ because it’s quite a large difference. One reason is that the Ruby runtime does so much for you. Ruby seems about as far as you can get from C’s “no hidden mechanism” principle—the whole point of Ruby is to make the human’s job easier at the expense of making the runtime shoulder more of the work. Unless or until you profile your code for optimization, you don’t need to care one whit about “keeping your compiler happy” when using Ruby.
 
 That said, for one thing, you can expect your Ruby code to execute much more slowly than “equivalent” C or C++ code. At the same time, your head will spin at how rapidly you can get a Ruby program up and running, as well as at how few lines of code it will take to write it. Ruby is much much simpler than C++—it will spoil you rotten.
