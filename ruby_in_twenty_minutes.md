@@ -1,6 +1,6 @@
 # Ruby in Twenty Minutes
 
-> #### Note::Ruby in the Browser
+> #### Info::Source
 > 
 > Source: https://www.ruby-lang.org/en/documentation/quickstart/
 
