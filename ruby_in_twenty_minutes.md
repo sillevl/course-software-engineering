@@ -9,6 +9,8 @@ This is a small Ruby tutorial that should take no more than 20 minutes to comple
 > 
 > You can also try out Ruby in the browser at [tryruby.org](http://tryruby.org/)
 
+TEST
+
 > **Note** Note
 >
 > You can also try out Ruby in the browser at [tryruby.org](http://tryruby.org/)
