@@ -211,19 +211,26 @@ irb(main):039:0> Greeter.instance_methods
     :!, :==, :!=, :__send__, :equal?, :instance_eval, :instance_exec, :__id__]
 Whoa. That’s a lot of methods. We only defined two methods. What’s going on here? Well this is all of the methods for Greeter objects, a complete list, including ones defined by ancestor classes. If we want to just list methods defined for Greeter we can tell it to not include ancestors by passing it the parameter false, meaning we don’t want methods defined by ancestors.
 
+```Ruby
 irb(main):040:0> Greeter.instance_methods(false)
 => [:say_hi, :say_bye]
+```
+
 Ah, that’s more like it. So let’s see which methods our greeter object responds to:
 
+```Ruby
 irb(main):041:0> greeter.respond_to?("name")
 => false
 irb(main):042:0> greeter.respond_to?("say_hi")
 => true
 irb(main):043:0> greeter.respond_to?("to_s")
 => true
-So, it knows say_hi, and to_s (meaning convert something to a string, a method that’s defined by default for every object), but it doesn’t know name.
+```
 
-Altering Classes—It’s Never Too Late
+So, it knows `say_hi`, and `to_s` (meaning convert something to a string, a method that’s defined by default for every object), but it doesn’t know `name`.
+
+## Altering Classes—It’s Never Too Late
+
 But what if you want to be able to view or change the name? Ruby provides an easy way of providing access to an object’s variables.
 
 ```Ruby
