@@ -294,6 +294,7 @@ The code above just prints the details of the call, but you are free to handle t
 
 
 ### Message passing, not function calls
+
 A method call is really a **message** to another object:
 
 ```Ruby
@@ -305,9 +306,12 @@ A method call is really a **message** to another object:
 1.send "+", 2
 
 ```
-Blocks are Objects, they just don’t know it yet
-Blocks (closures, really) are heavily used by the standard library. To call a block, you can either use yield, or make it a Proc by appending a special argument to the argument list, like so:
 
+### Blocks are Objects, they just don’t know it yet
+
+Blocks (closures, really) are heavily used by the standard library. To call a block, you can either use `yield`, or make it a `Proc` by appending a special argument to the argument list, like so:
+
+```Ruby
 def block(&the_block)
   # Inside here, the_block is the block passed to the method
   the_block # return the block
@@ -315,6 +319,8 @@ end
 adder = block { |a, b| a + b }
 # adder is now a Proc object
 adder.class # => Proc
+```
+
 You can create blocks outside of method calls, too, by calling Proc.new with a block or calling the lambda method.
 
 Similarly, methods are also Objects in the making:
