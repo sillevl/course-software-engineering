@@ -20,23 +20,23 @@ And, of course, Ruby itself is written in C.
 As with C, in Ruby,…
 
 * You may program procedurally if you like (but it will still be object-oriented behind the scenes).
-* Most of the operators are the same (including the compound assignment and also bitwise operators). Though, Ruby doesn’t have ++ or --.
-* You’ve got __FILE__ and __LINE__.
-* You can also have constants, though there’s no special const keyword. Const-ness is enforced by a naming convention instead— names starting with a capital letter are for constants.
+* Most of the operators are the same (including the compound assignment and also bitwise operators). Though, Ruby doesn’t have `++` or `--`.
+* You’ve got `__FILE__` and `__LINE__`.
+* You can also have constants, though there’s no special `const` keyword. Const-ness is enforced by a naming convention instead— names starting with a capital letter are for constants.
 * Strings go in double-quotes.
 * Strings are mutable.
-* Just like man pages, you can read most docs in your terminal window—though using the ri command.
+* Just like man pages, you can read most docs in your terminal window—though using the `ri` command.
 * You’ve got the same sort of command-line debugger available.
 
 ## Similarities with C++
 
 As with C++, in Ruby,…
 
-You’ve got mostly the same operators (even ::). << is often used for appending elements to a list. One note though: with Ruby you never use ->—it’s always just ..
-public, private, and protected do similar jobs.
-Inheritance syntax is still only one character, but it’s < instead of :.
-You may put your code into “modules”, similar to how namespace in C++ is used.
-Exceptions work in a similar manner, though the keyword names have been changed to protect the innocent.
+* You’ve got mostly the same operators (even `::`). `<<` is often used for appending elements to a list. One note though: with Ruby you never use `->`—it’s always just `.`.
+* `public`, `private`, and `protected` do similar jobs.
+* Inheritance syntax is still only one character, but it’s `<` instead of `:`.
+* You may put your code into “modules”, similar to how `namespace` in C++ is used.
+* Exceptions work in a similar manner, though the keyword names have been changed to protect the innocent.
 
 ## Differences from C
 
