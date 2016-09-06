@@ -330,15 +330,20 @@ method(:puts).call "puts is an object!"
 # => puts is an object!
 ```
 
-Operators are syntactic sugar
-Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls. You can, for example, override Fixnum’s + method:
 
+### Operators are syntactic sugar
+
+Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls. You can, for example, override Fixnum’s `+` method:
+
+```Ruby
 class Fixnum
   # You can, but please don't do this
   def +(other)
     self - other
   end
 end
+```
+
 You don’t need C++’s operator+, etc.
 
 You can even have array-style access if you define the [] and []= methods. To define the unary + and - (think +1 and -2), you must define the +@ and -@ methods, respectively. The operators below are not syntactic sugar, though. They are not methods, and cannot be redefined:
