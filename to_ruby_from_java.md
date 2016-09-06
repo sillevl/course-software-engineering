@@ -17,7 +17,7 @@ As with Java, in Ruby,…
 Unlike Java, in Ruby,…
 
 * You don’t need to compile your code. You just run it directly.
-* There are several different popular third-party GUI toolkits. Ruby users can try WxRuby, FXRuby, Ruby-GNOME2, Qt, or the bundled-in Ruby Tk for example.
+* There are several different popular third-party GUI toolkits. Ruby users can try [WxRuby](http://wxruby.rubyforge.org/wiki/wiki.pl), [FXRuby](http://www.fxruby.org/), [Ruby-GNOME2](https://ruby-gnome2.osdn.jp/), [Qt](https://github.com/ryanmelt/qtbindings/), or the bundled-in Ruby Tk for example.
 * You use the `end` keyword after defining things like classes, instead of having to put braces around blocks of code.
 * You have `require` instead of `import`.
 * All member variables are private. From the outside, you access everything via methods.
