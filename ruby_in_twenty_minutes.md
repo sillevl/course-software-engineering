@@ -369,9 +369,6 @@ back soon!
 
 There are a lot of new things thrown into this final example that we can take a deeper look at.
 
-
-## NEED TITLE !!!!!!!!!!
-
 So, looking deeper at our new program, notice the initial lines, which begin with a hash mark (#). In Ruby, anything on a line after a hash mark is a comment and is ignored by the interpreter. The first line of the file is a special case, and under a Unix-like operating system tells the shell how to run the file. The rest of the comments are there just for clarity.
 
 Our `say_hi` method has become a bit trickier:
