@@ -2,7 +2,7 @@
 
 * [Course Introduction](README.md)
 * [Introduction in Ruby](introduction_in_ruby.md)
-* [Ruby in Twenty Minutes](ruby/ruby_in_twenty_minutes.md)
+  * [Ruby in Twenty Minutes](ruby/ruby_in_twenty_minutes.md)
    * [Ruby From Other Languages](ruby/ruby_from_other_languages.md)
    * [To Ruby From Java](ruby/to_ruby_from_java.md)
    * [To Ruby From PHP](ruby/to_ruby_from_php.md)
