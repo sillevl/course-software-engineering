@@ -226,11 +226,14 @@ So, it knows say_hi, and to_s (meaning convert something to a string, a method t
 Altering Classes—It’s Never Too Late
 But what if you want to be able to view or change the name? Ruby provides an easy way of providing access to an object’s variables.
 
+```Ruby
 irb(main):044:0> class Greeter
 irb(main):045:1>   attr_accessor :name
 irb(main):046:1> end
 => nil
-In Ruby, you can open a class up again and modify it. The changes will be present in any new objects you create and even available in existing objects of that class. So, let’s create a new object and play with its @name property.
+```
+
+In Ruby, you can open a class up again and modify it. The changes will be present in any new objects you create and even available in existing objects of that class. So, let’s create a new object and play with its `@name` property.
 
 ```Ruby
 irb(main):047:0> greeter = Greeter.new("Andy")
@@ -253,7 +256,7 @@ Hi Betty!
 => nil
 ```
 
-Using attr_accessor defined two new methods for us, name to get the value, and name= to set it.
+Using `attr_accessor` defined two new methods for us, `name` to get the value, and `name=` to set it.
 
 
 ## Greeting Anything and Everything, MegaGreeter Neglects None!
