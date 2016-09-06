@@ -18,8 +18,7 @@
 For source code management wil will use GIT. Download and install GIT from the official GIT website.
 
 > #### Note::Installation settings
-> Leave all options default in the installation wizard. Except at the "Adjust your PATH environment" option, you MUST choose the third option: "*Use Git and optional Unix tools from the Windows Command Promt*"
-
+> Use default settings in the installation wizard, except the "Adjust your PATH environment" settings MUST be set using the third option "Use Git and optional Unix tools from the Windows Command Prompt"
 
 
 
