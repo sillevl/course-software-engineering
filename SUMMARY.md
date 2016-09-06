@@ -1,6 +1,6 @@
 # Summary
 
-* Course [Introduction](README.md)
+* [Course Introduction](README.md)
 * [Introduction in Ruby](ruby/introduction_in_ruby.md)
    * [Ruby in Twenty Minutes](ruby_in_twenty_minutes.md)
    * [Ruby From Other Languages](ruby_from_other_languages.md)
