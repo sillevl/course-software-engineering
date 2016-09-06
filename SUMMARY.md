@@ -10,10 +10,10 @@
 * [Sharing Role Behavior with Modules](sharing_role_behavior_with_modules.md)
 * [Combining Objects with Composition](combining_objects_with_composition.md)
 * [Design Cost-Effective Tests](design_cost-effective_tests.md)
-* [To Ruby From PHP](to_ruby_from_php.md)
 * [To Ruby From C and C++](to_ruby_from_c_and_c++.md)
 * [To Ruby From Java](to_ruby_from_java.md)
 * [Introduction in Ruby](ruby/introduction_in_ruby.md)
    * [Ruby From Other Languages](ruby_from_other_languages.md)
+   * [To Ruby From PHP](to_ruby_from_php.md)
    * [Ruby in Twenty Minutes](ruby_in_twenty_minutes.md)
 
