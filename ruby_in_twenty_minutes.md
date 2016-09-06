@@ -456,9 +456,9 @@ if __FILE__ == $0
 
 So that’s it for the quick tour of Ruby. There’s a lot more to explore, the different control structures that Ruby offers; the use of blocks and `yield`; modules as mixins; and more. I hope this taste of Ruby has left you wanting to learn more.
 
-If so, please head on over to our Documentation area, which rounds up links to manuals and tutorials, all freely available online.
+If so, please head on over to our [Documentation](https://www.ruby-lang.org/en/documentation/) area, which rounds up links to manuals and tutorials, all freely available online.
 
-Or, if you’d really like to dig into a book, check the book list (off-site link) for titles available for sale online or at your local bookseller.
+Or, if you’d really like to dig into a book, check the [book list](http://books.ruby-doc.com/bookstore/) (off-site link) for titles available for sale online or at your local bookseller.
 
 
 
