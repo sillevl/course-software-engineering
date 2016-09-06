@@ -325,8 +325,11 @@ You can create blocks outside of method calls, too, by calling `Proc.new` with a
 
 Similarly, methods are also Objects in the making:
 
+```Ruby
 method(:puts).call "puts is an object!"
 # => puts is an object!
+```
+
 Operators are syntactic sugar
 Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls. You can, for example, override Fixnum’s + method:
 
