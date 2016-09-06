@@ -164,8 +164,9 @@ class MyClass
 end
 ```
 
-You might expect another_method to be public. Not so. The private access modifier continues until the end of the scope, or until another access modifier pops up, whichever comes first. By default, methods are public:
+You might expect `another_method` to be public. Not so. The `private` access modifier continues until the end of the scope, or until another access modifier pops up, whichever comes first. By default, methods are public:
 
+```Ruby
 class MyClass
   # Now a_method is public
   def a_method; true; end
@@ -175,15 +176,20 @@ class MyClass
   # another_method is private
   def another_method; false; end
 end
-public, private and protected are really methods, so they can take parameters. If you pass a Symbol to one of them, that method’s visibility is altered.
+```
 
-Method access
-In Java, public means a method is accessible by anyone. protected means the class’s instances, instances of descendant classes, and instances of classes in the same package can access it, but not anyone else, and private means nobody besides the class’s instances can access the method.
+`public`, `private` and `protected` are really methods, so they can take parameters. If you pass a Symbol to one of them, that method’s visibility is altered.
 
-Ruby differs slightly. public is, naturally, public. private means the method(s) are accessible only when they can be called without an explicit receiver. Only self is allowed to be the receiver of a private method call.
 
-protected is the one to be on the lookout for. A protected method can be called from a class or descendant class instances, but also with another instance as its receiver. Here is an example (adapted from The Ruby Language FAQ):
+### Method access
 
+In Java, `public` means a method is accessible by anyone. `protected` means the class’s instances, instances of descendant classes, and instances of classes in the same package can access it, but not anyone else, and `private` means nobody besides the class’s instances can access the method.
+
+Ruby differs slightly. `public` is, naturally, public. `private` means the method(s) are accessible only when they can be called without an explicit receiver. Only `self` is allowed to be the receiver of a private method call.
+
+`protected` is the one to be on the lookout for. A protected method can be called from a class or descendant class instances, but also with another instance as its receiver. Here is an example (adapted from [The Ruby Language FAQ](http://ruby-doc.org/docs/ruby-doc-bundle/FAQ/FAQ.html)):
+
+```Ruby
 class Test
   # public by default
   def identifier
@@ -216,9 +222,14 @@ end
 
 t1 == t2
 # NoMethodError: private method `identifier' called for #<Test:0x342784>
-Classes are open
-Ruby classes are open. You can open them up, add to them, and change them at any time. Even core classes, like Fixnum or even Object, the parent of all objects. Ruby on Rails defines a bunch of methods for dealing with time on Fixnum. Watch:
+```
 
+
+### Classes are open
+
+Ruby classes are open. You can open them up, add to them, and change them at any time. Even core classes, like `Fixnum` or even `Object`, the parent of all objects. Ruby on Rails defines a bunch of methods for dealing with time on `Fixnum`. Watch:
+
+```Ruby
 class Fixnum
   def hours
     self * 3600 # number of seconds in an hour
@@ -229,6 +240,8 @@ end
 # 14 hours from 00:00 January 1st
 # (aka when you finally wake up ;)
 Time.mktime(2006, 01, 01) + 14.hours # => Sun Jan 01 14:00:00
+```
+
 Funny method names
 In Ruby, methods are allowed to end with question marks or exclamation marks. By convention, methods that answer questions end in question marks (e.g. Array#empty?, which returns true if the receiver is empty). Potentially “dangerous” methods by convention end with exclamation marks (e.g. methods that modify self or the arguments, exit!, etc.). Not all methods that change their arguments end with exclamation marks, though. Array#replace replaces the contents of an array with the contents of another array. It doesn’t make much sense to have a method like that that doesn’t modify self.
 
