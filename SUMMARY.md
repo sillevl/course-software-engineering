@@ -2,7 +2,6 @@
 
 * [Course Introduction](README.md)
 
----
 
 ### Introduction in Ruby
 
@@ -12,7 +11,7 @@
 * [To Ruby From Java](ruby/to_ruby_from_java.md)
 * [To Ruby From PHP](ruby/to_ruby_from_php.md)
 * [To Ruby From C and C++](ruby/to_ruby_from_c_and_c++.md)
----
+
 
 ### Practical Object-Oriented Design
 
