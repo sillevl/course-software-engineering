@@ -2,11 +2,18 @@
 
 
 ## Objectives
-
+* Learn supportive technologies and methodologies for engineering software solutions
+  * This can be applied to embedded and generic environments
+* Learn the C++ language and apply this on an embedded system
+* Learn how software can be documented
+  * Automatically by generating documentation from code
+  * Unified Modeling Language – UML
+* Learn the Agile principles and how they can help to plan projects
+* What design patterns are. How and when to use them.
+* Testing your software in an automated way
+* Learn the basic principles of an (Real-Time) Operating System
 
 ## Overview
-
-
 
 * Chapter 1: Introduction to the Ruby Programming Language
 * Chapter 2: Practical Object-Oriented Design (in Ruby)
