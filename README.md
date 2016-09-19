@@ -1,5 +1,13 @@
 # System Programming (Software Engineering)
 
+
+## Course objectives
+
+
+## Course Overview
+
+
+
 * Chapter 1: Introduction to the Ruby Programming Language
 * Chapter 2: Practical Object-Oriented Design (in Ruby)
 * Chapter 3: Software Testing
@@ -11,15 +19,14 @@
 * Chapter 9: Real-Time Operating System (on mbed)
 
 
-### Evaluation
+## Evaluation
 
-
-#### Methode
+### Methode
 * Schriftelijk examen
 * Permanente evaluatie
 
 
-#### Evaluatie
+### Evaluatie
 * 50% gedurende de examenperiode
 * 50% permanente evaluatie (niet herneembaar gedurende de examenperiodes)
 
