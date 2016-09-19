@@ -4,7 +4,8 @@
 ## Objectives
 * Learn supportive technologies and methodologies for engineering software solutions
   * This can be applied to embedded and generic environments
-* Learn the C++ language and apply this on an embedded system
+* Learning the Ruby programming language
+* Learn the C++ programming language and apply this on an embedded system
 * Learn how software can be documented
   * Automatically by generating documentation from code
   * Unified Modeling Language – UML
