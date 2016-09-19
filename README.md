@@ -11,6 +11,19 @@
 * Chapter 9: Real-Time Operating System (on mbed)
 
 
+### Evaluation
+
+
+#### Methode
+* Schriftelijk examen
+* Permanente evaluatie
+
+
+#### Evaluatie
+* 50% gedurende de examenperiode
+* 50% permanente evaluatie (niet herneembaar gedurende de examenperiodes)
+
+
 ## Required Software
 
 
