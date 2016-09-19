@@ -1,10 +1,10 @@
 # System Programming (Software Engineering)
 
 
-## Course objectives
+## Objectives
 
 
-## Course Overview
+## Overview
 
 
 
