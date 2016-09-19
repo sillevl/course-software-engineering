@@ -30,6 +30,10 @@ http://railsinstaller.org
 
 ### Atom
 
+Atom will be our text and code editor of choice.
+
+https://atom.io
+
 
 
 
