@@ -18,7 +18,7 @@ Software gets build for a reason. The target application is the entire point. If
 
 When writing software, you do not have to choose between pleasure and productivity. Programming techniques that make code a joy to write, overlap with those that most efficiently produces software. 
 
-Object-oriented design solves both the moral and technical dilemmas of programming. Using an object-oriented approach produces cost effective software using code dat is a pleasure to write
+Object-oriented design solves both the moral and technical dilemmas of programming. Using an object-oriented approach produces cost effective software using code dat is a pleasure to write.
 
 ### The Problem Design Solves
 
