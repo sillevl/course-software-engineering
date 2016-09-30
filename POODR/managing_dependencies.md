@@ -197,7 +197,58 @@ Gear.new(
     @cog       = args[:cog]       || 18
     @wheel     = args[:wheel]
   end
+```
 
+```ruby
+  # specifying defaults using fetch
+  def initialize(args)
+    @chainring = args.fetch(:chainring, 40)
+    @cog       = args.fetch(:cog, 18)
+    @wheel     = args[:wheel]
+  end
+```
+
+```ruby
+  # specifying defaults by merging a defaults hash
+  def initialize(args)
+    args = defaults.merge(args)
+    @chainring = args[:chainring]
+#   ...
+  end
+
+  def defaults
+    {:chainring => 40, :cog => 18}
+  end
+```
+
+```ruby
+# When Gear is part of an external interface
+module SomeFramework
+  class Gear
+    attr_reader :chainring, :cog, :wheel
+    def initialize(chainring, cog, wheel)
+      @chainring = chainring
+      @cog       = cog
+      @wheel     = wheel
+    end
+  # ...
+  end
+end
+
+# wrap the interface to protect yourself from changes
+module GearWrapper
+  def self.gear(args)
+    SomeFramework::Gear.new(args[:chainring],
+                            args[:cog],
+                            args[:wheel])
+  end
+end
+
+# Now you can create a new Gear using an arguments hash.
+GearWrapper.gear(
+  :chainring => 52,
+  :cog       => 11,
+  :wheel     => Wheel.new(26, 1.5)).gear_inches
 ```
 
 ## Managing Dependency Direction
