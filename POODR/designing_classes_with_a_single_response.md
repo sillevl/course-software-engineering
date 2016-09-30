@@ -157,6 +157,11 @@ class ObscuringReferences
 end
 ```
 
+```ruby
+# rim and tire sizes (now in milimeters!) in a 2d array
+@data = [[622, 20], [622, 23], [559, 30], [559, 40]]
+```
+
 ### Enforce Single Responsibility Everywhere
 
 
