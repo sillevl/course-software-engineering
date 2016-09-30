@@ -120,6 +120,27 @@ class Gear
 end
 ```
 
+```ruby
+  # default implementation via attr_reader
+  def cog
+    @cog
+  end
+```
+
+```ruby
+  # a simple reimplementation of cog
+  def cog
+    @cog * unanticipated_adjustment_factor
+  end
+```
+
+```ruby
+  # a more complex one
+  def cog
+    @cog * (foo? ? bar_adjustment : baz_adjustment)
+  end
+```
+
 ### Enforce Single Responsibility Everywhere
 
 
