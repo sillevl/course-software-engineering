@@ -190,6 +190,16 @@ Gear.new(
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 ```
 
+```ruby
+  # specifying defaults using ||
+  def initialize(args)
+    @chainring = args[:chainring] || 40
+    @cog       = args[:cog]       || 18
+    @wheel     = args[:wheel]
+  end
+
+```
+
 ## Managing Dependency Direction
 
 
