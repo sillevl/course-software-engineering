@@ -72,12 +72,123 @@ end
 Gear.new(52, 11, 26, 1.5).gear_inches
 ```
 
+```ruby
+class Gear
+  attr_reader :chainring, :cog, :wheel
+  def initialize(chainring, cog, wheel)
+    @chainring = chainring
+    @cog       = cog
+    @wheel     = wheel
+  end
+
+  def gear_inches
+    ratio * wheel.diameter
+  end
+# ...
+end
+
+# Gear expects a 'Duck' that knows 'diameter'
+Gear.new(52, 11, Wheel.new(26, 1.5)).gear_inches
+```
+
 ### Isolate Dependencies
 
+```ruby
+class Gear
+  attr_reader :chainring, :cog, :rim, :tire, :wheel
+  def initialize(chainring, cog, rim, tire)
+    @chainring = chainring
+    @cog       = cog
+    @wheel     = Wheel.new(rim, tire)
+  end
+
+  def gear_inches
+    ratio * wheel.diameter
+  end
+# ...
+```
+
+```ruby
+class Gear
+  attr_reader :chainring, :cog, :rim, :tire, :wheel
+  def initialize(chainring, cog, rim, tire)
+    @chainring = chainring
+    @cog       = cog
+    @rim       = rim
+    @tire      = tire
+  end
+
+  def gear_inches
+    ratio * wheel.diameter
+  end
+
+  def wheel
+    @wheel ||= Wheel.new(rim, tire)
+  end
+# ...
+```
+
+```ruby
+def gear_inches
+  ratio * wheel.diameter
+end
+```
+
+```ruby
+def gear_inches
+  #... a few lines of scary math
+  foo = some_intermediate_result * wheel.diameter
+  #... more lines of scary math
+end
+```
+
+```ruby
+def gear_inches
+  #... a few lines of scary math
+  foo = some_intermediate_result * diameter
+  #... more lines of scary math
+end
+
+def diameter
+  wheel.diameter
+end
+```
 
 ### Remove Argument-Order Dependencies
 
+```ruby
+class Gear
+  attr_reader :chainring, :cog, :wheel
+  def initialize(chainring, cog, wheel)
+    @chainring = chainring
+    @cog       = cog
+    @wheel     = wheel
+  end
+  ...
+end
 
+Gear.new(
+  52,
+  11,
+  Wheel.new(26, 1.5)).gear_inches
+```
+
+```ruby
+class Gear
+  attr_reader :chainring, :cog, :wheel
+  def initialize(args)
+    @chainring = args[:chainring]
+    @cog       = args[:cog]
+    @wheel     = args[:wheel]
+  end
+  ...
+end
+
+Gear.new(
+  :chainring => 52,
+  :cog       => 11,
+  :wheel     => Wheel.new(26, 1.5)).gear_inches
+```
 
 ## Managing Dependency Direction
 
