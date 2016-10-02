@@ -2,7 +2,7 @@
 
 # Object-Oriented Design
 
-The world is procedural. Time flows and events pass by one by one. Activities can be modeled using procedural software. The order is known so everything can be writen in code.
+The world is procedural. Time flows and events pass by one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
 
 -- example --
 
@@ -18,11 +18,11 @@ Software gets build for a reason. The target application is the entire point. If
 
 When writing software, you do not have to choose between pleasure and productivity. Programming techniques that make code a joy to write, overlap with those that most efficiently produces software. 
 
-Object-oriented design solves both the moral and technical dilemmas of programming. Using an object-oriented approach produces cost effective software using code dat is a pleasure to write.
+Object-oriented design solves both the moral and technical dilemmas of programming. Using an object-oriented approach produces cost effective software using code that is a pleasure to write.
 
 ### The Problem Design Solves
 
-When writing a new application and you have a complete set of requirements. Let's imagine that this application, once writen, never needs change.
+When writing a new application and you have a complete set of requirements. Let's imagine that this application, once written, never needs change.
 
 In this case, design would not matter. If you start the application, it would run forever, no matter what. As long as nothing changes.
 
@@ -59,7 +59,7 @@ Every application is a collection of code. The code's arrangement is th _design_
 The difficulty of design is that every problem has two components:
 
 * You must write code to solve the problem
-* You must write code that is easy to be changed later on
+* You must write code that is easy to change later on
 
 Practical design does not anticipate what will happen, it accepts that something will happen and in the present you cannot know what will happen.
 
