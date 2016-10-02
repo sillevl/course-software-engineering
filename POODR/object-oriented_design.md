@@ -67,6 +67,10 @@ The purpose of design is to allow you to design _later_ and its primary goal is 
 
 ## The Tools of Design
 
+Design is not acting on a fixed set of rules, it's making choices that close off some options and opens access to others.
+
+Just like a carpenter has hammers and nails, an object-oriented designer has tools. Those tools consist out of principles and patterns.
+
 ### Design Principles
 
 ### Design Patterns
