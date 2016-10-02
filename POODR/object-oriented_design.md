@@ -1,5 +1,3 @@
--- The progress of abstractions -- 
-
 # Object-Oriented Design
 
 The world is procedural. Time flows and events pass by one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
@@ -165,5 +163,6 @@ Object-oriented applications are made up of objects that send messages to each o
 
 ### Object Oriented Languages
 
-## Summary
+-- The progress of abstractions -- 
+
 
