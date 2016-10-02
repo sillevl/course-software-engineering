@@ -54,7 +54,16 @@ In small applications, poor design is survivable. The problem is that is that if
 
 ### A Practical Definition of Design
 
-Every application is a collection of code. The code's arrangement is th _design_. One problem can be solved in many different ways. Design is thus an art, the art of arranging code.
+Every application is a collection of code. The code's arrangement is th _design_. One problem can be solved in many different ways. Design is thus an art, the art of arranging code.µ
+
+The difficulty of design is that every problem has two components:
+
+* You must write code to solve the problem
+* You must write code that is easy to be changed later on
+
+Practical design does not anticipate what will happen, it accepts that something will happen and in the present you cannot know what will happen.
+
+The purpose of design is to allow you to design _later_ and its primary goal is to reduce the cost of change.
 
 ## The Tools of Design
 
