@@ -73,6 +73,26 @@ Just like a carpenter has hammers and nails, an object-oriented designer has too
 
 ### Design Principles
 
+SOLID represents five of the most well known priciples of object-oriented design:
+
+* **S**ingle Responsibility
+* **O**pen-Closed
+* **L**iskov Substitution
+* **I**nterface Segregation
+* **D**ependency Inversion
+
+Other principles include DRY (Don't Repeat Yourself) and Law of Demeter (LoD).
+
+Where do these priciples come from? Do they have value or are these merely someone's opionion? Who says?
+
+Early object-oriented programmers that noticed that some code arrangements made their lives easier and others made them harder. It comes from the experience of others that led to the development of opinions about how to write good code.
+
+Academics got involved and needed to quantify "goodness" of code. If you can measure something, you can compare them. These measurements are often called "*code metrics*".
+
+Studies in the 1990s by Chidamber and Kemerer and Basili and in 2001 by Laing and Coleman tried to find the good practices and they confirm that design matters.
+
+The priciples of good design represent measurable truths and following them will improve your code.
+
 ### Design Patterns
 
 ## The Act of Design
