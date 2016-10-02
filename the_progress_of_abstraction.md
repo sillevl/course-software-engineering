@@ -86,19 +86,20 @@ Summarized: You ‘send a message’ to an object. The object figures out what t
 ## The Hidden Implementation
 
 We can break up the playing field into:
-Class creators, those who create new data types
-Client programmers, the class consumers
-Client programmers
-Collect a toolbox full of classes to user for rapid application development
-Class creators
-Build a class that exposes only what’s necessary to the client programmer and keeps everything else hidden
 
-Why hiding?
-If it’s hidden, the client programmer cant use it
-That means that the class creator can change the hidden portion at will, without worrying about the impact to anyone else
-In any relationship it is important to have boundaries that are respected by all parties involved
-When creating a library, you establish a relationship with the client programmer
-If all member are available to anyone, the client programmer can do what ever he want’s and there is no way of enforcing the rules
+* Class creators, those who create new data types
+* Client programmers, the class consumers
+
+Client programmers: Collect a toolbox full of classes to user for rapid application development.
+
+Class creators: Build a class that exposes only what’s necessary to the client programmer and keeps everything else hidden
+
+
+### Why hiding?
+
+If it’s hidden, the client programmer cant use it. That means that the class creator can change the hidden portion at will, without worrying about the impact to anyone else. In any relationship it is important to have boundaries that are respected by all parties involved.
+
+When creating a library, you establish a relationship with the client programmer. If all member are available to anyone, the client programmer can do what ever he want’s and there is no way of enforcing the rules
 If you don’t want this, there is no way to prevent it
 
 Access control prevents client programmers to hands off portions they shouldn’t touch
