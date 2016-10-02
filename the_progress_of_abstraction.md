@@ -1,18 +1,16 @@
 # The Progress of Abstraction
 
--- The progress of abstractions -- 
+All programming languages provide abstractions. The complexity of the problem you want to solve is directly related to the kind and quality of abstraction.
 
-All programming languages provide abstractions
-The complexity of the problem you want to solve is directly related to the kind and quality of abstraction
-Complexity <-> Abstraction
-Assembly is an abstraction for machine code
-Imperative languages (Fortran, Basic and C) are abstractions of assembly languages
-These languages are a big improvement
-BUT ! Still requires you to think in terms of the structure of the computer rather than the structure of the problem
+> Complexity <-> Abstraction
+
+Assembly is an abstraction for machine code. Imperative languages (Fortran, Basic and C) are abstractions of assembly languages. These languages are a big improvement
+BUT ! Still requires you to think in terms of the structure of the computer rather than the structure of the problem.
 
 The programmer must establish the association between:
-the machine model: “solution space”, the place where the problem must be solved
-the model of the problem of the problem: “problem space”, the place where the problem exists
+
+2. the machine model: “solution space”, the place where the problem must be solved
+1. the model of the problem of the problem: “problem space”, the place where the problem exists
 
 In this case we are modeling the machine to solve our problems
 Using programming languages such as assembler, Fortran, Basic or C
