@@ -23,53 +23,45 @@ This was introduced by languages such as:
 
 A good solution to a particular class of problems, but becomes awkward when you step outside the domain.
 
-The object-oriented approach goes a step farther
-It provides tools to represent the elements in the problem space
-The representation is general enough so that it is not constrained to any particular type of problem
-Elements in the problem space are represented in the solution space as “objects”
-There is still a connection to back to the computer
-Each object looks a bit like a little computer
-It has state
-And has operations
-This is in analogy with the real world
-Everything has characteristics and behaviour
+The object-oriented approach goes a step farther. It provides tools to represent the elements in the problem space. The representation is general enough so that it is not constrained to any particular type of problem. Elements in the problem space are represented in the solution space as “_objects_”.
 
-Five basic characteristics of Smalltalk, the first successful object-oriented language
-One of the languages upon which C++ is bases
-They represent a pure approach to object-oriented programming
+There is still a connection to back to the computer. Each object looks a bit like a little computer.
 
-Everything is an object
-A program is a bunch of objects telling each other what to do by sending messages
-Each object has its own memory made up of other objects
-Every object has a type
-All objects of a particular type can receive the same message
+* has state
+* has operations
 
-Everything is an object
+This is in analogy with the real world. Everything has characteristics and behaviour.
 
-Think of an object as a fancy variable
-It stores data
-You can make requests to the object
-In theory, any conceptual component in the problem (dogs, buildings, services, etc…) can be represented as an object in the program
+Five basic characteristics of Smalltalk, the first successful object-oriented language. One of the languages upon which C++ is bases. They represent a pure approach to object-oriented programming.
 
+1. Everything is an object
 2. A program is a bunch of objects telling each other what to do by sending messages
-
-To make a request of an object, you “send a message” to that object
-A message is an request to call a function that belongs to that object
-
 3. Each object has its own memory made up of other objects
-
-You can create a new kind of object by making a package  containing existing objects
-Thus you can build complexity in a program while hiding it behind the simplicity of objects
-
 4. Every object has a type
+5. All objects of a particular type can receive the same message
 
-Each object is an “instance” of a “class”
-Class is synonymous with “type”
+
+#### Everything is an object
+
+Think of an object as a fancy variable. It stores data and you can make requests to the object. In theory, any conceptual component in the problem (dogs, buildings, services, etc…) can be represented as an object in the program.
+
+#### A program is a bunch of objects telling each other what to do by sending messages
+
+To make a request of an object, you “send a message” to that object. A message is an request to call a function that belongs to that object
+
+#### Each object has its own memory made up of other objects
+
+You can create a new kind of object by making a package containing existing objects. 
+Thus you can build complexity in a program while hiding it behind the simplicity of objects.
+
+#### Every object has a type
+
+Each object is an “_instance_” of a “_class_”. Class is synonymous with “_type_”.
 
 The most important distinguishing characteristic of a class is:
-What messages can you send to it?
+> What messages can you send to it?
 
-5. All objects of a particular type can receive the same message
+#### All objects of a particular type can receive the same message
 
 Eg: an object of type “circle” is also an object of type “shape”
 A circle is guaranteed to accept shape messages
