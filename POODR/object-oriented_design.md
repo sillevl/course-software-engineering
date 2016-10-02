@@ -50,7 +50,7 @@ Object-oriented design is about _managing dependencies_. In the absence of desig
 
 Objects resist being reused int different contexts. They are difficult to test and may introduce duplication.
 
-In small applications, poor design is survivable.
+In small applications, poor design is survivable. The problem is that is that if they are successful, they grow up as poorly designed big applications.
 
 ### A Practical Definition of Design
 
