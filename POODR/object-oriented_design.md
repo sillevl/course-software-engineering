@@ -22,7 +22,35 @@ Object-oriented design solves both the moral and technical dilemmas of programmi
 
 ### The Problem Design Solves
 
+When writing a new application and you have a complete set of requirements. Let's imagine that this application, once writen, never needs change.
+
+In this case, design would not matter. If you start the application, it would run forever, no matter what. As long as nothing changes.
+
+In the real world, something __will__ change. It always does:
+
+* The customer did not know what they wanted
+* The customer did not say what they meant
+* The developer did not understand the needs
+* The developer learned how to do something better
+* ...
+
+Applications that are perfect are not stable as well. The application was a success, and everybody wants more!
+
+**Change is unavoidable, ubiquitous, omnipresent and inevitable.**
+
+It is the need for changes that makes design mater. Applications that are easy to change are a pleasure to write and a joy to extend.
+
+Applications that resist change make changes expensive. 
+
 ### Why Change Is Hard
+
+Object-oriented applications are made up of *objects* that send *messages* to each other. Getting the right message to the correct target requires the sender to know things about the receiver. This knowledge creates dependencies and these dependencies stand in the way of change.
+
+Object-oriented design is about _managing dependencies_. In the absence of design, unmanaged dependencies wreak havoc because objects know too much about one other. Changing one object forces change upon its collaborators. In turn forcing change upon its collaborators, and so on.
+
+Objects resist being reused int different contexts. They are difficult to test and may introduce duplication.
+
+In small applications, poor design is survivable.
 
 ### A Practical Definition of Design
 
