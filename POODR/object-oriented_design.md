@@ -163,6 +163,4 @@ Object-oriented applications are made up of objects that send messages to each o
 
 ### Object Oriented Languages
 
--- The progress of abstractions -- 
-
 
