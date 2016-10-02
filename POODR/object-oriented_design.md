@@ -91,17 +91,53 @@ Academics got involved and needed to quantify "goodness" of code. If you can mea
 
 Studies in the 1990s by Chidamber and Kemerer and Basili and in 2001 by Laing and Coleman tried to find the good practices and they confirm that design matters.
 
-The priciples of good design represent measurable truths and following them will improve your code.
+The principles of good design represent measurable truths and following them will improve your code.
 
 ### Design Patterns
 
+In addition to principles, object-oriented design involves **patterns**.
+
+The so called Gang of Four (GoF), Erich Gamma, Richard Helm, Ralph Johnson and Jon Vlissides, wrote a seminal work on patterns in 1995. Their book _Design Patterns_ describes patterns as:
+
+> Simple and elegant solutions to specific problems in object-oriented software design that you can use to make your designs more flexible, modular, reusable and understandable
+
+Design patterns are powerful. They name common problems and solve those problems. Naming these patterns improve communication and collaboration.
+
 ## The Act of Design
+
+Now that we know about principles and patterns, all object-oriented design problems seem to be solved.
+
+How hard can it be to design good software? Well, still pretty hard. If you think of software as a custom furniture, then principles and patterns are like woodworking tools. Knowing how the software should look when it's done, does not cause it to build itself.
 
 ### How Design Fails
 
+Design will fail due to **lack of design**. _Undesinged_ applications carry the seeds of their own destruction. They are easy to write but gradually become impossible to change. You can recognize these problems when programmers greet change requests with:
+> "Yes, I can add that feature, _but it will break everything_"
+
+Design will fail due to **overdesign**. In excess of enthusiasm, principles are applied inappropriately and patterns are seen where none exist. You can recognize these problems when programmers greet change requests with:
+> "No, I can' add that feature; _it wasn't designed to do that_"
+
+Design will fail when **the act of design is separated from the act of programming**. Design is a process of progressive discovery that relies on a feedback loop. The feedback loop should be timely and incremental. Iterative techniques of Agile are perfectly suited. It allows design to adjust and evolve. Programmers who write applications designed by isolated _experts_ greet change requests with:
+> "Yes, I can certainly add that feature, _but it's not what you really wanted and you will eventually be sorry_"
+
 ### When to Design
 
+Agile believes that customers can't define the software they want before they see it. Showing progress is done sooner rather then later. Software should be build in small increments, iterating into an application the customer really needs. Agile believes that the most cost-effective way to write software is to produce what the customer really wants. This can only be done by collaborating with customer throughout the whole development.
+
+If Agile is correct, two other things are also true:
+
+* There is no point in doing Big Upfront Design - BUFD, because it cannot possibly be correct
+* No one can predict when the application will be done, because you don't know in advance what it eventually do
+
+For some Agile is unconfortable because "We don't know what we're doing" and "We don't know when we'll be done" can be difficult to sell. BUFD may provide a feeling of control but its a temporary illusion that will not survive the development of the application.
+
+Agile processes _guarantee change_ and your ability to make these changes depends on your applications design. If you cannot write well-designed code you'll have to rewrite you application during every iteration.
+
 ### Judging Design
+
+In the days of yore, programmers where sometimes judged by the number of lines of code (referred to as _source lines of code_ or SLOC) they produced. Managers needed a way to compare programmers and evaluate software, SLOC, what better than nothing.
+
+SLOC was not 
 
 ## A Brief Introduction to Object-Oriented Programming
 
