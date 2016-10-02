@@ -63,33 +63,27 @@ The most important distinguishing characteristic of a class is:
 
 #### All objects of a particular type can receive the same message
 
-Eg: an object of type “circle” is also an object of type “shape”
-A circle is guaranteed to accept shape messages
-This means you can talk to shapes, and automatically handle anything that fits the description of a shape
+Eg: an object of type “circle” is also an object of type “shape”.
 
-This substitutability is one of the most powerful concepts in OOP
+A circle is guaranteed to accept shape messages. This means you can talk to shapes, and automatically handle anything that fits the description of a shape.
 
-Aristotle was one of the first to study the concept of “type”
-He spoke of ‘the class of fishes and the class of birds’
-The idea that all objects, while being unique, are part of a class of objects
-Objects that have the same characteristics and behaviors
-The keyword “class” was first introduced in the language Simula-67 to introduce a new type into a program
-Objects are identical except for their state
-When a class is established, you can make as many objects of that type as you like
-Each with their own state and identity
+This substitutability is one of the most powerful concepts in OOP.
 
 
-The interface establishes what request you can make
-There must be code somewhere to satisfy that request, Along with the hidden data, it comprises the implementation
+## An Object has an Interface
 
-It is not that complicated
-A type has a function associated with each possible request
-When you make a request to that object, a function is called
+Aristotle was one of the first to study the concept of “type”. He spoke of ‘the class of fishes and the class of birds’. The idea that all objects, while being unique, are part of a class of objects. Objects that have the same characteristics and behaviors.
 
-Summarized
-You ‘send a message’ to an object
-The object figures out what to do (it executes code)
+The keyword “_class_” was first introduced in the language Simula-67 to introduce a new type into a program. Objects are identical except for their state. When a class is established, you can make as many objects of that type as you like. Each with their own state and identity.
 
+The interface establishes what request you can make. There must be code somewhere to satisfy that request, Along with the hidden data, it comprises the implementation. It is not that complicated. A type has a function associated with each possible request. When you make a request to that object, a function is called.
+
+Summarized: You ‘send a message’ to an object. The object figures out what to do (it executes code).
+
+-- image --
+
+
+## The Hidden Implementation
 
 We can break up the playing field into:
 Class creators, those who create new data types
