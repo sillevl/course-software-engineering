@@ -9,19 +9,19 @@ BUT ! Still requires you to think in terms of the structure of the computer rath
 
 The programmer must establish the association between:
 
-2. the machine model: “solution space”, the place where the problem must be solved
-1. the model of the problem of the problem: “problem space”, the place where the problem exists
+2. the machine model: “_solution space_”, the place where the problem must be solved
+1. the model of the problem of the problem: “_problem space_”, the place where the problem exists
 
-In this case we are modeling the machine to solve our problems
-Using programming languages such as assembler, Fortran, Basic or C
+In this case we are modeling the machine to solve our problems. Using programming languages such as assembler, Fortran, Basic or C
 
-The alternative to modeling the machine is to model the problem you are trying to solve
+The alternative to modeling the machine is to model the problem you are trying to solve.
 This was introduced by languages such as:
-LISP: All problems are ultimately lists
-APL: All problems are algorithmic
-Prolog: All problems are chains of decisions
-A good solution to a particular class of problems
-Becomes awkward when you step outside the domain
+
+* LISP: All problems are ultimately lists
+* APL: All problems are algorithmic
+* Prolog: All problems are chains of decisions
+
+A good solution to a particular class of problems, but becomes awkward when you step outside the domain.
 
 The object-oriented approach goes a step farther
 It provides tools to represent the elements in the problem space
