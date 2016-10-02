@@ -54,6 +54,8 @@ In small applications, poor design is survivable. The problem is that is that if
 
 ### A Practical Definition of Design
 
+Every application is a collection of code. The code's arrangement is th _design_. One problem can be solved in many different ways. Design is thus an art, the art of arranging code.
+
 ## The Tools of Design
 
 ### Design Principles
