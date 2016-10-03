@@ -105,37 +105,39 @@ Access control prevents client programmers to hands off portions they shouldn’
 
 -- image -- 
 
-Once a class is created and tested
-It should ideally represent a useful unit of code
-Code reuse is one of the greatest advantages of object-oriented programming languages
+Once a class is created and tested, it should ideally represent a useful unit of code. Code reuse is one of the greatest advantages of object-oriented programming languages.
 DRY anyone?!
-Multiple ways to reuse a class 
-Just use an object of that class
-Composition: Use an object of that class inside a new class
-Inheritance: Extending the class in a new class
+Multiple ways to reuse a class:
 
-Just using an object
+* Just use an object of that class
+* Composition: Use an object of that class inside a new class
+* Inheritance: Extending the class in a new class
+
+
+### Just using an object
+
 The class can be reused by creating multiple objects of that class
 Each object has its own state
 Each object has the same behavior
 
-Composition: Use an object of that class inside a new class
-Also know as a Has-a relationship, eg: ‘a car has an engine’
+### Composition
+
+Use an object of that class inside a new class. This is also known as a _Has-a_ relationship, eg: ‘a car has an engine’.
+
+-- image --
+
+This is called composition because you are composing a new class out of existing classes. This is more generally known as _aggregation_. It comes with a great deal of flexibility. Member objects of the new class can be made private. They are inaccessible to client programmers. You can change those members without disturbing existing client code.
+
+### Inheritance
+
+The concept of an object is a convenient tool. You can package data and functionality together by concept. Inheritance lets you reuse classes in new classes that might have a similar functionality. We could say that we clone a class and then make additions and modifications to it. If the original class (base, super or parent class) is changed, the modified ‘_clone_’ also reflects those changes.
+
+-- image --
+
+The base type is “shape”. All shapes have a size, color, position,… All shapes can be drawn, erased, moved, colored,… Specific shapes derive (inherit) these characteristics and behavior Circle, square, triangle Each may have additional characteristics and behavior.
+Eg: some shapes can be flipped. Some behaviors may be different like calculating the area of a shape depends on the type of shape.
 
 
-
-This is called composition because you are composing a new class out of existing classes
-This is more generally known as aggregation
-Comes with a great deal of flexibility
-Member objects of the new class can be made private
-They are inaccessible to client programmers
-You can change those members without disturbing existing client code
-
-The concept of an object is a convenient tool
-You can package data and functionality together by concept
-Inheritance lets you reuse classes in new classes that might have a similar functionality
-We could say that we clone a class and then make additions and modifications to it
-If the original class (base, super or parent class) is changed, the modified ‘clone’ also reflects those changes
 
 When inheriting from an existing shape, you create a new type
 The new type contains not only all the member of the existing types
