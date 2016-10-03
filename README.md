@@ -4,13 +4,11 @@
 
 * Learn supportive technologies and methodologies for engineering software solutions
   * This can be applied to embedded and generic environments
-
 * Learning the Ruby programming language
 * Learn the C++ programming language and apply this on an embedded system
 * Learn how software can be documented
   * Automatically by generating documentation from code
   * Unified Modeling Language – UML
-
 * Learn the Agile principles and how they can help to plan projects
 * What design patterns are. How and when to use them.
 * Testing your software in an automated way
