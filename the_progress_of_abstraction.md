@@ -99,14 +99,10 @@ Class creators: Build a class that exposes only what’s necessary to the client
 
 If it’s hidden, the client programmer cant use it. That means that the class creator can change the hidden portion at will, without worrying about the impact to anyone else. In any relationship it is important to have boundaries that are respected by all parties involved.
 
-When creating a library, you establish a relationship with the client programmer. If all member are available to anyone, the client programmer can do what ever he want’s and there is no way of enforcing the rules
-If you don’t want this, there is no way to prevent it
+When creating a library, you establish a relationship with the client programmer. If all member are available to anyone, the client programmer can do what ever he want’s and there is no way of enforcing the rules. If you don’t want this, there is no way to prevent it.
 
-Access control prevents client programmers to hands off portions they shouldn’t touch
-Hiding the internals that are not part of the interface that users need, is actually a service to the users.
-Client programmers can easily see what’s important for them and ignore the rest
-C++ uses keywords (access modifiers) to set those boundaries in a class
-Public, private and protected
+Access control prevents client programmers to hands off portions they shouldn’t touch. Hiding the internals that are not part of the interface that users need, is actually a service to the users. Client programmers can easily see what’s important for them and ignore the rest. C++ uses keywords (access modifiers) to set those boundaries in a class
+Public, private and protected.
 
 Once a class is created and tested
 It should ideally represent a useful unit of code
