@@ -178,32 +178,24 @@ void doSomething(Shape& s){
   s.erase( );
 }
 ```
-Decouple the code by writing against the base class
-You do not need the details of the inherited class
-The code becomes more simple
-You can use what ever shape you want when calling the doSomething() method
-You can use an new type such as a Hexagon
+Decouple the code by writing against the base class. You do not need the details of the inherited class. The code becomes more simple.
 
+You can use what ever shape you want when calling the doSomething() method. You can use an new type such as a Hexagon.
 
 ```c
-Circle aCircle;Line aLine;doSomething( aCircle );  // Dynamic BindingdoSomething( aLine );    // aka Late Binding
+Circle aCircle;
+Line aLine;
+doSomething( aCircle );  // Dynamic Binding
+doSomething( aLine );    // aka Late Binding
 ```
 
-The process of treating a derived class as it were its base class is called upcasting
+The process of treating a derived class as it were its base class is called _upcasting_.
+The program is extensible. It can work with more types than those already existing.
 
-The program is extensible
-It can work with more types than those already existing
+-- image --
 
-Technically the domain of OOP is abstract data typing, inheritance and polymorphism
-Other issues can be at least important
-Such as the way objects are created and destroyed
-Where is the data for an object
-How is the lifetime of that object controlled?
-C++ takes the approach that control of efficiency is the most important
-It gives the programmer a choice
-The storage and lifetime can be determined while implementing the program
-Objects can be placed on the stack, or in static storage
-
+Technically the domain of OOP is abstract data typing, inheritance and polymorphism. Other issues can be at least important. Such as the way objects are created and destroyed. Where is the data for an object. How is the lifetime of that object controlled? C++ takes the approach that control of efficiency is the most important. It gives the programmer a choice. The storage and lifetime can be determined while implementing the program
+Objects can be placed on the stack, or in static storage.
 
 An area in memory that is directly used by the microprocessor to store data during program execution
 Variables on the stack are sometimes called automatic or scoped variables
