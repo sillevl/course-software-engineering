@@ -13,7 +13,7 @@
 ### Practical Object-Oriented Design
 
 * [Object-Oriented Design](POODR/object-oriented_design.md)
-* [The Progress of Abstraction](the_progress_of_abstraction.md)
+* [The Progress of Abstraction](the_progress_of_abstraction/the_progress_of_abstraction.md)
 * [Designing Classes with a Single Response](POODR/designing_classes_with_a_single_response.md)
 * [Managing Dependencies](POODR/managing_dependencies.md)
 * [Creating Flexible Interfaces](POODR/creating_flexible_interfaces.md)
