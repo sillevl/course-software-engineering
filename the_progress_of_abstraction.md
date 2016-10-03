@@ -209,23 +209,17 @@ The alternative is to create objects dynamically. A pool of memory called the he
 
 ### Garbage Collector
 
-The compiler has no knowledge of the lifetime of dynamically created objects
-The programmer must determine programmatically when to destroy the object by using the delete keyword
-An alternative is the garbage collector
-Automatically discovers when objects are no longer in use and destroys it
-Makes writing programs much more convenient, but all applications must be able to tolerate the existence of the garbage collector and the overhead coming along with it
-This does not meet the design requirements of the C++ language  garbage collector not included !
-Third-party garbage collectors exist for C++ if needed
+The compiler has no knowledge of the lifetime of dynamically created objects. The programmer must determine programmatically when to destroy the object by using the delete keyword. An alternative is the garbage collector. It automatically discovers when objects are no longer in use and destroys it. It makes writing programs much more convenient, but all applications must be able to tolerate the existence of the garbage collector and the overhead coming along with it. This does not meet the design requirements of the C++ language so a garbage collector not is included!
+
+Third-party garbage collectors exist for C++ if needed.
+
+## Exception Handling
+
+Error handling is a difficult issue ever since the beginning of programming. It is hard to design a good error-handling scheme. Many language simply ignore it for that reason
+Exception handling wires error handling directly into the programming language. An exception is an object that is “thrown” from the origin of the error and can be “caught” by an appropriate exception handler. It has some kind of parallel path of execution. This prevents interfering with the normal path of execution. It makes code easier to write.
 
 
-Error handling is a difficult issue ever since the beginning of programming
-It is hard to design a good error-handling scheme
-Many language simply ignore it for that reason
-Exception handling wires error handling directly into the programming language
-An exception is an object that is “thrown” from the origin of the error and can be “caught” by an appropriate exception handler
-It has some kind of parallel path of execution
-This prevents interfering with the normal path of execution
-Makes code easier to write
+## Why C++ succeeds
 
 A better C
 Syntax already known
@@ -235,6 +229,8 @@ Maximum leverage with libraries
 Source-code reuse with templates
 Error handling
 Programming in the large
+
+## Summary
 
 Give a feel for the broad issues of object-oriented programming and C++
 Why OOP is different
