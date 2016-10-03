@@ -205,7 +205,7 @@ The stack is an area in memory that is directly used by the microprocessor to st
 
 ### Heap
 
-The alternative is to create objects dynamically. A pool of memory called the heap is used for this. Advantage is you don’t have t know how many object, their lifetime or exact type until runtime. The decisions are can be made while the program is running. If you need a new object, simply create it on the heap using the `new` keyword. When finished you must release it with the delete keyword. Because storage is managed at runtime, the dynamic allocation is many times slower compared to stack allocation.
+The alternative is to create objects dynamically. A pool of memory called the heap is used for this. Advantage is you don’t have t know how many object, their lifetime or exact type until runtime. The decisions are can be made while the program is running. If you need a new object, simply create it on the heap using the `new` keyword. When finished you must release it with the `delete` keyword. Because storage is managed at runtime, the dynamic allocation is many times slower compared to stack allocation.
 
 
 The compiler has no knowledge of the lifetime of dynamically created objects
