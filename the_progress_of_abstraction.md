@@ -103,7 +103,7 @@ When creating a library, you establish a relationship with the client programmer
 
 Access control prevents client programmers to hands off portions they shouldn’t touch. Hiding the internals that are not part of the interface that users need, is actually a service to the users. Client programmers can easily see what’s important for them and ignore the rest. C++ uses keywords (access modifiers) to set those boundaries in a class `public`, `private` and `protected`.
 
--- image -- 
+![Hiding the Abstraction](the progress of abstraction/hiding_the_abstraction.png)
 
 Once a class is created and tested, it should ideally represent a useful unit of code. Code reuse is one of the greatest advantages of object-oriented programming languages.
 DRY anyone?!
