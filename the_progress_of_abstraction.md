@@ -194,23 +194,18 @@ The program is extensible. It can work with more types than those already existi
 
 -- image --
 
+## Creating and destroying objects
+
 Technically the domain of OOP is abstract data typing, inheritance and polymorphism. Other issues can be at least important. Such as the way objects are created and destroyed. Where is the data for an object. How is the lifetime of that object controlled? C++ takes the approach that control of efficiency is the most important. It gives the programmer a choice. The storage and lifetime can be determined while implementing the program
 Objects can be placed on the stack, or in static storage.
 
-An area in memory that is directly used by the microprocessor to store data during program execution
-Variables on the stack are sometimes called automatic or scoped variables
-A fixed patch of memory that is allocated before the program begins to run
-Places the priority on the speed of storage allocation
-Sacrifice flexibility
-Must exactly know the quantity, lifetime and type of object while you write the program
+### Stack
 
-The alternative is to create objects dynamically
-A pool of memory called the heap is used for this
-Advantage is you don’t have t know how many object, their lifetime or exact type until runtime
-The decisions are can be made while the program is running
-If you need a new object, simply create it on the heap using the new keyword
-When finished you must release it with the delete keyword
-Because storage is managed at runtime, the dynamic allocation is many times slower compared to stack allocation
+The stack is an area in memory that is directly used by the microprocessor to store data during program execution. Variables on the stack are sometimes called automatic or scoped variables. A fixed patch of memory that is allocated before the program begins to run. It places the priority on the speed of storage allocation and sacrifice flexibility. You must exactly know the quantity, lifetime and type of object while you write the program.
+
+### Heap
+
+The alternative is to create objects dynamically. A pool of memory called the heap is used for this. Advantage is you don’t have t know how many object, their lifetime or exact type until runtime. The decisions are can be made while the program is running. If you need a new object, simply create it on the heap using the `new` keyword. When finished you must release it with the delete keyword. Because storage is managed at runtime, the dynamic allocation is many times slower compared to stack allocation.
 
 
 The compiler has no knowledge of the lifetime of dynamically created objects
