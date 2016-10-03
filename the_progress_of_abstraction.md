@@ -80,8 +80,7 @@ The interface establishes what request you can make. There must be code somewher
 
 Summarized: You ‘send a message’ to an object. The object figures out what to do (it executes code).
 
--- image --
-
+![Object Interface](the progress of abstraction/object_interface.png)
 
 ## The Hidden Implementation
 
