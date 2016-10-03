@@ -130,14 +130,14 @@ This is called composition because you are composing a new class out of existing
 
 ### Inheritance
 
+-- image --
+
 The concept of an object is a convenient tool. You can package data and functionality together by concept. Inheritance lets you reuse classes in new classes that might have a similar functionality. We could say that we clone a class and then make additions and modifications to it. If the original class (base, super or parent class) is changed, the modified ‘_clone_’ also reflects those changes.
 
 -- image --
 
 The base type is “shape”. All shapes have a size, color, position,… All shapes can be drawn, erased, moved, colored,… Specific shapes derive (inherit) these characteristics and behavior Circle, square, triangle Each may have additional characteristics and behavior.
 Eg: some shapes can be flipped. Some behaviors may be different like calculating the area of a shape depends on the type of shape.
-
-
 
 When inheriting from an existing shape, you create a new type
 The new type contains not only all the member of the existing types
