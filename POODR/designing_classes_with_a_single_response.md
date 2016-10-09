@@ -203,8 +203,23 @@ It is always a question about "improving it now" versus "improving it later". Ea
 
 ## Writing Code That Embraces Change
 
+You can arrange the code so that `Gear` will be easy to change even if you don't know what changes will come. There are well-known techniques that you can use to create code that embraces change.
 
 ### Depend on Behavior, Not Data
+
+Behavior is captured in methods and invoked by sending messages. DRY (Don't Repeat Yourself) code tolerates change because any change in behavior can be made by changing code in just one place.
+
+Objects often contain data. Data is held in an instance variable and can be anything. Data can be accessed in two ways:
+
+* Refer directly to the instance variable
+* Wrap the instance variable in an accessor method
+
+
+#### Hide Instance Variables
+
+> Always wrap instance variables in an accessor method instead of directly referring to a variable
+
+Take a look at the `ratio` method below:
 
 ```ruby
 class Gear
@@ -218,6 +233,10 @@ class Gear
   end
 end
 ```
+
+Hide the variables, even from the class that defines them by wrapping them in methods.
+
+Ruby provides `attr_reader` as an easy way to create the encapsulating methods:
 
 ```ruby
 class Gear
