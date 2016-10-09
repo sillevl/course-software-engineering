@@ -336,7 +336,23 @@ class RevealingReferences
 end
 ```
 
+The `diameters` has no knowledge of the internal structure of the array. Whate were once references to cell[1] have been transformed into messages send to `wheel.tire`.
+
+All the knowledge about the structure of the incomming array has been isolated inside the `weelify` method, which converts the array of `Arrays` into an array of `Structs`. Ruby defines a `Struct` as "a convenient way to bundle a number of attributes together, using accessor methods, without having to write a explicit class". ([ruby-doc.org/core/classes/Struct.html](http://ruby-doc.org/core/classes/Struct.html))
+
+If the input of the `wheelify` method changes, the code will only change in one place.
+
+This style of code allows you to protect agains changes in externally owned data structures. It makes code more readable and intention revealing. It trades indexing into a structure for sending messages to an object. The `wheelify` method isolates messy structural information and DRYs out code. It makes this class far more tolerant of change.
+
 ### Enforce Single Responsibility Everywhere
+
+Creating classes with a single responsibility has important implications for design, but it can be usefully employed in many other parts of the code.
+
+#### Extract Extra Responibilities from Methods
+
+Methods, like classes, should have a single responsibility. All of the same reasons apply. It makes them easy to change and easy to reuse.
+
+Take a look again at the `diameters` method of the `RevealingReferences` class:
 
 ```ruby
   def diameters
@@ -344,6 +360,7 @@ end
       wheel.rim + (wheel.tire * 2)}
   end
 ```
+The method has clearly two responsibilities. It iterates over the wheels and it calculates the diameter of each wheel. Those responsibilities could be refactered into separate methods:
 
 ```ruby
   # first - iterate over the array
@@ -357,12 +374,18 @@ end
   end
 ```
 
+This refactoring is not a case of overdesign. It only reorganizes code that is currently in use. The fact that the singular `diameter` method can now be called from other places is a free and happy side effect.
+
+Separating iteration from the action is a common case of multiple responsibility that is easy to recogize. In other cases the problem is not so obvious. Lets take a look at the `gear_inches` mehtod of the `Gear` class again:
+
 ```ruby
   def gear_inches
       # tire goes around rim twice for diameter
     ratio * (rim + (tire * 2))
   end
 ```
+
+Is `gear_inches` a responsibility of the `Gear` class? It might be, but it feels wrong to assume so. The root problem is that the method _itself_ has more than one responsibility. Hidden in the `gear_inches` is the calculation for wheel diameter. Extracting this calculation in its own method `diameter` will make it easier to examine the class's responsibilities.
 
 ```ruby
   def gear_inches
@@ -373,6 +396,12 @@ end
     rim + (tire * 2)
   end
 ```
+
+The refactoring does not change the way how the diameter is calculated, it only isolates the behavior in a separate method.
+
+Do these refactorings even when you do not know the ultimate design. They are needed, not because design is clear, but because it isen't. Good practices reveal design.
+
+The refactoring makes the problem obvious. `Gear` is definitely responsible for calculating `gear_inches`but should not be calculating wheel diameter.
 
 ```ruby
 class Gear
