@@ -412,9 +412,9 @@ The impact of a single refactoring like this is small, but the cumulative effect
 
 #### Isolate Extra Responsibilities in Classes
 
+Once every method has a single responsibility, the scope of the class becomes more apparent. The `Gear` class has some wheel-like behavior. Does the application need a `Wheel` class?
 
-
- 
+Ruby allows you to remove the responsibility for calculating tire diameter from `Gear` without commiting to a new class. The following example extends the previous `Wheel Struct` with a block that adds a method to calculate diameter. 
 
 ```ruby
 class Gear
@@ -441,7 +441,13 @@ class Gear
 end
 ```
 
+Now that we have a `Wheel` that can calculate its own diameter. Embedding this `Wheel` in `Gear` is obviously not the long-term design goal. It is more an experiment in code organization. It cleans up `Gear` but defers the decision about `Wheel`.
+
+With this experiment `Gear` suggests a `Wheel` will only exist in the context of a `Gear`.
+
 ## Finally, the Real Wheel
+
+
 
 ```ruby
 class Gear
@@ -491,7 +497,7 @@ puts Gear.new(52, 11).ratio
 
 ## Summary
 
-
+The path to changeable and maintainable object-oriented software begins with classes with a single responsibility. Classes that do one thing _isolate_ that thing from the rest of the application. This allows for change without consequence and reuse without duplication.
 
 
 
