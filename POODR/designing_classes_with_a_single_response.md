@@ -1,5 +1,19 @@
-# Designing Classes with a Single Response
+# Designing Classes with a Single Responsibility
 
+The foundation of an object-oriented system is the _message_, but the most visible organizational structure is the _class_. *single responsibility* concentrates on how to decide what belongs in a class. The other principles have more emphasis on the messages.
+
+When creating new code, a lot of questions might arrise. 
+
+* What are the classes to use?
+* How many classes should I have?
+* What behavior will they implement?
+* How much do they know about other classes?
+* How much of them selves should they expose?
+
+These questions can be overwhelming. Fear not. The first thing to do is to _insist that it be simple_.
+The goal is to model your application, using classes, such that it does what it is supposed to _right now_, and is easy to change _later_.
+
+These are two different criteria. Everyone can arrange code to make it work right now. Creating an easy-to-change application, however is a different matter. The quality of easy changeability reveals the craft of programming. Achieving it takes knowledge, skill and a bit of artistic creativity. _Single responsibility_ is a simple technique that helps to improve the easiness of changeability. You just need to know how to use it.
 
 ## Deciding What Belongs in a Class
 
