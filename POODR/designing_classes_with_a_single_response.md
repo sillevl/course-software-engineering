@@ -171,6 +171,19 @@ You increase the application's chance of breaking unexpectedly if you depend on 
 
 ### Determining If a Class Has a Single Responsibility
 
+To determine if a class has behavior that belongs somewhere else is to interrogate it. Rephrasing every one of the methods as a question and it must make sense. For example:
+
+> "Please Mr. Gear, what is your ratio?"
+
+This makes perfectly sense.
+
+> "Please Mr. Gear, what are your gear_inches?"
+
+This might sound weird, but is still doable.
+
+> "Please Mr. Gear, what is your tire (size)?"
+
+This sounds downright ridiculous.
 
 ### Determining When to Make Design Decisions
 
