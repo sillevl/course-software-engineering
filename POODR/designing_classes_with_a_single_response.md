@@ -261,6 +261,12 @@ end
   end
 ```
 
+The `cog` method is now the only place in the code that understands what cog means. _Cog_ becomes the result of a message. Implementing this method changes cog from data (which is refered all over) to behavior (which is defined once).
+
+If the `@cog` instance variable is reffered to ten times and it suddenly needs to be adjusted, the code will need many changes. However if `@cog` is wrapped in a method, you can change cog means by implementing your own version of the method.
+
+Some examples: 
+
 ```ruby
   # a simple reimplementation of cog
   def cog
