@@ -403,6 +403,19 @@ Do these refactorings even when you do not know the ultimate design. They are ne
 
 The refactoring makes the problem obvious. `Gear` is definitely responsible for calculating `gear_inches`but should not be calculating wheel diameter.
 
+The impact of a single refactoring like this is small, but the cumulative effect of this coding style is huge. Methods with a single responsibility have folling benefits:
+
+* **Expose previously hidden qualities**. Refactoring a class so that all of its methods have a single responsibility has a clarifying effect on the class. Even if you do not intend to reorganize the methods into other classes today, having each of them serve a single purpose makes the set of things the class does more obvious.
+* **Avoid the need for comments**. Comments can become out of date because they are not executable. Comments are decaying documentation. If code needs a comment, extract that bit into a separate method. The new method will serve the same purpose the old comment did.
+* **Encourage reuse**. Small objects encourage coding behavior that is healty for the application. Other programmers will resulse methods instead of duplicating them. They will follow the pattern in turn.
+* **Are easy to move to another class**. When design comes more clear and decide to make changes, small methods are easy to move. Small methods lower the barrier to improve design.
+
+#### Isolate Extra Responsibilities in Classes
+
+
+
+ 
+
 ```ruby
 class Gear
   attr_reader :chainring, :cog, :wheel
