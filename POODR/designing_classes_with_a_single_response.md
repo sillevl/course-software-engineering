@@ -300,10 +300,14 @@ class ObscuringReferences
 end
 ```
 
+This class expects to be initialized with a two-dimensional array of rimms and tires:
+
 ```ruby
 # rim and tire sizes (now in milimeters!) in a 2d array
 @data = [[622, 20], [622, 23], [559, 30], [559, 40]]
 ```
+
+
 
 ```ruby
 class RevealingReferences
