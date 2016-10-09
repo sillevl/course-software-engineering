@@ -189,6 +189,10 @@ On other way to explore what a class is actually doing is to attempt to describe
 
 Object-oriented designers use the word _cohesion_ to describe the concept. The Single Responsibility Principle (SRP) does not require that a class does only one very narrow thing or that it changes for only a single nitpicky reason. SRP instead requires that a class is cohesive. Everything the class does must be highly related to its purpose.
 
+The responsibility of the `Gear` class could be described as "Calculate the ratio between two toothed sprockets". This means that the class, in its current shape does too much. Maybe it could be described as "Calculate the effect that a gear has on a bicyle". This takes `gear_inches` back on solid ground, but `tire` size is still quite shaky.
+
+The class does not feel right. `Gear` has more than one responsibility but it's not obvious what should be done.
+
 ### Determining When to Make Design Decisions
 
 
