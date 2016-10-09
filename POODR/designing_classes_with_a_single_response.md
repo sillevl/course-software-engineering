@@ -499,6 +499,8 @@ puts Gear.new(52, 11).ratio
 # -> 4.72727272727273
 ```
 
+Both classes have a single responsibility. The code is not perfect, but in some ways it achieves a higher standard: it is _good enough_.
+
 ## Summary
 
 The path to changeable and maintainable object-oriented software begins with classes with a single responsibility. Classes that do one thing _isolate_ that thing from the rest of the application. This allows for change without consequence and reuse without duplication.
