@@ -280,6 +280,8 @@ Some examples:
     @cog * (foo? ? bar_adjustment : baz_adjustment)
   end
 ```
+#### Hide Data Structures
+
 
 ```ruby
 class ObscuringReferences
