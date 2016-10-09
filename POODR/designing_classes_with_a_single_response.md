@@ -140,6 +140,8 @@ puts Gear.new(52, 11, 24, 1.25).gear_inches
 # -> 125.272727272727
 ```
 
+The new `gear_inches` method assumes that rim and tire size are given in inches, which may or may not be correct. With that caveat, the `Gear` class meets the specification, and the code, with the exeption of the following bug, works.
+
 ```ruby
 puts Gear.new(52, 11).ratio # didn't this used to work?
 # ArgumentError: wrong number of arguments (2 for 4)
