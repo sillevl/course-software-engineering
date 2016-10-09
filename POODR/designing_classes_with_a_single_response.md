@@ -154,10 +154,20 @@ The bug above was introduced when the `gear_inches` method was added. `Gear.init
 
 Now that our `Gear` class exists, its time to ask the question: **Is it the best way to organize the code?**
 
-The answer, as always, is: it depends. If you expect the application to remain static forever, the `Gear` in its current form may be good enough. However you can forsee the possibility of an entire application of calculators for bicyclists. `Gear` is the first of many classes of an application that will _evolve_. To efficiently evolve, code mush be easy to change.
+The answer, as always, is: it depends. If you expect the application to remain static forever, the `Gear` in its current form may be good enough. However you can foresee the possibility of an entire application of calculators for bicyclists. `Gear` is the first of many classes of an application that will _evolve_. To efficiently evolve, code mush be easy to change.
 
 ### Why Single Responsibility Matters
 
+Applications that are easy to change consist out of classes that are easy to reuse. Reusable classes are pluggable units of well-defined behavior that have few entanglements.
+
+A class with more than one responsibility is difficult to reuse. If you want to reuse some (but not all) of its behavior, it is impossible to get at only the parts you need. You are faced with two options and neither is appealing:
+
+* If the responsibilities are so coupled that you cannot use just the behavior you need, you could duplicate the code of interest. This is a terrible idea, and would make the code not DRY.
+* If the class is structured such that you _can_ access only the behavior you need, you could reuse the entire class. This just substitutes one problem for another.
+
+The class you are reusing is confused about what it does and it contains several tangled up responsibilities, it has _many reasons to change_. It may change for a reason that is unrelated to your use of it. Each time it changes, there is a possibility of breaking every class that depends on it.
+
+You increase the application's chance of breaking unexpectedly if you depend on classes that do to much.
 
 ### Determining If a Class Has a Single Responsibility
 
