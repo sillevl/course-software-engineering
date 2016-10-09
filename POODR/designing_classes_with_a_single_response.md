@@ -105,7 +105,9 @@ Cyclists use something called _gear inches_ to compare bicycles that differ in b
 
 ```
 gear inches = wheel diameter * gear ratio
+```
 where
+```
 wheel diameter = rim diameter + twice tire diameter
 ```
 
