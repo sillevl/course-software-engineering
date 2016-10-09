@@ -252,6 +252,8 @@ class Gear
 end
 ```
 
+`attr_reader` causes Ruby to create a simple wrapper method for the variables. Ruby implicitly created one for `cog`:
+
 ```ruby
   # default implementation via attr_reader
   def cog
