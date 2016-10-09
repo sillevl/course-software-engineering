@@ -76,7 +76,7 @@ The gear created by combining a 52-tooth chainring with an 11-tooth cog (a 52×1
 
 Believe it or not, there are people who deeply care about bicycle gearing. You can help them out by writing a Ruby application to calculate gear ratios.
 
-````ruby
+```ruby
 class Gear
   attr_reader :chainring, :cog
   def initialize(chainring, cog)
@@ -195,6 +195,11 @@ The class does not feel right. `Gear` has more than one responsibility but it's 
 
 ### Determining When to Make Design Decisions
 
+The code in the `Gear` class is both _transparant_ and _reasonable_, but this does not reflect excellent design. The class  just has no dependencies so changes have no consequences. If it were to acquire dependencies it would suddenly be a violation of both these goals. The class should be reorganized _at that time_. New dependencies will supply the information you need to make good design decisions.
+
+`Gear` is neither _usable_ nor _exemplary_. It has multiple responsibilities and should not be reused. Other developers might reuse `Gear`, or create new code that follows it pattern while you are waiting for better information.
+
+It is always a question about "improving it now" versus "improving it later". Each choice has a price. A good designer understands this tension and minimizes costs by making informed tradeoffs between the needs of the present and the posibilities of the fututure.
 
 ## Writing Code That Embraces Change
 
