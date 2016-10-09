@@ -307,7 +307,13 @@ This class expects to be initialized with a two-dimensional array of rimms and t
 @data = [[622, 20], [622, 23], [559, 30], [559, 40]]
 ```
 
+`ObscuringReferences` uses Ruby's `attr_reader` to wrap the `@data` instance in a method. Just hiding the instance variable is not enough. Every sender of `data` must have a complete knowledge of what piece of data is at which index in the array.
 
+The `diameters` method knows not only how to calculate the diameters, but also where to find the rims and tires in the array. It knows that rims are at [0] and tires are at [1]. It depends on the structure of the array. If that structure changes, the code must change aswel.
+
+Referencing rims and tires in this way escapes encapsulation. Befor you know it you reference them all over places. Referencing rims and tires in this way is not DRY. The knowledge that rims are at [0] should not be duplicated. It should be known in just one place.
+
+In Ruby it is easy to separarate structure from meaning. Ruby provides the `Struct` class to wrap a structur. In the following example `RevealingReferences` has the same interface as the previous class.
 
 ```ruby
 class RevealingReferences
