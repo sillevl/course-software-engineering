@@ -72,7 +72,9 @@ ratio     = chainring / cog.to_f
 puts ratio                        # -> 1.11111111111111
 ```
 
+The gear created by combining a 52-tooth chainring with an 11-tooth cog (a 52×11) has a ratio of 4.73. Each time you push the pedals one time around, the wheels will travel around five times. Whith a 30×27 ratio, every single time the pedals go around, the weels will rotate a little more than once.
 
+Believe it or not, there are people who deeply care about bicycle gearing. You can help them out by writing a Ruby application to calculate gear ratios.
 
 ````ruby
 class Gear
@@ -90,6 +92,14 @@ end
 puts Gear.new(52, 11).ratio        # -> 4.72727272727273
 puts Gear.new(30, 27).ratio        # -> 1.11111111111111
 ```
+
+The `Gear` class is simplicity itself. You can create a new `Gear` instance by providing the number of teeth for the chainring and the cog. Each instance implements three methods: `chainring`, `cog` and `ratio`.
+
+You show your Gear calculator to a cyclist friend and she finds it useful but immediately asks for an enhancement. She owns two bicycles. The bicycles have exactly the same gearing but they have different wheel sizes. She would like to also calculate the effect of the difference in wheels.
+
+Bikes with larger wheels travel much farther during each wheel rotation than ones with tiny wheels.
+
+-- image --
 
 ```ruby 
 class Gear
