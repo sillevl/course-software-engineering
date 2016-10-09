@@ -50,8 +50,13 @@ To make code TRUE (Transparent, Reasonable, Usable and Exemplary) is to ensure t
 
 ## Creating Classes That have a Single Responsibility
 
+A class should do the smallest possible useful thing. That is, it should have a single responsibility.
 
 ### An Example Application: Bicycles and Gears
+
+Bicycles are wonderfully efficient machines. They use gears to provide humans with a mechanical advantage. When riding a bike you can use different gears, small ones to creep up hills, and big ones to  get back down. Gears work by changing how far a bike travels each time your feet complete one circle with the pedals.
+
+The terms of _small_ and _big_ are not very precise. To compare different gears, bicyclists use the ratio of the numbers of their teeth. Those ratios can be calculated with this simple Ruby script:
 
 ```ruby
 chainring = 52                    # number of teeth
