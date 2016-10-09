@@ -447,7 +447,11 @@ With this experiment `Gear` suggests a `Wheel` will only exist in the context of
 
 ## Finally, the Real Wheel
 
+You show the application again to your cyclist friend, and the future arrives. She would like to have a calculator for "bicycle wheel circumference". This is the information you have been waiting for. The new feature supplies the exact information you need to make the next design decision.
 
+It is a minor change to the `Wheel` by adding the circumference calculator method. The real change is that there is now an explicite need for a `Wheel` class. Wheel circumferences have nothing to do with gears, to this asks for a new class to be introduced (to keep responsibilities separated).
+
+Because the `Wheel` behavior was already isolated in the `Gear` class, the change is painless. Simply convert the `Wheel Struct` to an independent `Wheel` class and add the `circumference` method:
 
 ```ruby
 class Gear
