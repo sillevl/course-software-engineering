@@ -140,7 +140,7 @@ puts Gear.new(52, 11, 24, 1.25).gear_inches
 # -> 125.272727272727
 ```
 
-The new `gear_inches` method assumes that rim and tire size are given in inches, which may or may not be correct. With that caveat, the `Gear` class meets the specification, and the code, with the exeption of the following bug, works.
+The new `gear_inches` method assumes that rim and tire size are given in inches, which may or may not be correct. With that caveat, the `Gear` class meets the specification, and the code, with the exception of the following bug, works.
 
 ```ruby
 puts Gear.new(52, 11).ratio # didn't this used to work?
@@ -150,7 +150,11 @@ puts Gear.new(52, 11).ratio # didn't this used to work?
 #	 from (irb):20
 ```
 
-The bug above was introduced when the `gear_inches` method was added. `Gear.initialize` was changed to require two additional arguments, `rim` and `tire`.
+The bug above was introduced when the `gear_inches` method was added. `Gear.initialize` was changed to require two additional arguments, `rim` and `tire`. Altering the number of arguments of a method breaks all existing callers of the method. This would normally be terrible problem that would have to dealt with instantly. Our application currently has no such callers, so we will ignore it for now.
+
+Now that our `Gear` class exists, its time to ask the question: **Is it the best way to organize the code?**
+
+The answer, as always, is: it depends. If you expect the application to remain static forever, the `Gear` in its current form may be good enough. However you can forsee the possibility of an entire application of calculators for bicyclists. `Gear` is the first of many classes of an application that will _evolve_. To efficiently evolve, code mush be easy to change.
 
 ### Why Single Responsibility Matters
 
