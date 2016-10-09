@@ -185,6 +185,10 @@ This might sound weird, but is still doable.
 
 This sounds downright ridiculous.
 
+On other way to explore what a class is actually doing is to attempt to describe it in one sentence. If it uses the word "and", it likely has more than one responsibility. If it uses the word "or" the class has more than one responsibility, and they aren't even related.
+
+Object-oriented designers use the word _cohesion_ to describe the concept. The Single Responsibility Principle (SRP) does not require that a class does only one very narrow thing or that it changes for only a single nitpicky reason. SRP instead requires that a class is cohesive. Everything the class does must be highly related to its purpose.
+
 ### Determining When to Make Design Decisions
 
 
