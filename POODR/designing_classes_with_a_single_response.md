@@ -282,6 +282,7 @@ Some examples:
 ```
 #### Hide Data Structures
 
+If being attached to an instance variable is bad, depending on a complicated data structure is worse. Concider the following `ObscuringReferences` class:
 
 ```ruby
 class ObscuringReferences
