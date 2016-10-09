@@ -150,6 +150,8 @@ puts Gear.new(52, 11).ratio # didn't this used to work?
 #	 from (irb):20
 ```
 
+The bug above was introduced when the `gear_inches` method was added. `Gear.initialize` was changed to require two additional arguments, `rim` and `tire`.
+
 ### Why Single Responsibility Matters
 
 
