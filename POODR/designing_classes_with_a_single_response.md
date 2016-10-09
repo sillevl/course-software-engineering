@@ -99,7 +99,15 @@ You show your Gear calculator to a cyclist friend and she finds it useful but im
 
 Bikes with larger wheels travel much farther during each wheel rotation than ones with tiny wheels.
 
--- image --
+-- image wheel difference --
+
+Cyclists use something called _gear inches_ to compare bicycles that differ in both gearing and wheel size. The formula follows:
+
+```
+gear inches = wheel diameter * gear ratio
+where
+wheel diameter = rim diameter + twice tire diameter
+```
 
 ```ruby 
 class Gear
