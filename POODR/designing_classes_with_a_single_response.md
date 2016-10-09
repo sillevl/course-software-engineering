@@ -17,12 +17,34 @@ These are two different criteria. Everyone can arrange code to make it work righ
 
 ## Deciding What Belongs in a Class
 
+Having an application in mind, you know what it should do. You may even know how to implement the most interesting things bits of behavior. The problem is not of technical knowledge but of organization. You know how to write the code, but not where to put it.
 
 ### Grouping Methods into Classes
 
+In class-based object-oriented programming languages, methods are defined in classes. The classes will affect how you think about your application forever. They define a virtual world that constrains the imagination of everyone that will be using those classes. You are constructing a box that may be difficult to think outside of.
+
+It is important to correctly group methods in classes, but in the early stage of the project, you cannot possibly get it right. You will never know less than what you know right now.
+If the application succeeds, many of the decisions you make today will need to be changed later. If the moment comes, the ability to successfully make those changes is determined by the design.
+
+Design is more than the art of preserving changeability than it is the act of achieving perfection.
 
 ### Organizing Code to Allow for Easy Changes
 
+The idea of _easy_ is to broad. We need concrete definitions of easiness and specific criteria by which to judge code.
+
+If you define easy to change as: 
+
+* Changes have no unexpected side effects
+* Small changes in requirements require correspondingly small changes in code
+* Existing code is easy to reuse
+* The easiest way to make a change is to add code that in itself is easy to change
+
+Then the code you write should have the following qualities. Code should be:
+
+* **Transparent**: The consequences of change should be obvious in the code that is changing and in distant code that relies upon it.
+* **Reasonable**: The cos of any change should be proportional to the benefits the change achieves.
+* **Usable**: Existing code should be usable in new and unexpected contexts.
+* **Exemplary**: The code itself should encourage those who change it to perpetuate these qualities.
 
 ## Creating Classes That have a Single Responsibility
 
