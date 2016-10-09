@@ -46,6 +46,8 @@ Then the code you write should have the following qualities. Code should be:
 * **Usable**: Existing code should be usable in new and unexpected contexts.
 * **Exemplary**: The code itself should encourage those who change it to perpetuate these qualities.
 
+To make code TRUE (Transparent, Reasonable, Usable and Exemplary) is to ensure that each class has a single, well-defined responsibiltiy. 
+
 ## Creating Classes That have a Single Responsibility
 
 
