@@ -111,6 +111,8 @@ where
 wheel diameter = rim diameter + twice tire diameter
 ```
 
+You can change the `Gear` class to add this new behavior:
+
 ```ruby 
 class Gear
   attr_reader :chainring, :cog, :rim, :tire
