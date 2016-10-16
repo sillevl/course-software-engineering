@@ -380,6 +380,7 @@ The other interesting thing about `GearWrapper` is that its only purpose is to c
 
 ## Managing Dependency Direction
 
+Dependencies always have a direction. This seciton covers on how to decide on the direction of dependencies.
 
 ### Reversing Dependencies
 
