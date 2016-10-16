@@ -227,6 +227,8 @@ end
 
 ### Remove Argument-Order Dependencies
 
+#### Use Hashes for Initialization Arguments
+
 ```ruby
 class Gear
   attr_reader :chainring, :cog, :wheel
@@ -261,6 +263,8 @@ Gear.new(
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 ```
 
+#### Explicitly Define Defaults
+
 ```ruby
   # specifying defaults using ||
   def initialize(args)
@@ -291,6 +295,8 @@ Gear.new(
     {:chainring => 40, :cog => 18}
   end
 ```
+
+#### Isolate Multiparameter Initialization
 
 ```ruby
 # When Gear is part of an external interface
@@ -366,8 +372,15 @@ end
 Wheel.new(26, 1.5, 52, 11).gear_inches
 ```
 
-### Choosing Dependencies
+### Choosing Dependency Direction
 
+#### Understanding Likelihood of Change
+
+#### Recognizing Concretions and Abstractions
+
+#### Avoiding Dependent-Laden Classes
+
+#### Finding the Dependencies That Matter
 
 
 ## Summary
