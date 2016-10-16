@@ -197,6 +197,8 @@ In both cases `Gear` still knows far too much. It still takes `rim` and `tire` a
 
 However there _has_ been an improvement. The number of dependencies in `gear_inches` has been reduced. This coding style reveals dependencies instead of concealing them. This lowers the barriers to reuse and making the code easier to refactor when needed. This change makes the code more agile, and will adapt more easily to the unknown future.
 
+#### Isolate Vulnerable External Messages
+
 ```ruby
 def gear_inches
   ratio * wheel.diameter
