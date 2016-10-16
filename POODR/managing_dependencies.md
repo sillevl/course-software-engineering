@@ -137,6 +137,12 @@ end
 Gear.new(52, 11, Wheel.new(26, 1.5)).gear_inches
 ```
 
+The technique used here is called _duck typing_. If it quacks like a duck, it is a duck. [https://en.wikipedia.org/wiki/Duck_typing ](https://en.wikipedia.org/wiki/Duck_typing)
+
+The change is so small, but coding in this style has huge benifits. Moving the creation of the new `Wheel` instance outside the `Gear` class decouples the two classes. `Gear` can now collaborate with any object that implements `diameter`.
+
+This technique is known as _dependency injection_. `Gear` previously had explicit dependencies on the `Wheel` class and on the type and order of its initialization arguments. By using injecting the dependencies are reduced to a single dependency on the `diameter` method.
+
 ### Isolate Dependencies
 
 ```ruby
