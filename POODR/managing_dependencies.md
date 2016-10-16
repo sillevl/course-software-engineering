@@ -168,7 +168,9 @@ class Gear
 # ...
 ```
 
-Creation of the `Wheel` has been moved from the `gear_inches` method to the initialization method. This cleans up the `gear_inches` method.
+Creation of the `Wheel` has been moved from the `gear_inches` method to the initialization method. This cleans up the `gear_inches` method. Note that this technique unconditionally creates a new `Wheel` each time a new `Gear` is created.
+
+The next alternative isolates creation of a new `Wheel` in its own explicitly defined `wheel` method. This method lazy creates a new instance of `Wheel`. The creation of a `Wheel` is deferred until `gear_inches` invokes the new `wheel` method.
 
 
 ```ruby
