@@ -338,6 +338,12 @@ This isolation technique is reasonably for the case above, but it is especially 
 
 #### Isolate Multiparameter Initialization
 
+Until now all techniques for removing the argument order dependency used situation where _you_ have control over the signature of the method that needs to change. In some situation you will be forced to depend on a method that requires fixed-order arguments.
+
+Just as you would DRY out repetitive code inside of a class, you can DRY out creation of new `Gear` instances by creating a single method to wrap the external interface. The classes in the application should depend on code that you own. Using a wrapping method isolates external dependencies.
+
+In the next example the `SomeFramework::Gear` is not owned by the application and is part of an external framework. Its initialization requires fixed-order arguments. The `GearWrapper` module was created to avoid having multiple dependencies on the order of those arguments. `GearWrapper` isolates all knowledge of the external interface in one place. In above it improves the interface of the application.
+
 ```ruby
 # When Gear is part of an external interface
 module SomeFramework
