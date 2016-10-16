@@ -374,6 +374,10 @@ GearWrapper.gear(
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 ```
 
+There are two things to note about `GearWrapper`. First its a Ruby module instead of a class. It lets you define a separate and distinct object to which you can send the `gear` message while simultaneously conveying the idea that you don't  expect to have instances of `GearWrapper`.
+
+The other interesting thing about `GearWrapper` is that its only purpose is to create instances of some other class. Object-oriented designers have a word for objects like this. They call them _factories_
+
 ## Managing Dependency Direction
 
 
