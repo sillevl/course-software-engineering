@@ -85,8 +85,11 @@ Another type of dependencies is that of tests on code. Tests that are closely co
 
 ## Writing Loosely Coupled Code
 
+Reducing dependencies means recognizing and removing the ones you don't need. Some examples will be illustrated to reduce dependencies by decoupling code.
 
 ### Injecting Dependencies
+
+Referring to another class by its name creates a dependency. In the last version of `Gear`, the `gear_inches` method contains an explicit reference to the class `Wheel`:
 
 ```ruby
 class Gear
