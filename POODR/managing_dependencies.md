@@ -465,7 +465,7 @@ This technique and transition might be for granted in Ruby. If you have been req
 
 In Ruby you just inject `Wheel` into `Gear` such that `Gear` depends on a `Duck` who responds to `diameter`. In this case you are casually defining an interface. In static typed languages defining an interface is _always_ intentional.
 
-The wonderful thing about abstractions is that they represent common, stable qualities.
+The wonderful thing about abstractions is that they represent common, stable qualities. They are less likely to change than concrete classes. Depending on abstractions is always better than on concretions. 
 
 #### Avoiding Dependent-Laden Classes
 
