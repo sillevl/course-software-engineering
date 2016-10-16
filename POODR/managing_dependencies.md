@@ -110,6 +110,12 @@ end
 Gear.new(52, 11, 26, 1.5).gear_inches
 ```
 
+If the `Wheel` class changes its name, the `Gear` class needs to change as well. A deeper problem exits that is far less visible but more destructive.
+
+When `Gear` hard-codes a reference to `Wheel` deep inside its `gear_inches` method, it is explicitly declaring that its only willing to calculate  gear inches for instances of `Wheel`. `Gear` refuses to collaborate with any other kind of object, even if that object has a diameter and uses gears.
+
+The code above uses an unjustified attachment to static types. It is not the class of the object that is important, it is the _message_ you plan to send it. `Gear`needs access to an object that can respond to `diameter`.
+
 ```ruby
 class Gear
   attr_reader :chainring, :cog, :wheel
