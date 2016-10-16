@@ -427,6 +427,10 @@ end
 Wheel.new(26, 1.5, 52, 11).gear_inches
 ```
 
+Calculating `gear_inches` still requires collaboration between `Gear` and `Wheel` and the result of the calculation is unaffected by the reversal. You could infer that the direction of the dependency does not matter. That it makes no difference whether `Gear` depends on `Wheel` or vice versa.
+
+This might be true in an application that never changes. However your application _will_ change. The choices about the direction of dependencies have repercussions. If you get it right, the application will be pleasant to work on and easy to maintain. If you get it wrong then dependencies will gradually take over the application and will become harder and harder to change.
+
 ### Choosing Dependency Direction
 
 #### Understanding Likelihood of Change
