@@ -237,7 +237,7 @@ This is exactly what you would have written if you had many references to `wheel
 
 Sending a message requires arguments. The sender must have any knowledge of those arguments. This dependency is unavoidable. However there is also a more suble dependency. Not only does the sender need to provide arguments, it must also know the specific and fixed order.
 
-In the following example, the `Gear`'s `initialize` method takes three arguments: `chainring`, `cog` and `wheel`. It provides no defaults and all the arguments must be passed and _i the correct order_
+In the following example, the `Gear`'s `initialize` method takes three arguments: `chainring`, `cog` and `wheel`. It provides no defaults and all the arguments must be passed and _in the correct order_
 
 ```ruby
 class Gear
