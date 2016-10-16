@@ -141,9 +141,17 @@ The technique used here is called _duck typing_. If it quacks like a duck, it is
 
 The change is so small, but coding in this style has huge benifits. Moving the creation of the new `Wheel` instance outside the `Gear` class decouples the two classes. `Gear` can now collaborate with any object that implements `diameter`.
 
-This technique is known as _dependency injection_. `Gear` previously had explicit dependencies on the `Wheel` class and on the type and order of its initialization arguments. By using injecting the dependencies are reduced to a single dependency on the `diameter` method.
+This technique is known as _dependency injection_. `Gear` previously had explicit dependencies on the `Wheel` class and on the type and order of its initialization arguments. By using injecting the dependencies are reduced to a single dependency on the `diameter` method. `Gear` is now smarter because it knows less.
 
 ### Isolate Dependencies
+
+It is best to break all dependencies. This is always _technically_ possible, but sometimes not _actually_ possible. When working with existing code, it is mostly constrained how much you can change.
+
+If it is impossible to remove unnecessary dependencies, you should isolate them within your class. Isolating dependencies makes them easy to spot and reduce when circumstances permit.
+
+#### Isolate Instance Creation
+
+If you cannot change the code to inject a `Wheel` into a `Gear`, you should isolate the creation of a new `Wheel` inside the `Gear` class. The intent is to explicitly expose the dependency while reducing its reach into your class. The next example show this idea:
 
 ```ruby
 class Gear
@@ -159,6 +167,9 @@ class Gear
   end
 # ...
 ```
+
+Creation of the `Wheel` has been moved from the `gear_inches` method to the initialization method. This cleans up the `gear_inches` method.
+
 
 ```ruby
 class Gear
