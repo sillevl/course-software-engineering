@@ -70,8 +70,18 @@ Dependencies _couple_ `Gear` and `Wheel`. The more they know about each other an
 * If you want to reuse `Gear`, `Wheel` comes along for the ride.
 * When you test `Gear` you will be testing `Wheel`too.
 
+-- figuur --
+
+If two or more objects are tightly coupled, they behave as a unit. It becomes impossible to reuse just one.
+
 ### Other Dependencies
 
+This chapter covers the four kinds of dependencies listed above and suggests techniques for avoiding the problems they create. However other kinds of dependencies exist. They types will be covered in other chapters.
+
+One especially destructive kind of dependency occurs where an object knows another who knows another who knows something. Many messages are chained together to reach behavior that lives in a distant object. Message chaining created dependencies between the original object and every other object in the chain.
+This is a violation of the Law of Demeter (covered later).
+
+Another type of dependencies is that of tests on code. Tests that are closely coupled to code lead to frustration. These test will break every time code is refactored. 
 
 ## Writing Loosely Coupled Code
 
