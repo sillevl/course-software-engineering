@@ -1,7 +1,16 @@
 # Managing Dependencies
 
+Object-oriented languages are efficient and effective because the model reality. Objects reflect real world problems and the interactions between those objects provide solutions. A single object cannot know everything, so it will have to talk to other objects.
+
+For any desired behavior, an object knows it personally, inherits it, or knows another object who knows it. The previous chapter concerned itself with the behavior a class should implement personally. Behavior through inheritance is covered in one of the next chapters. This chapter will focus on getting access to behavior that is implemented in _other_ objects. 
+
+Well build objects have a single responsibility. To solve complex tasks it is required that they work together. Tho collaborate, objects must know things about others. _Knowing_ creates dependencies. If not managed, dependencies will strangle your application.
 
 ## Understanding Dependencies
+
+An object depends on another object if, when one object changes, the other might be forced to change in turn.
+
+Here is a modified version of the `Gear` class. `Gear` is initialized with four familiar arguments. The `gear_inches` method uses both the `rim`and `tire` to create a new instance of `Wheel`. `Wheel` has not changed since the previous example.
 
 ```ruby
 class Gear
@@ -39,8 +48,16 @@ end
 Gear.new(52, 11, 26, 1.5).gear_inches
 ```
 
+The code seems innocent, but it's a lot more complex than it looks. `Gear` has at least 4 dependencies on `Wheel`. Most of these dependencies are unnecessary. `Gear`does not need these dependencies to do the job. These dependencies resist change in the `Gear` implementation.
+
 ### Recognizing Dependencies
 
+An object has dependencies when it knows
+
+* The name of another class. `Gear`expects a class named `Wheel` to exist.
+* The name of a message that it intends to send to someother than self. `Gear` expects a `Wheel` instance to respond to `diameter`.
+* The arguments that a message requires. `Gear`knows that `Wheel.new` requires a `rim` and a `tire`.
+* The order of those arguments. `Gear` knows the first argument to `Wheel.new` should be `rim`, the second, `tire`.
 
 ### Coupling Between Objects (CBO)
 
