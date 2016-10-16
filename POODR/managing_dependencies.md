@@ -433,9 +433,39 @@ This might be true in an application that never changes. However your applicatio
 
 ### Choosing Dependency Direction
 
+Pretend that classes are people. If you would give people advice about how to behave you would tell them to 
+
+> Depend on things that change less often then you do
+
+In this statement lies the idea which i based on three simple truths about code:
+
+* Some classes are more likely than others to have changes in requirements.
+* Concrete classes are more likely to change than abstract classes.
+* Changing a class that has many dependents will result in widespread consequences.
+
+There are ways in which these truths intersect but each is a separate and distinct notion.
+
 #### Understanding Likelihood of Change
 
+The idea that some classes are more likely to change than others applies not only on code that you write for your application, but also to code that you use but did _not_ write. The Ruby base classes and other framework code that you rely on both have their own inherent likelihood of change.
+
+Fortunately Ruby base classes change less often than your own code. It makes perfectly sense to depend on the `*`method as `gear_inches` does. Or to expect that `String` and `Array` will continue to work as they always have.
+
+Framework classes are another story. Any framework you use will be more stable than the code you write, but it certainly is possible that code changes in rapidly developed projects.
+
+Every class in your project can be ranks along a scale of how likely it is to undergo a change relative to all the other classes. This ranking is one key piece of information when choosing the direction of dependencies.
+
 #### Recognizing Concretions and Abstractions
+
+The second idea concerns itself with the concreteness and abstractness of code. The term _abstract_ here is used as in "dissassociated from any specific instance".
+
+This concept was illustrated earlier. `Gear` depended on `Wheel` and on  `Wheel.new` and on `Wheel.new(rim, tire)`, it depended on concrete code. After the code was altered to inject a `Wheel` into `Gear`, `Gear` suddenly began to depend on someting far more abstract. It had access to an object that could respond to the `diameter` message.
+
+This technique and transition might be for granted in Ruby. If you have been required to accomplish this in a statically typed language, this could not be done in the same manner. Statically typed language have compilers that test types and you would not be able to inject any random object into `Gear`. Instead you would have to declare an _interface_, define a `diameter` as part of that interface. Including the interface in the `Wheel` class, and tell `Gear` that the class you are injecting is _a kind of_ that interface.
+
+In Ruby you just inject `Wheel` into `Gear` such that `Gear` depends on a `Duck` who responds to `diameter`. In this case you are casually defining an interface. In static typed languages defining an interface is _always_ intentional.
+
+The wonderful thing about abstractions is that they represent common, stable qualities.
 
 #### Avoiding Dependent-Laden Classes
 
