@@ -59,8 +59,16 @@ An object has dependencies when it knows
 * The arguments that a message requires. `Gear`knows that `Wheel.new` requires a `rim` and a `tire`.
 * The order of those arguments. `Gear` knows the first argument to `Wheel.new` should be `rim`, the second, `tire`.
 
+Each dependency creates a chance that `Gear` will be forced to change because of a change to `Wheel`. Some dependencies must exist, because they _must_ collaborate, but most dependencies listed above are unnecessary.
+Dependencies make code less _reasonable_. The challenge is to manage dependencies so that each class has the fewest possible. A class should just know enough to do its job and nothing more.
+
 ### Coupling Between Objects (CBO)
 
+Dependencies _couple_ `Gear` and `Wheel`. The more they know about each other and the more coupled they are. The more coupled two objects are,  the more they behave like a single entity.
+
+* If you change `Wheel` it may be necesarry to make changes to `Gear` as well.
+* If you want to reuse `Gear`, `Wheel` comes along for the ride.
+* When you test `Gear` you will be testing `Wheel`too.
 
 ### Other Dependencies
 
