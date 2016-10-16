@@ -237,7 +237,7 @@ This is exactly what you would have written if you had many references to `wheel
 
 Sending a message requires arguments. The sender must have any knowledge of those arguments. This dependency is unavoidable. However there is also a more suble dependency. Not only does the sender need to provide arguments, it must also know the specific and fixed order.
 
-In the following example, the `Gear`'s `initialize` method takes three arguments: `chainring`, `cog` and `wheel`. It provides no defaults and all the arguments must be passed and _in the correct order_
+In the following example, the `Gear`'s `initialize` method takes three arguments: `chainring`, `cog` and `wheel`. It provides no defaults and all the arguments must be passed and _in the correct order_.
 
 ```ruby
 class Gear
@@ -256,7 +256,13 @@ Gear.new(
   Wheel.new(26, 1.5)).gear_inches
 ```
 
+The senders of `new` depend on the order of the arguments as they are specified in `Gear`'s `initialize` mehtod. If that order changes, all the senders will be forced to change.
+
 #### Use Hashes for Initialization Arguments
+
+There is a simple way to avoid depending on fixed-order arguments. Instead of a fixed list of parameters  you could take a hash of options instead.
+
+The next example shows a version of this simple technique.
 
 ```ruby
 class Gear
@@ -275,7 +281,15 @@ Gear.new(
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 ```
 
+The `initialize` method now takes just one argument `args`, a hash that contains all of the inputs. The `initialize` method is changed to extract its arguments from this hash.
+
+This technique has several advantages. First it will remove the dependency on the argument order. `Gear` is now free to add or remove initialization arguments and defaults. Now changes can be made with the knowledge that no changes will have side effects in other code.
+
+Note that both techniques in many cases can be combined. That is, a few fixed-order arguments, followed by an options hash.
+
 #### Explicitly Define Defaults
+
+There are many techniques for adding defaults. Simple non-boolean defaults can be specified using the `||` method as in next example.
 
 ```ruby
   # specifying defaults using ||
@@ -286,6 +300,16 @@ Gear.new(
   end
 ```
 
+This is a common technique but should be used with caution. The `||` acts as an `or` condition. If the left-hand expression returns `false` or `nil` it proceeds to evaluate and returns the right-hand expression. In the case where `args` contains `:boolean_thing` key that defaults to true, it makes it impossible for the caller to ever set the final variable toe `false` or `nil`.
+
+```ruby
+@bool = args[:boolean_thing] || true
+```
+
+It is better to use the `fetch` method to set defaults. The `fetch` method _expects_ the key you are fetching to be in the hash and supplies options for handling missing keys.
+
+In the exmple below `fetch` is used to set `@chainring` to the default of 40, only if the `:chainring` key is not in the `args` hash.
+
 ```ruby
   # specifying defaults using fetch
   def initialize(args)
@@ -294,6 +318,8 @@ Gear.new(
     @wheel     = args[:wheel]
   end
 ```
+
+You can also completely remove the defaults from `initialize` and isolate them inside of a separate wrapping method. The `defaults` method defines a second hash that is merged into the options hash during initialization.
 
 ```ruby
   # specifying defaults by merging a defaults hash
@@ -307,6 +333,8 @@ Gear.new(
     {:chainring => 40, :cog => 18}
   end
 ```
+
+This isolation technique is reasonably for the case above, but it is especially useful when defaults are more complicated.
 
 #### Isolate Multiparameter Initialization
 
