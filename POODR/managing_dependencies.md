@@ -469,6 +469,8 @@ The wonderful thing about abstractions is that they represent common, stable qua
 
 #### Avoiding Dependent-Laden Classes
 
+The consequences of changing a dependent-laden class are obvious. A class that, if changed, will cause changes to ripple through the application, will be under enormous pressure to _never_ change. Your application may be permanently handicapped by your reluctance to pay the price required to make a change to this class.
+
 #### Finding the Dependencies That Matter
 
 
