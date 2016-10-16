@@ -384,6 +384,10 @@ Dependencies always have a direction. This section covers on how to decide on th
 
 ### Reversing Dependencies
 
+Every example this far showed that `Gear` was depending on `Wheel` or `diameter`. The code could also be easily have been written with the direction of dependencies reversed. `Wheel` could instead depend on `Gear` or `ratio`.
+
+The next code shows an example where `Wheel` has been changed to depend on `Gear` and `gear_inches`. `gear_inches` is still responsible for the actual calculation but expects a `diameter` argument to be passed in by the caller.
+
 ```ruby
 class Gear
   attr_reader :chainring, :cog
