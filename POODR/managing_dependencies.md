@@ -199,11 +199,15 @@ However there _has_ been an improvement. The number of dependencies in `gear_inc
 
 #### Isolate Vulnerable External Messages
 
+Now that we isolated references to external class names, it is time to take a look at external _messages_ that are sent to someone other than `self`. For example `gear_inches`sends `ratio` and `wheel` to `self`, but sends `diameter` to `wheel`.
+
 ```ruby
 def gear_inches
   ratio * wheel.diameter
 end
 ```
+
+This example is fine. Gear's only reference to `wheel.diameter` is in this method. But imagine the code was more complex and calculating gear inches required a lot more math and look something like this:
 
 ```ruby
 def gear_inches
@@ -212,6 +216,8 @@ def gear_inches
   #... more lines of scary math
 end
 ```
+
+Now `wheel.diameter` is embedded deeply inside a complex method. Embedding the external dependency deep inside `gear_inches` is unnecessary and increases its vulnerability. You can reduce the chance of being forced to change `gear_inches` by removing its external dependency and encapsulating it in a method of its own:
 
 ```ruby
 def gear_inches
@@ -225,9 +231,13 @@ def diameter
 end
 ```
 
+This is exactly what you would have written if you had many references to `wheel.diameter` throughout `Gear` and you wanted it DRY. After this change, `gear_inches` is more abstract. `Gear` now isolates `wheel.diameter` in a separate method and `gear_inches` can depend on a message sent to `self`.
+
 ### Remove Argument-Order Dependencies
 
-#### Use Hashes for Initialization Arguments
+Sending a message requires arguments. The sender must have any knowledge of those arguments. This dependency is unavoidable. However there is also a more suble dependency. Not only does the sender need to provide arguments, it must also know the specific and fixed order.
+
+In the following example, the `Gear`'s `initialize` method takes three arguments: `chainring`, `cog` and `wheel`. It provides no defaults and all the arguments must be passed and _n the correct order_
 
 ```ruby
 class Gear
@@ -245,6 +255,8 @@ Gear.new(
   11,
   Wheel.new(26, 1.5)).gear_inches
 ```
+
+#### Use Hashes for Initialization Arguments
 
 ```ruby
 class Gear
