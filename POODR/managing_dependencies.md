@@ -483,30 +483,5 @@ _Depend on things that change less often than you do_ is a simple rule of thumb 
 
 ## Summary
 
-Dependency managemen is core to creating future-proof applications. Injection dependencies creates loosely coupled objects that can be reused in new ways. Isolating dependencies allow objects to quickly adapt to unexpected changes. Depending on abstractions decreases the likelihood of facing these changes.
+Dependency management is core to creating future-proof applications. Injection dependencies creates loosely coupled objects that can be reused in new ways. Isolating dependencies allow objects to quickly adapt to unexpected changes. Depending on abstractions decreases the likelihood of facing these changes.
 The key to manage dependencies is to control their direction. It is best that classes depend on things that change less often than they do.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
