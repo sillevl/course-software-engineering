@@ -473,9 +473,18 @@ The consequences of changing a dependent-laden class are obvious. A class that, 
 
 #### Finding the Dependencies That Matter
 
+Classes vary in their likelyhood of change, their level of abstraction, and their number of dependents. They all matter, but the interesting design decisions occur at the place where _likelyhood of change_ intersects with _number of dependents_.
+
+-- figure -- 
+
+The danger zone is where _concrete_ classes have many dependencies, and you believe it is unlikely to change. These classes represent danger to the future health of the application. These classes are the classes that make an application painfull to change.
+
+_Depend on things that change less often than you do_ is a simple rule of thumb that when following will evolve a healthy design in your application.
 
 ## Summary
 
+Dependency managemen is core to creating future-proof applications. Injection dependencies creates loosely coupled objects that can be reused in new ways. Isolating dependencies allow objects to quickly adapt to unexpected changes. Depending on abstractions decreases the likelihood of facing these changes.
+The key to manage dependencies is to control their direction. It is best that classes depend on things that change less often than they do.
 
 
 
