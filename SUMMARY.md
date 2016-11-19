@@ -17,5 +17,5 @@
 * [Combining Objects with Composition](POODR/combining_objects_with_composition.md)
 * [Design Cost-Effective Tests](POODR/design_cost-effective_tests.md)
 * [Design Patterns](designpatterns/design_patterns.md)
-* Creating Ruby gems
+* [Creating Ruby gems](ruby/creating_ruby_gems.md)
 
