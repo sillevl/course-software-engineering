@@ -22,4 +22,5 @@
 * Documenting a project
   * [Markdown](doucmentation/markdown.md)
   * [Creating a README file](doucmentation/creating-a-readme.md)
+  * [Creating a README file](documentation/creating-a-readme.md)
   * Sourcecode documentation generation
