@@ -19,8 +19,9 @@
 * [Design Cost-Effective Tests](POODR/design_cost-effective_tests.md)
 * [Design Patterns](designpatterns/design_patterns.md)
 * [Crating a CommandLine application](ruby/crating_a_commandline_application.md)
-* Documenting a project
-  * [Markdown](doucmentation/markdown.md)
-  * [Creating a README file](doucmentation/creating-a-readme.md)
-  * [Creating a README file](documentation/creating-a-readme.md)
-  * Sourcecode documentation generation
+* [Documenting a project](documenting_a_project.md)
+   * [Markdown](doucmentation/markdown.md)
+   * [Creating a README file](doucmentation/creating-a-readme.md)
+   * [Creating a README file](documentation/creating-a-readme.md)
+   * Sourcecode documentation generation
+
