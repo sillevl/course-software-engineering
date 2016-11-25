@@ -20,6 +20,6 @@
 * [Design Patterns](designpatterns/design_patterns.md)
 * [Crating a CommandLine application](ruby/crating_a_commandline_application.md)
 * Documenting a project
-  * Markdown
-  * Creating a README file
+  * [Markdown](doucmentation/markdown.md)
+  * [Creating a README file](doucmentation/creating-a-readme.md)
   * Sourcecode documentation generation
