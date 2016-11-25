@@ -1,2 +1,0 @@
-# Documenting a project
-
