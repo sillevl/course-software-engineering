@@ -2,15 +2,14 @@
 #Creating a README.md
 
 
-https://dbader.org/blog/write-a-great-readme-for-your-github-project
-
+Source: [https://dbader.org/blog/write-a-great-readme-for-your-github-project](https://dbader.org/blog/write-a-great-readme-for-your-github-project)
 
 
 ## How to write a great README for your GitHub project
 
 A great README file helps your project to stand out from the sea of open-source software on GitHub. In this article I go over the key elements every README for an open-source project should contain. It also includes a README.md template for use in your own projects.
 
-![example of github readme](documentation/img/github-readme-header.png)
+![example of github readme](img/github-readme-header.png)
 
 Developers release new open-source projects on GitHub every day. As a result it’s becoming more and more difficult to get your own project to stand out from the sea of open-source software. However you can do a few things to increase your chances of grabbing other developers attention. One effective and simple technique is *putting up a nice-looking and helpful README file*.
 
