@@ -150,11 +150,11 @@ You can add new functions to the derived class. Add functionality that the base 
 
 ![Shape Inheritance](shape_inheritance_2.png)
 
-You can change existing behavior that is different from that of the base class. This is also known as _overriding_ a function. You simple create a new definition for the function in the derived class.
+You can change existing behavior that is different from that of the base class. This is also known as _overriding_ a function. You simply create a new definition for the function in the derived class.
 
 When working with type hierarchies:
 
-* The object is often treated not as the specific type, but as its baste type
+* The object is often treated not as the specific type, but as its base type
 * This allows for code that does not depend on specific types
 * Such code is unaffected by the addition of new types
 * 
