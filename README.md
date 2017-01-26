@@ -48,19 +48,19 @@ For source code management we will use GIT. Download and install GIT from the of
 > 
 > Use default settings in the installation wizard, except the "Adjust your PATH environment" settings MUST be set using the third option "Use Git and optional Unix tools from the Windows Command Prompt"
 
-[https:\/\/git-scm.com\/](https://git-scm.com/)
+[https://git-scm.com](https://git-scm.com/)
 
 ### Ruby
 
 You can download and install Ruby in many ways. For this course we will use the Railsinstaller. This installation contains more than just the Ruby runtime. Be sure to select Ruby version 2.2 or newer.
 
-[http:\/\/railsinstaller.org](http://railsinstaller.org)
+[http://railsinstaller.org](http://railsinstaller.org)
 
 ### Atom
 
 Atom will be our text and code editor of choice.
 
-[https:\/\/atom.io](https://atom.io)
+[https://atom.io](https://atom.io)
 
 
 
