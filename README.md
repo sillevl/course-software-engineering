@@ -22,10 +22,10 @@
 * Chapter 6:  Introduction to the Ruby Programming Language
 * Chapter 7:  Practical Object-Oriented Design \(in Ruby\)
 * Chapter 8:  Creating Reusable Software Packages
-* Chapter 8:  Code Documentation
-* Chapter 9:  Software Testing
-* Chapter 10: Design Patterns
-* Chapter 11: Code Smells
+* Chapter 9:  Code Documentation
+* Chapter 10:  Software Testing
+* Chapter 11: Design Patterns
+* Chapter 12: Code Smells
 
 ## Evaluation
 
