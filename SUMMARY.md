@@ -5,7 +5,10 @@
 ### Projectmanagement with Redmine
 
 
-### Agile Software Development and Scrum
+### Agile Software Development
+
+* Agile
+* Scrum
 
 ### Introduction to the Ruby Programming Language
 
