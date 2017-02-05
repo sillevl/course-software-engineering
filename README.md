@@ -15,15 +15,15 @@
 ## Overview
 
 * Chapter 1:  Course Introduction
-* Chapter 1:  Projectmanagement with Redmine
-* Chapter 2:  Agile Software Development
-* Chapter 6:  Introduction to the Ruby Programming Language
-* Chapter 7:  Practical Object-Oriented Design \(in Ruby\)
-* Chapter 8:  Creating Reusable Software Packages
-* Chapter 9:  Code Documentation
-* Chapter 10:  Software Testing
-* Chapter 11: Design Patterns
-* Chapter 12: Code Smells
+* Chapter 2:  Projectmanagement with Redmine
+* Chapter 3:  Agile Software Development
+* Chapter 4:  Introduction to the Ruby Programming Language
+* Chapter 5:  Code Documentation
+* Chapter 6:  Practical Object-Oriented Design \(in Ruby\)
+* Chapter 7:  Creating Reusable Software Packages
+* Chapter 8:  Creating your own command-line applications
+* Chapter 9:  Software Testing
+* Chapter 10: Design Patterns and Code smells
 
 ## Evaluation
 
