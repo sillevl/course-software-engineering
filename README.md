@@ -14,11 +14,9 @@
 
 ## Overview
 
+* Chapter 1:  Course Introduction
 * Chapter 1:  Projectmanagement with Redmine
 * Chapter 2:  Agile Software Development
-* Chapter 3:  Scrum
-* Chapter 4:  Markdown
-* Chapter 5:  UML 
 * Chapter 6:  Introduction to the Ruby Programming Language
 * Chapter 7:  Practical Object-Oriented Design \(in Ruby\)
 * Chapter 8:  Creating Reusable Software Packages
