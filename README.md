@@ -53,7 +53,7 @@ For source code management we will use GIT. Download and install GIT from the of
 
 ### Ruby
 
-You can download and install Ruby in many ways. For this course we will use the Railsinstaller. This installation contains more than just the Ruby runtime. Be sure to select Ruby version 2.2 or newer.
+You can download and install Ruby in many ways. For this course we will use the Railsinstaller. This installation contains more than just the Ruby runtime. Be sure to select Ruby version 2.3 or newer.
 
 [http://railsinstaller.org](http://railsinstaller.org)
 
