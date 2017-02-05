@@ -5,17 +5,7 @@
 ### Projectmanagement with Redmine
 
 
-### Agile Software Development
-
-
-### Scrum
-
-
-### Markdown
-
-
-### UML 
-
+### Agile Software Development and Scrum
 
 ### Introduction to the Ruby Programming Language
 
@@ -25,6 +15,13 @@
 * [To Ruby From PHP](ruby/to_ruby_from_php.md)
 * [To Ruby From C and C++](ruby/to_ruby_from_c_and_c++.md)
 
+### Code Documentation
+
+* [Documenting a project](documenting_a_project.md)
+* [Markdown](documentation/markdown.md)
+* [Creating a README file](documentation/creating-a-readme.md)
+* Sourcecode documentation generation
+* UML
 
 ### Practical Object-Oriented Design \(in Ruby\)
 
@@ -48,27 +45,13 @@
 
 * [Crating a CommandLine application](ruby/crating_a_commandline_application.md)
 
-### Code Documentation
-
-* [Documenting a project](documenting_a_project.md)
-* [Markdown](documentation/markdown.md)
-* [Creating a README file](documentation/creating-a-readme.md)
-* Sourcecode documentation generation
-
 ### Software Testing
 
+* Unit testing
 
 ### Design Patterns and Code Smells
+
 * [Design Patterns](designpatterns/design_patterns.md)
 * Codesmells
 * Refactoring
-
-
-
-
-
-
-* [Crating a CommandLine application](ruby/crating_a_commandline_application.md)
-
-
 
