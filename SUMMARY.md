@@ -22,7 +22,7 @@
 
 ### Code Documentation
 
-* [Documenting a project](documentation/documenting_a_project.md)
+* Documenting a project
 * [Markdown](documentation/markdown.md)
 * [Creating a README file](documentation/creating-a-readme.md)
 * Choosing a License
