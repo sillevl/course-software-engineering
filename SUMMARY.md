@@ -43,6 +43,8 @@
 
 ### Creating Reusable Software Packages
 
+* Semantic Versioning
+* Creating Ruby Gems
 
 ### Creating your own command-line applications
 
@@ -51,6 +53,7 @@
 ### Software Testing
 
 * Unit testing
+* Rake test automation
 
 ### Design Patterns and Code Smells
 
