@@ -44,12 +44,12 @@
 
 ### Creating Reusable Software Packages
 
-* Semantic Versioning
-* Creating Ruby Gems
+* [Semantic Versioning](ruby-gems/semantic-versioning.md)
+* [Creating Ruby Gems](ruby-gems/creating_ruby_gems.md)
 
 ### Creating your own command-line applications
 
-* [Crating a CommandLine application](ruby/crating_a_commandline_application.md)
+* [Crating a CommandLine application](ruby-cli/crating_a_commandline_application.md)
 
 ### Software Testing
 
