@@ -4,6 +4,8 @@
 
 ### Projectmanagement with Redmine
 
+* Redmine
+* Project Management
 
 ### Agile Software Development
 
