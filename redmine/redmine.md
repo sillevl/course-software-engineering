@@ -44,6 +44,9 @@ Features
 ## Wiki
 
 
+> #### Note::Redmine Guide
+>
+> More information can be found on the website of Redmine: [Redmine Guide](http://www.redmine.org/guide)
 
 ### Markdown
 
