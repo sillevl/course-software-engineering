@@ -203,7 +203,7 @@ HTTP URLs and email addresses are automatically turned into clickable links:
 http://www.redmine.org, someone@foo.bar
 ```
 
-displays:[http://www.redmine.org](http://www.redmine.org/),[someone@foo.bar](mailto:someone@foo.bar)
+displays: [http://www.redmine.org](http://www.redmine.org/),[someone@foo.bar](mailto:someone@foo.bar)
 
 If you want to display a specific text instead of the URL, you can use the standard markdown syntax:
 
@@ -211,11 +211,11 @@ If you want to display a specific text instead of the URL, you can use the stand
 [Redmine web site](http://www.redmine.org)
 ```
 
-displays:[Redmine web site](http://www.redmine.org/)
+displays: [Redmine web site](http://www.redmine.org/)
 
 #### Text formatting
 
-For things such as headlines, bold, tables, lists, Redmine supports Markdown syntax. See[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)for information on using any of these features. A few samples are included below, but the engine is capable of much more of that.
+For things such as headlines, bold, tables, lists, Redmine supports Markdown syntax. See [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax) for information on using any of these features. A few samples are included below, but the engine is capable of much more of that.
 
 ### Font style
 
@@ -235,10 +235,8 @@ Display:
 
 ### Inline images
 
-* **!\[\]\(image\_url\)**
-  displays an image located at image\_url \(markdown syntax\)
-* If you have an image attached to your wiki page, it can be displayed inline using its filename:
-  **!\[\]\(attached\_image\)**
+* **!\[\]\(image\_url\)**  displays an image located at image\_url \(markdown syntax\)
+* If you have an image attached to your wiki page, it can be displayed inline using its filename:  **!\[\]\(attached\_image\)**
 
 ### Headings
 
@@ -341,7 +339,7 @@ Displays a clickable thumbnail of an attached image. Examples:
 
 #### Code highlighting
 
-Default code highlightment relies on[CodeRay](http://coderay.rubychan.de/), a fast syntax highlighting library written completely in Ruby. It currently supports c, clojure, cpp \(c++, cplusplus\), css, delphi \(pascal\), diff \(patch\), erb \(eruby, rhtml\), go, groovy, haml, html \(xhtml\), java, javascript \(ecmascript, ecma\_script, java\_script, js\), json, lua, php, python, ruby \(irb\), sass, sql, taskpaper, text \(plain, plaintext\), xml and yaml \(yml\) languages, where the names inside parentheses are aliases.
+Default code highlightment relies on [CodeRay](http://coderay.rubychan.de/), a fast syntax highlighting library written completely in Ruby. It currently supports c, clojure, cpp \(c++, cplusplus\), css, delphi \(pascal\), diff \(patch\), erb \(eruby, rhtml\), go, groovy, haml, html \(xhtml\), java, javascript \(ecmascript, ecma\_script, java\_script, js\), json, lua, php, python, ruby \(irb\), sass, sql, taskpaper, text \(plain, plaintext\), xml and yaml \(yml\) languages, where the names inside parentheses are aliases.
 
 You can highlight code at any place that supports wiki formatting using this syntax \(note that the language name or alias is case-insensitive\):
 
@@ -353,30 +351,18 @@ You can highlight code at any place that supports wiki formatting using this syn
 
 Example:
 
-```
+```ruby
 # The Greeter class
-class
-Greeter
-def
-initialize
-(name)
+class Greeter
 
-@name
- = name.capitalize
+  def initialize (name
+    @name = name.capitalize
+  end
 
-end
-def
-salute
-
-    puts 
-"
-Hello 
-#{
-@name
-}
-!
-"
-end
+  def salute
+    puts "Hello #{@name}!"
+  end
+  
 end
 ```
 
