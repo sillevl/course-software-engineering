@@ -23,6 +23,7 @@
 * [Documenting a project](documenting_a_project.md)
 * [Markdown](documentation/markdown.md)
 * [Creating a README file](documentation/creating-a-readme.md)
+* Choosing a License
 * Sourcecode documentation generation
 * UML
 
