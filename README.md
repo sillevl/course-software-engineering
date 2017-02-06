@@ -2,6 +2,8 @@
 
 ## Objectives
 
+* Managing (software) projects
+* Collaborating software development
 * Learn supportive technologies and methodologies for engineering software solutions
   * This can be applied to embedded and generic environments
 * Learning the Ruby programming language

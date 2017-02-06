@@ -2,13 +2,13 @@
     "plugins": [
         "callouts",
         "richquotes",
-        "image-captions"
+        "image-captions",
+        "creativecommons"
     ],
     "pluginsConfig": {
-      "image-captions": {
-          "align": "center",
-          "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
-      }
-  }
-
+        "image-captions": {
+            "align": "center",
+            "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+        }
+    }
 }
