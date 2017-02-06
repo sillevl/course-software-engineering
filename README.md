@@ -63,6 +63,4 @@ Atom will be our text and code editor of choice.
 
 [https://atom.io](https://atom.io)
 
-{% creativecommons type="by-nc-nd" %}
-{% endcreativecommons %}
 
