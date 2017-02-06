@@ -20,7 +20,7 @@
 
 ### Code Documentation
 
-* [Documenting a project](documenting_a_project.md)
+* [Documenting a project](documentation/documenting_a_project.md)
 * [Markdown](documentation/markdown.md)
 * [Creating a README file](documentation/creating-a-readme.md)
 * Choosing a License
@@ -53,7 +53,7 @@
 
 ### Software Testing
 
-* Unit testing
+* [Unit testing](unit_testing/unit_testing.md)
 * Rake test automation
 
 ### Design Patterns and Code Smells
