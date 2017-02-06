@@ -50,11 +50,9 @@ Features
 
 ### Markdown
 
-Provides automatic markup for your text
+Provides automatic markup for your text like Heading, lists, links, images, code
 
-Heading, lists, links, images, code
-
-Can be used throughout all of Redmine \(wiki, issues, news\)
+Markdown  can be used throughout all of Redmine \(wiki, issues, news\)
 
 Take care of your layout !
 
