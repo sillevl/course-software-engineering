@@ -35,7 +35,6 @@
 * [The Progress of Abstraction](the_progress_of_abstraction/the_progress_of_abstraction.md)
 * [Designing Classes with a Single Response](POODR/designing_classes_with_a_single_response.md)
 * [Managing Dependencies](POODR/managing_dependencies.md)
-* [Creating Ruby gems](ruby/creating_ruby_gems.md)
 * [Creating Flexible Interfaces](POODR/creating_flexible_interfaces.md)
 * [Reducing Costs with Duck Typing](POODR/reducing_costs_with_duck_typing.md)
 * [Acquiring Behavior Through Inheritance](POODR/acquiring_behavior_through_inheritance.md)
