@@ -4,13 +4,13 @@
 
 ### Projectmanagement with Redmine
 
-* Redmine
-* Project Management
+* [Redmine](redmine/redmine.md)
+* [Project Management](redmine/projectmanagement.md)
 
 ### Agile Software Development
 
-* Agile
-* Scrum
+* [Agile](agile/agile.md)
+* [Scrum](agile/scrum.md)
 
 ### Introduction to the Ruby Programming Language
 
