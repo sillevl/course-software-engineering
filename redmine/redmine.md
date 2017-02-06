@@ -2,7 +2,7 @@
 
 # Introduction
 
-![Logo Redmine](redmine/img/2000px-Redmine_logo.svg.png)
+![Logo Redmine](/redmine/img/2000px-Redmine_logo.svg.png)
 
 > “Redmine is a flexible project management web application. Written using Ruby on Rails framework, it is cross-platform and cross-database.” \(www.redmine.org\)
 
