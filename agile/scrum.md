@@ -301,8 +301,11 @@ By the end of the Sprint Retrospective, the Scrum Team should have identified im
 
 ### Inspect & Adapt
 
+Sources:
 
-https://www.scrumalliance.org/why-scrum/scrum-guide
+* https://www.scrumalliance.org/why-scrum/scrum-guide
+* https://en.wikipedia.org/wiki/Scrum_(software_development)
+* Scrum: A breathtakingly brief and agile introduction
 
 {% creativecommons type="by-sa" %}
 {% endcreativecommons %}
