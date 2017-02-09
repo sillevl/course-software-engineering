@@ -303,3 +303,6 @@ By the end of the Sprint Retrospective, the Scrum Team should have identified im
 
 
 https://www.scrumalliance.org/why-scrum/scrum-guide
+
+{% creativecommons type="by-sa" %}
+{% endcreativecommons %}
