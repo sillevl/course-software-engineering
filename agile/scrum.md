@@ -173,6 +173,8 @@ The Increment is the sum of all the Product Backlog items completed during a Spr
 
 ### Burn Charts
 
+![Example of a burndown chart](img/SampleBurndownChart.png)
+
 ### Task Board
 
 ### Definition of "Done"
