@@ -2,6 +2,7 @@
 
 ## What is Scrum?
 
+![Scrum Product Development Cycle](agile/img/Scrum - Scrum.png)
 
 
 ## Roles
