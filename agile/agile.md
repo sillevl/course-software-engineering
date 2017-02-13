@@ -83,12 +83,14 @@ The most important practices of the primary XP practices are divided into four c
 * Integration Practices
     * **10-minute build** The team creates an automated build for the entire codebase that runs in under 10 minutes. This build includes automatically running all of the unit tests and generating a report of which tests passed and which failed.
     * Individual developers use **continues integration** to constantly integrate changes from their teammates so everyone's sandbox is up-to-date.
+    * XP aims to work with **small releases** that are the result of the iterative and integrated approach.
     
 * Planning Practices
     * Using iterative development to manage the projects. Like scrum, the planning is split up into a short iterations called **weekly cycles** and long-term iterations called **quarterly cycles**.
     * Features and work that needs to be done is documentented in **user stories** in the same way as Scrum teams do.
 * Team Practices
-    * sit together
+    * When teams sit together, they periodically absorb project information through **osmotic communication**.
+    * XP teams work in an **informative workspaces** that uses **information radiators** like wall charts to automatically communicate information to people who happen to work with it.
 
 ### Lean
 
