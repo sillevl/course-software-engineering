@@ -122,6 +122,32 @@ Each values come with _thinking tools_ to help you apply the values to real-worl
 
 ### Kanban
 
+Kanban is a method for process improvement used by agile teams. Kanban is a manufacturing term, adapted for software development. It is described as "The Kanban Method introduces a complex adaptive system that is intended to catalyze a Lean outcome within an organization".
+
+Kanban has a different focus from agile methodologies like Scrum and XP. Scrum primarily focuses on project management: the scope of the work that will be done, when that work will be delivered, and whether the outcome of that work meets the needs of the users. The focus of XP is software development. The XP values and practices are built around creating an environment conducive to development, and developing programmer habits that help them design and build code that's simple and easy to change.
+
+Kanban is about ___helping a team improve the way they build software___. Kanban has practices that give you a way to stabilize and improve your system for building software:
+
+---
+
+First follow the foundational principles:
+* Start with what you do now
+* Agree to pursue incremental, evolutionary change
+* Initially, respect current roles, responsibilities and job titles
+
+Then adopt the core practices:
+* Visualize
+* Limit WIP (Work In Progress)
+* Manage Flow
+* Make Process Policies Explicit
+* Implement Feedback Loops
+* Improve Collaboratively, Evolve Experimentally
+
+It is not expected that implementations adopt all six practices initially. Partial implementations are referred to as "shallow" with the expectation that they gradually increase in depth as more practices are adopted and implemented with greater capability.
+
+---
+
+
 ### Ohters
 
 The methods listed above, may be the most popular used, but many other Agile methods and frameworks exist. These methods won't be discussed in this course.
