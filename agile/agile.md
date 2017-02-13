@@ -1,8 +1,23 @@
 # Agile
 
-## The problem
+## Waterfall model
 
-_waterfall_
+The waterfall model is a **sequential (non-iterative)** design process, used in software development processes, in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, production/implementation and maintenance.
+
+The waterfall development model originates in the manufacturing and construction industries: highly structured physical environments in which after-the-fact changes are prohibitively costly, if not impossible. Because no formal software development methodologies existed at the time, this **hardware-oriented** model was simply adapted for software development.
+
+![Waterfall model](img/800px-Waterfall_model.svg.png)
+
+In the original waterfall model, the following phases are followed in order:
+
+* System and software requirements: captured in a product requirements document
+* Analysis: resulting in models, schema, and business rules
+* Design: resulting in the software architecture
+* Coding: the development, proving, and integration of software
+* Testing: the systematic discovery and debugging of defects
+* Operations: the installation, migration, support, and maintenance of complete systems
+
+Thus the waterfall model maintains that one should move to a phase only when its preceding phase is reviewed and verified.
 
 ## Agile
 
@@ -90,9 +105,20 @@ The most important practices of the primary XP practices are divided into four c
     * Features and work that needs to be done is documentented in **user stories** in the same way as Scrum teams do.
 * Team Practices
     * When teams sit together, they periodically absorb project information through **osmotic communication**.
-    * XP teams work in an **informative workspaces** that uses **information radiators** like wall charts to automatically communicate information to people who happen to work with it.
+    * XP teams work in an **informative workspaces** (taskboards and burndown charts) that uses **information radiators** like wall charts to automatically communicate information to people who happen to work with it.
 
 ### Lean
+Lean is different. Unlike Scrum and XP, Lean doesn't include a set of practices. **Lean is a mindset**, and just like with the mindset for Scrum and XP, Lean comes with values and principles (In Lean terminology they are called "thinking tools").
+
+* **Elimininate waste**: Find the work that you're doing that doesn't directly help to create valuable software and remove it from the project.
+* **Amplify learning**: Use feedback from you project to improve how you build software.
+* **Decide as late as possible**: Make very important decision for your project when you have to most information about it - at the last responsible moment.
+* **Deliver as fast as possible**: Understand the cost of delay, and minimize it using pull systems and queues.
+* **Empower the team**: Establish a focused and effective environment and build awhole team of energized people.
+* **Build integrity in**: Build software that intuitively makes sense to the users, and which forms a coherent whole.
+* **See the whole**: Understand the work that happens on your project - and take the right kind of measurement to make sure you're actually seeing everything clearly, warts and all.
+
+Each values come with _thinking tools_ to help you apply the values to real-world situations for your team. 
 
 ### Kanban
 
@@ -105,3 +131,4 @@ The methods listed above, may be the most popular used, but many other Agile met
 Sources: 
 * Learning Agile. Understanding Scrum, XP, Lean and Kanban
 * https://en.wikipedia.org/wiki/Agile_software_development#Agile_methods
+* https://en.wikipedia.org/wiki/Waterfall_model
