@@ -63,4 +63,10 @@ Atom will be our text and code editor of choice.
 
 [https://atom.io](https://atom.io)
 
+### Lucid Chart
+
+Lucid Chart is an online tool to create diagrams and charts for software projects. Create an free account with your VIVES email address. Then request a free educational upgrade for you account at [https://www.lucidchart.com/pages/usecase/education]()
+
+[https://www.lucidchart.com/]()
+
 
