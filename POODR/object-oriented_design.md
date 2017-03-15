@@ -46,13 +46,13 @@ Object-oriented applications are made up of *objects* that send *messages* to ea
 
 Object-oriented design is about _managing dependencies_. In the absence of design, unmanaged dependencies wreak havoc because objects know too much about one other. Changing one object forces change upon its collaborators. In turn forcing change upon its collaborators, and so on.
 
-Objects resist being reused int different contexts. They are difficult to test and may introduce duplication.
+Objects resist being reused in different contexts. They are difficult to test and may introduce duplication.
 
 In small applications, poor design is survivable. The problem is that is that if they are successful, they grow up as poorly designed big applications.
 
 ### A Practical Definition of Design
 
-Every application is a collection of code. The code's arrangement is th _design_. One problem can be solved in different ways. Design is thus an art, the art of arranging code.µ
+Every application is a collection of code. The code's arrangement is th _design_. One problem can be solved in different ways. Design is thus an art, the art of arranging code.
 
 The difficulty of design is that every problem has two components:
 
