@@ -308,7 +308,7 @@ This is a common technique but should be used with caution. The `||` acts as an 
 
 It is better to use the `fetch` method to set defaults. The `fetch` method _expects_ the key you are fetching to be in the hash and supplies options for handling missing keys.
 
-In the exmple below `fetch` is used to set `@chainring` to the default of 40, only if the `:chainring` key is not in the `args` hash.
+In the example below `fetch` is used to set `@chainring` to the default of 40, only if the `:chainring` key is not in the `args` hash.
 
 ```ruby
   # specifying defaults using fetch
