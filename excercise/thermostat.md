@@ -4,6 +4,14 @@ Create a Ruby application that accepts a wanted temperature value and calculates
 
 ### v0.0.1
 A Ruby application that can set the wanted temperature value and a range to calculate the output states. 
+Output states can be:
+* Heating: ON/OFF
+* Cooling: ON/OFF
+* RGB-LED: 
+    * BLUE: to cold
+    * GREEN: OK
+    * RED: to hot
+* Text format of the temperatures
 
 ### v0.0.2
 The application supports different temperature units such as:
@@ -37,4 +45,10 @@ RGB Color: #0000FF
 ### v0.0.4
 Instead of a give value, the current temperature must be supplied using an HTTP URL.
 
-For example: https://labict.be/software-engineering/temperature/api/temperature/fake
+For example: [https://labict.be/software-engineering/temperature/api/temperature/fake](https://labict.be/software-engineering/temperature/api/temperature/fake)
+
+### v0.0.5
+The output values and states can be formatted into a JSON format. The unit for the output can be configured and choosen
+
+### v0.0.6
+The RGB-LED now supports full color values instead of only RED, GREEN and BLUE.
