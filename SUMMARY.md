@@ -62,3 +62,7 @@
 * Codesmells
 * Refactoring
 
+## Exercise
+
+* [Thermostat](excercise/thermostat.md)
+
