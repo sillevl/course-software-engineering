@@ -114,7 +114,7 @@ If the `Wheel` class changes its name, the `Gear` class needs to change as well.
 
 When `Gear` hard-codes a reference to `Wheel` deep inside its `gear_inches` method, it is explicitly declaring that its only willing to calculate  gear inches for instances of `Wheel`. `Gear` refuses to collaborate with any other kind of object, even if that object has a diameter and uses gears.
 
-The code above uses an unjustified attachment to static types. It is not the class of the object that is important, it is the _message_ you plan to send it. `Gear` needs access to an object that can respond to `diameter`. `Gear` does not care and should not know about the class of the object. `Gear` does not need to know about the `Wheel` class to calculate `gear_inches`. It doe not need to know that a `Wheel` expects to be initialized with a `rim` and then a `tire`. It just needs an object that knows `diameter`.
+The code above uses an unjustified attachment to static types. It is not the class of the object that is important, it is the _message_ you plan to send it. `Gear` needs access to an object that can respond to `diameter`. `Gear` does not care and should not know about the class of the object. `Gear` does not need to know about the `Wheel` class to calculate `gear_inches`. It does not need to know that a `Wheel` expects to be initialized with a `rim` and then a `tire`. It just needs an object that knows `diameter`.
 
 Instead of being coupled to a `Wheel` we change to code so that `Gear` expects to be initialized with an object that can respond to `diameter`:
 
