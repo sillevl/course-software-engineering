@@ -4,7 +4,7 @@ Object-oriented languages are efficient and effective because the model reality.
 
 For any desired behavior, an object knows it personally, inherits it, or knows another object who knows it. The previous chapter concerned itself with the behavior a class should implement personally. Behavior through inheritance is covered in one of the next chapters. This chapter will focus on getting access to behavior that is implemented in _other_ objects. 
 
-Well build objects have a single responsibility. To solve complex tasks it is required that they work together. Tho collaborate, objects must know things about others. _Knowing_ creates dependencies. If not managed, dependencies will strangle your application.
+Well build objects have a single responsibility. To solve complex tasks it is required that they work together. To collaborate, objects must know things about others. _Knowing_ creates dependencies. If not managed, dependencies will strangle your application.
 
 ## Understanding Dependencies
 
