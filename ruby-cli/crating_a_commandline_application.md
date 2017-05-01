@@ -9,11 +9,11 @@ OptionParser is a class for command-line option analysis. It is much more advanc
 
 ### Features
 
-The argument specification and the code to handle it are written in the same place.
-It can output an option summary; you don’t need to maintain this string separately.
-Optional and mandatory arguments are specified very gracefully.
-Arguments can be automatically converted to a specified class.
-Arguments can be restricted to a certain set.
+1. The argument specification and the code to handle it are written in the same place.
+2. It can output an option summary; you don’t need to maintain this string separately.
+3. Optional and mandatory arguments are specified very gracefully.
+4. Arguments can be automatically converted to a specified class.
+5. Arguments can be restricted to a certain set.
 
 All of these features are demonstrated in the examples below. 
 
