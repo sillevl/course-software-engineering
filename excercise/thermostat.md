@@ -64,3 +64,9 @@ both situations could be implemented with an mbed in combination with an applica
 ### v0.1.0
 Convert the application to an real command-line application by using the `OptionParser` class that is included in the Ruby standard library. All previous implemented features should be supported, but the command-line options should not be backward compatible.
 
+
+### v0.1.1
+Convert the application into a Ruby Gem and publish it on [rubygems.org](https://rubygems.org).
+
+Note: name your ruby gem `FIRSTNAME-LASTNAME-thermostat-exercise` (fill in your first and last name). This is not to pollute the global namespace of gems.
+
