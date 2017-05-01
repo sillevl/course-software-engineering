@@ -52,3 +52,15 @@ The output values and states can be formatted into a JSON format. The unit for t
 
 ### v0.0.6
 The RGB-LED now supports full color values instead of only RED, GREEN and BLUE.
+
+
+### v0.0.7 
+Add MQTT support for:
+1. Subsciption to an temperature sensor 
+2. Publish RGB-color to an actual RGB LED
+
+both situations could be implemented with an mbed in combination with an application board: https://developer.mbed.org/users/sillevl/code/MQTT-Thermostat-example/
+
+### v0.1.0
+Convert the application to an real command-line application by using the `OptionParser` class that is included in the Ruby standard library. All previous implemented features should be supported, but the command-line options should not be backward compatible.
+
