@@ -2,7 +2,7 @@
 
 ## Objectives
 
-* Managing (software) projects
+* Managing \(software\) projects
 * Collaborating software development
 * Learn supportive technologies and methodologies for engineering software solutions
   * This can be applied to embedded and generic environments
@@ -57,16 +57,17 @@ You can download and install Ruby in many ways. For this course we will use the 
 
 [http://railsinstaller.org](http://railsinstaller.org)
 
-### Atom
+### Visual Studio Code {#visual-studio-code}
 
-Atom will be our text and code editor of choice.
+Visual Studio Code will be our text and code editor of choice.
 
-[https://atom.io](https://atom.io)
+[code.visualstudio.com/](https://code.visualstudio.com/)
+
+[Installation guide](https://sillevl.gitbooks.io/software-installation-guide/content/visual-studio-code/visual-studio-code.html)
 
 ### Lucid Chart
 
 Lucid Chart is an online tool to create diagrams and charts for software projects. Create an free account with your VIVES email address. Then request a free educational upgrade for you account at [https://www.lucidchart.com/pages/usecase/education]()
 
 [https://www.lucidchart.com/]()
-
 
