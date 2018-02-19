@@ -75,7 +75,7 @@ The Agile Manifesto is based on twelve principles:
 
 The rules of Scrum are simple and easy to communicate, which make it a great starting point for many teams adopting Agile. Here's the basic pattern for a Scrum project:
 
-* There are three main roles on a Scrum project: **Project Owner, Scrum Master** and ** team member.
+* There are three main roles on a Scrum project: **Project Owner, Scrum Master** and **team member**.
 * The Product Owner works with the rest of the team to maintain and prioritize a **product backlog** of features and requirements need to be built.
 * The software is built using timeboxed iterations calles **sprints**. At the start of each sprint, the team does **sprint planning** to determine which features from the backlog they will build. This is called the **sprint backlog**, and the team works throughout the sprint to build all of the features in it.
 *  Every day the team holds a short face-to-face meeting called the **Daily Scrum** to update each other on the progress they've made and to discuss the roadblocks ahead. Each person answers three questions:
@@ -90,7 +90,7 @@ There are 13 **primary practices of Extreme Programming** that can help guide te
 
 The focus on programming has led to the misbelieve that XP is only for advanced, highly skilled programmers. This is not true.
 
-The most important practices of the primary XP practices are divided into four categories: _programming_, _integration_, _planning _and _team_.
+The most important practices of the primary XP practices are divided into four categories: _programming_, _integration_, _planning_ and _team_.
 
 * Programming Practices
     * Test first programming, or also known as **TDD - Test Driven Development** using *unit tests* to test the code and requirements in an automated way. TDD helps programmers focus on the work that needs te be done, and gives the programmer confidence that the implementation does what it needs to be doing, and will report bugs that are introduced later on. The programmer can refactor his code without any fear of losing existing implementation.
@@ -111,7 +111,7 @@ The most important practices of the primary XP practices are divided into four c
 Lean is different. Unlike Scrum and XP, Lean doesn't include a set of practices. **Lean is a mindset**, and just like with the mindset for Scrum and XP, Lean comes with values and principles (In Lean terminology they are called "thinking tools").
 
 * **Elimininate waste**: Find the work that you're doing that doesn't directly help to create valuable software and remove it from the project.
-* **Amplify learning**: Use feedback from you project to improve how you build software.
+* **Amplify learning**: Use feedback from your project to improve how you build software.
 * **Decide as late as possible**: Make very important decision for your project when you have to most information about it - at the last responsible moment.
 * **Deliver as fast as possible**: Understand the cost of delay, and minimize it using pull systems and queues.
 * **Empower the team**: Establish a focused and effective environment and build awhole team of energized people.
