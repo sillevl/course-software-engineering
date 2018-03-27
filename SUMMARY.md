@@ -56,6 +56,14 @@
 * [Unit testing](unit_testing/unit_testing.md)
 * Rake test automation
 
+## Continues Integration
+
+* Introduction
+
+## Continues Delivery
+
+* Introduction 
+
 ## Design Patterns and Code Smells
 
 * [Design Patterns](designpatterns/design_patterns.md)
