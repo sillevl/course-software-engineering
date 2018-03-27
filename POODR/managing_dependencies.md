@@ -1,6 +1,6 @@
 # Managing Dependencies
 
-Object-oriented languages are efficient and effective because the model reality. Objects reflect real world problems and the interactions between those objects provide solutions. A single object cannot know everything, so it will have to talk to other objects.
+Object-oriented languages are efficient and effective because they model reality. Objects reflect real world problems and the interactions between those objects provide solutions. A single object cannot know everything, so it will have to talk to other objects.
 
 For any desired behavior, an object knows it personally, inherits it, or knows another object who knows it. The previous chapter concerned itself with the behavior a class should implement personally. Behavior through inheritance is covered in one of the next chapters. This chapter will focus on getting access to behavior that is implemented in _other_ objects. 
 
@@ -79,7 +79,7 @@ If two or more objects are tightly coupled, they behave as a unit. It becomes im
 This chapter covers the four kinds of dependencies listed above and suggests techniques for avoiding the problems they create. However other kinds of dependencies exist. They types will be covered in other chapters.
 
 One especially destructive kind of dependency occurs where an object knows another who knows another who knows something. Many messages are chained together to reach behavior that lives in a distant object. Message chaining created dependencies between the original object and every other object in the chain.
-This is a violation of the Law of Demeter (covered later).
+This is a violation of the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) (covered later).
 
 Another type of dependencies is that of tests on code. Tests that are closely coupled to code lead to frustration. These test will break every time code is refactored. 
 
