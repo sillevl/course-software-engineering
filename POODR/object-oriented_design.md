@@ -1,6 +1,6 @@
 # Object-Oriented Design
 
-The world is procedural. Time flows and events pass by one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
+The world is procedural. Time flows and events pass by, one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
 
 -- example --
 
@@ -129,7 +129,7 @@ If Agile is correct, two other things are also true:
 
 For some Agile is unconfortable because "We don't know what we're doing" and "We don't know when we'll be done" can be difficult to sell. BUFD may provide a feeling of control but its a temporary illusion that will not survive the development of the application.
 
-Agile processes _guarantee change_ and your ability to make these changes depends on your applications design. If you cannot write well-designed code you'll have to rewrite you application during every iteration.
+Agile processes _guarantee change_ and your ability to make these changes depends on your applications design. If you cannot write well-designed code you'll have to rewrite your application during every iteration.
 
 ### Judging Design
 

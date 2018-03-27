@@ -8,7 +8,7 @@ When creating new code, a lot of questions might arrise.
 * How many classes should I have?
 * What behavior will they implement?
 * How much do they know about other classes?
-* How much of them selves should they expose?
+* How much of themselves should they expose?
 
 These questions can be overwhelming. Fear not. The first thing to do is to _insist that it be simple_.
 The goal is to model your application, using classes, such that it does what it is supposed to _right now_, and is easy to change _later_.
@@ -17,7 +17,7 @@ These are two different criteria. Everyone can arrange code to make it work righ
 
 ## Deciding What Belongs in a Class
 
-Having an application in mind, you know what it should do. You may even know how to implement the most interesting things bits of behavior. The problem is not of technical knowledge but of organization. You know how to write the code, but not where to put it.
+Having an application in mind, you know what it should do. You may even know how to implement the most interesting bits of behavior. The problem is not of technical knowledge but of organization. You know how to write the code, but not where to put it.
 
 ### Grouping Methods into Classes
 
@@ -30,7 +30,7 @@ Design is more than the art of preserving changeability than it is the act of ac
 
 ### Organizing Code to Allow for Easy Changes
 
-The idea of _easy_ is to broad. We need concrete definitions of easiness and specific criteria by which to judge code.
+The idea of _easy_ is to broad. We need concrete definitions of _easiness_ and specific criteria by which to judge code.
 
 If you define easy to change as: 
 
@@ -42,7 +42,7 @@ If you define easy to change as:
 Then the code you write should have the following qualities. Code should be:
 
 * **Transparent**: The consequences of change should be obvious in the code that is changing and in distant code that relies upon it.
-* **Reasonable**: The cos of any change should be proportional to the benefits the change achieves.
+* **Reasonable**: The cost of any change should be proportional to the benefits the change achieves.
 * **Usable**: Existing code should be usable in new and unexpected contexts.
 * **Exemplary**: The code itself should encourage those who change it to perpetuate these qualities.
 

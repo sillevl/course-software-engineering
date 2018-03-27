@@ -148,7 +148,7 @@ It is not expected that implementations adopt all six practices initially. Parti
 ---
 
 
-### Ohters
+### Others
 
 The methods listed above, may be the most popular used, but many other Agile methods and frameworks exist. These methods won't be discussed in this course.
 
