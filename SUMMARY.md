@@ -20,15 +20,6 @@
 * [To Ruby From PHP](ruby/to_ruby_from_php.md)
 * [To Ruby From C and C++](ruby/to_ruby_from_c_and_c++.md)
 
-## Code Documentation
-
-* Documenting a project
-* [Markdown](documentation/markdown.md)
-* [Creating a README file](documentation/creating-a-readme.md)
-* Choosing a License
-* Sourcecode documentation generation
-* [UML](documentation/uml.md)
-
 ## Practical Object-Oriented Design \(in Ruby\)
 
 * [Object-Oriented Design](POODR/object-oriented_design.md)
@@ -41,6 +32,15 @@
 * [Sharing Role Behavior with Modules](POODR/sharing_role_behavior_with_modules.md)
 * [Combining Objects with Composition](POODR/combining_objects_with_composition.md)
 * [Design Cost-Effective Tests](POODR/design_cost-effective_tests.md)
+
+## Code Documentation
+
+* Documenting a project
+* [Markdown](documentation/markdown.md)
+* [Creating a README file](documentation/creating-a-readme.md)
+* Choosing a License
+* Sourcecode documentation generation
+* [UML](documentation/uml.md)
 
 ## Creating Reusable Software Packages
 

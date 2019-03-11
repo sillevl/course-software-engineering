@@ -1,12 +1,12 @@
 # Object-Oriented Design
 
-The world is procedural. Time flows and events pass by, one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
+_The world is procedural_. Time flows and events pass by, one by one. Activities can be modeled using procedural software. The order is known so everything can be written in code.
 
--- example --
+Your morning procedure could look like: get up, brush your teeth, make coffee, dress, and then get to work.
 
-The world is object-oriented. There are objects around us that we can interact with. Each object has its own behavior. Some interactions between objects might be predictable, others are not.
+_The world is object-oriented_. There are objects around us that we can interact with. Each object has its own behavior. Some interactions between objects might be predictable, others are not.
 
--- example -- 
+A car is an object that is composed out of a motor object, door objects, pedal objects, dashboard objects and many more. All these objects communicate with each other to make it drive.
 
 In a world of objects, new arrangements of behavior emerge naturally. Object-oriented design requires you to shift your thinking. Not viewing the world as a collection of predefined procedures, but by  modeling the world as a series of messages that pass between objects.
 
@@ -38,7 +38,7 @@ Applications that are perfect are not stable as well. The application was a succ
 
 It is the need for changes that makes design mater. Applications that are easy to change are a pleasure to write and a joy to extend.
 
-Applications that resist change make changes expensive. 
+Applications that resist change make changes expensive.
 
 ### Why Change Is Hard
 
@@ -127,7 +127,7 @@ If Agile is correct, two other things are also true:
 * There is no point in doing Big Upfront Design - BUFD, because it cannot possibly be correct
 * No one can predict when the application will be done, because you don't know in advance what it eventually do
 
-For some Agile is unconfortable because "We don't know what we're doing" and "We don't know when we'll be done" can be difficult to sell. BUFD may provide a feeling of control but its a temporary illusion that will not survive the development of the application.
+For some Agile is uncomfortable because "We don't know what we're doing" and "We don't know when we'll be done" can be difficult to sell. BUFD may provide a feeling of control but its a temporary illusion that will not survive the development of the application.
 
 Agile processes _guarantee change_ and your ability to make these changes depends on your applications design. If you cannot write well-designed code you'll have to rewrite your application during every iteration.
 
@@ -153,14 +153,3 @@ The goal is to write software with the lowest cost per feature. The decision of 
 When the act of design prevents software from being delivered on time, you fail. However if design takes you a whole morning, it may pay of in the afternoon. The benefits will keep paying off for the lifetime of the application.
 
 The break-even point for design depends on the programmer. Inexperienced programmers who do a lot of anticipatory design might never reach a point where their efforts pay off. Skilled designers will produce much more efficient results.
-
-
-## A Brief Introduction to Object-Oriented Programming
-
-Object-oriented applications are made up of objects that send messages to each other. Messages will turn out to be the more important of the two...
-
-### Procedural Languages
-
-### Object Oriented Languages
-
-
