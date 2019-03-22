@@ -99,7 +99,7 @@ You show your Gear calculator to a cyclist friend and she finds it useful but im
 
 Bikes with larger wheels travel much farther during each wheel rotation than ones with tiny wheels.
 
--- image wheel difference --
+![Diameter vs distance](./img/diameter-vs-distance.jpg)
 
 Cyclists use something called _gear inches_ to compare bicycles that differ in both gearing and wheel size. The formula follows:
 
