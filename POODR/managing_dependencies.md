@@ -70,7 +70,7 @@ Dependencies _couple_ `Gear` and `Wheel`. The more they know about each other an
 * If you want to reuse `Gear`, `Wheel` comes along for the ride.
 * When you test `Gear` you will be testing `Wheel`too.
 
--- figuur --
+![Code coupling](./img/coupling.jpeg)
 
 If two or more objects are tightly coupled, they behave as a unit. It becomes impossible to reuse just one.
 
@@ -475,7 +475,7 @@ The consequences of changing a dependent-laden class are obvious. A class that, 
 
 Classes vary in their likelyhood of change, their level of abstraction, and their number of dependents. They all matter, but the interesting design decisions occur at the place where _likelyhood of change_ intersects with _number of dependents_.
 
--- figure -- 
+![Change vs dependents](./img/change-vs-dependents.jpeg)
 
 The danger zone is where _concrete_ classes have many dependencies, and you believe it is unlikely to change. These classes represent danger to the future health of the application. These classes are the classes that make an application painfull to change.
 
