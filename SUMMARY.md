@@ -26,21 +26,15 @@
 * [The Progress of Abstraction](the_progress_of_abstraction/the_progress_of_abstraction.md)
 * [Designing Classes with a Single Response](POODR/designing_classes_with_a_single_response.md)
 * [Managing Dependencies](POODR/managing_dependencies.md)
-* [Creating Flexible Interfaces](POODR/creating_flexible_interfaces.md)
-* [Reducing Costs with Duck Typing](POODR/reducing_costs_with_duck_typing.md)
-* [Acquiring Behavior Through Inheritance](POODR/acquiring_behavior_through_inheritance.md)
-* [Sharing Role Behavior with Modules](POODR/sharing_role_behavior_with_modules.md)
-* [Combining Objects with Composition](POODR/combining_objects_with_composition.md)
-* [Design Cost-Effective Tests](POODR/design_cost-effective_tests.md)
+
 
 ## Code Documentation
 
-* Documenting a project
 * [Markdown](documentation/markdown.md)
 * [Creating a README file](documentation/creating-a-readme.md)
-* Choosing a License
-* Sourcecode documentation generation
-* [UML](documentation/uml.md)
+* [Choosing a License](documentation/licences.md)
+* [Sourcecode documentation generation](documentation/doc-generation.md)
+<!-- * [UML](documentation/uml.md) -->
 
 ## Creating Reusable Software Packages
 
@@ -51,7 +45,11 @@
 
 * [Crating a CommandLine application](ruby-cli/crating_a_commandline_application.md)
 
-## Software Testing
+## All the small things
+
+* [All the small things](all-the-small-things/README.md)
+
+<!-- ## Software Testing
 
 * [Unit testing](unit_testing/unit_testing.md)
 * Rake test automation
@@ -72,5 +70,5 @@
 
 ## Exercise
 
-* [Thermostat](excercise/thermostat.md)
+* [Thermostat](excercise/thermostat.md) -->
 
