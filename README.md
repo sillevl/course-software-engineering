@@ -1,30 +1,31 @@
-# System Programming \(Software Engineering\)
+# Course Introduction
 
 ## Objectives
 
+* Managing \(software\) projects
+* Collaborating software development
 * Learn supportive technologies and methodologies for engineering software solutions
   * This can be applied to embedded and generic environments
 * Learning the Ruby programming language
-* Learn the C++ programming language and apply this on an embedded system
 * Learn how software can be documented
   * Automatically by generating documentation from code
   * Unified Modeling Language – UML
 * Learn the Agile principles and how they can help to plan projects
 * What design patterns are. How and when to use them.
 * Testing your software in an automated way
-* Learn the basic principles of an \(Real-Time\) Operating System
 
 ## Overview
 
-* Chapter 1: Introduction to the Ruby Programming Language
-* Chapter 2: Practical Object-Oriented Design \(in Ruby\)
-* Chapter 3: Software Testing
-* Chapter 4: UML
-* Chapter 5: Design Patterns
-* Chapter 6: Code Documentation
-* Chapter 7: Agile Software Development
-* Chapter 8: C++
-* Chapter 9: Real-Time Operating System \(on mbed\)
+* Chapter 1:  Course Introduction
+* Chapter 2:  Projectmanagement with Redmine
+* Chapter 3:  Agile Software Development
+* Chapter 4:  Introduction to the Ruby Programming Language
+* Chapter 5:  Code Documentation
+* Chapter 6:  Practical Object-Oriented Design \(in Ruby\)
+* Chapter 7:  Creating Reusable Software Packages
+* Chapter 8:  Creating your own command-line applications
+* Chapter 9:  Software Testing
+* Chapter 10: Design Patterns and Code smells
 
 ## Evaluation
 
@@ -45,22 +46,28 @@
 For source code management we will use GIT. Download and install GIT from the official GIT website.
 
 > #### Note::Installation settings
-> 
+>
 > Use default settings in the installation wizard, except the "Adjust your PATH environment" settings MUST be set using the third option "Use Git and optional Unix tools from the Windows Command Prompt"
 
 [https://git-scm.com](https://git-scm.com/)
 
 ### Ruby
 
-You can download and install Ruby in many ways. For this course we will use the Railsinstaller. This installation contains more than just the Ruby runtime. Be sure to select Ruby version 2.2 or newer.
+You can download and install Ruby in many ways. For this course we will use the Railsinstaller. This installation contains more than just the Ruby runtime. Be sure to select Ruby version 2.3 or newer.
 
 [http://railsinstaller.org](http://railsinstaller.org)
 
-### Atom
+### Visual Studio Code <a id="visual-studio-code"></a>
 
-Atom will be our text and code editor of choice.
+Visual Studio Code will be our text and code editor of choice.
 
-[https://atom.io](https://atom.io)
+[code.visualstudio.com/](https://code.visualstudio.com/)
 
+[Installation guide](https://sillevl.gitbooks.io/software-installation-guide/content/visual-studio-code/visual-studio-code.html)
 
+### Lucid Chart
+
+Lucid Chart is an online tool to create diagrams and charts for software projects. Create an free account with your VIVES email address. Then request a free educational upgrade for you account at [https://www.lucidchart.com/pages/usecase/education](./)
+
+[https://www.lucidchart.com/](./)
 
