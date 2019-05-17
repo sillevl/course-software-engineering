@@ -1,4 +1,4 @@
-# Software Engineering
+# Course Introduction
 
 ## Objectives
 
@@ -57,7 +57,7 @@ You can download and install Ruby in many ways. For this course we will use the 
 
 [http://railsinstaller.org](http://railsinstaller.org)
 
-### Visual Studio Code {#visual-studio-code}
+### Visual Studio Code <a id="visual-studio-code"></a>
 
 Visual Studio Code will be our text and code editor of choice.
 
@@ -67,7 +67,7 @@ Visual Studio Code will be our text and code editor of choice.
 
 ### Lucid Chart
 
-Lucid Chart is an online tool to create diagrams and charts for software projects. Create an free account with your VIVES email address. Then request a free educational upgrade for you account at [https://www.lucidchart.com/pages/usecase/education]()
+Lucid Chart is an online tool to create diagrams and charts for software projects. Create an free account with your VIVES email address. Then request a free educational upgrade for you account at [https://www.lucidchart.com/pages/usecase/education](./)
 
-[https://www.lucidchart.com/]()
+[https://www.lucidchart.com/](./)
 
