@@ -7,7 +7,7 @@
 - Git Collaboration
   - [Branching / Merging](02-git-collaboration/branches/index.md)
   - [Gitflow Workflow](02-git-collaboration/gitflow/index.md)
-- Project Management / Issue tracking
+- [Project Management / Issue tracking](03-project-management/index.md)
 - JavaScript ES6 concepts
   - Classes
   - Modules (CommonJS vs ES6 modules)
