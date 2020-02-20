@@ -21,5 +21,8 @@
   "homepage": "https://github.com/sillevl/course-software-engineering#readme",
   "devDependencies": {
     "vuepress": "^1.3.0"
+  },
+  "dependencies": {
+    "vuepress-theme-devbit": "file:../../tools/vuepress-theme-devbit"
   }
 }
