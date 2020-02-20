@@ -7,16 +7,20 @@
 - Git Collaboration
   - [Branching / Merging](02-git-collaboration/branches/index.md)
   - [Gitflow Workflow](02-git-collaboration/gitflow/index.md)
+  - Pull Requests
+  - Protected branches
 - [Project Management / Issue tracking](03-project-management/index.md)
 - JavaScript ES6 concepts
-  - Classes
-  - Modules (CommonJS vs ES6 modules)
-  - Callback hell
-  - Promises
-  - Async/Await
-  - Destructuring
-  - Arrow functions
-- TypeScript ?
+  - [Classes](04-JavaScript/classes.md)
+  - Modules
+    - [CommonJS](04-JavaScript/common-js.md)
+    - [ES6 modules](04-JavaScript/es6-modules.md)
+  - [Callback hell](04-JavaScript/callback-hell.md)
+  - [Promises](04-JavaScript/promises.md)
+  - [Async/Await](04-JavaScript/async-await.md)
+  - [Destructuring](04-JavaScript/destructuring.md)
+  - [Arrow functions](04-JavaScript/arrow-functions.md)
+- [TypeScript](05-typescript/index.md)
 - Creating reusable software
   - NPM packages
 - Microservices and archtectures
