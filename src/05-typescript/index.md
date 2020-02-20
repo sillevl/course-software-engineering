@@ -74,7 +74,8 @@ console.log( greeter(user) )
 Re-compiling, you’ll now see an error:
 
 ```text
-error TS2345: Argument of type 'number[]' is not assignable to parameter of type 'string'.
+error TS2345: Argument of type 'number[]' is not assignable to 
+parameter of type 'string'.
 ```
 
 Similarly, try removing all the arguments to the greeter call. TypeScript will let you know that you have called this function with an unexpected number of parameters. In both cases, TypeScript can offer static analysis based on both the structure of your code, and the type annotations you provide.
@@ -111,7 +112,11 @@ Also of note, the use of `public` on arguments to the constructor is a shorthand
 ```typescript
 class Student {
     fullName: string
-    constructor(public firstName: string, public middleInitial: string, public lastName: string) {
+    constructor(
+        public firstName: string,
+        public middleInitial: string,
+        public lastName: string
+    ) {
         this.fullName = `${firstName} ${middleInitial} ${lastName}`
     }
 }
