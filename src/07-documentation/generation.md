@@ -166,7 +166,7 @@ npm run docs
 This will create a `./docs` directory containing a HTML website. Open this directory and click
 on the `index.html` file to visit the website.
 
-![TypeDoc website example](img/typedoc-example.jpg)
+![TypeDoc website example](./img/typedoc-example.jpg)
 
 Pretty cool, uh? TypeDoc works perfectly.
 
@@ -182,6 +182,6 @@ Commit your `./docs` folder, push it to GitHub. Then go to the GitHub repository
 the browser and go to Settings > GitHub Pages, select `master branch/docs folder` and
 click **save**.
 
-![GitHub Pages](img/gh-pages.png)
+![GitHub Pages](./img/gh-pages.png)
 
 Then a link should appear with your documentation website. It is now **online**.
