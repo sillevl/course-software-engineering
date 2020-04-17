@@ -23,6 +23,11 @@
 - [TypeScript](05-typescript/index.md)
 - Creating reusable software
   - NPM packages
+- Code Documentation
+  - [Readme](07-documentation/creating-readme-files.md)
+  - [Licencing](07-documentation/licences.md)
+  - [Symantic versioning](07-documentation/semver.md)
+  - [Source code documentation generation](07-documentation/generation.md)
 - Microservices and archtectures
   - Docker
   - Docker Compose
@@ -32,8 +37,4 @@
   - Liskov Substitution Principle
   - Interface Segregation
   - Dependency Inversion
-- Code Documentation
-  - Readme
-  - Licencing
-  - Source code documentation generation
 - Unit testing
