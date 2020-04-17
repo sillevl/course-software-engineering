@@ -22,7 +22,7 @@
   - [Arrow functions](04-JavaScript/arrow-functions.md)
 - [TypeScript](05-typescript/index.md)
 - Creating reusable software
-  - NPM packages
+  - [NPM packages](06-npm/index.md)
 - Code Documentation
   - [Readme](07-documentation/creating-readme-files.md)
   - [Licencing](07-documentation/licences.md)
