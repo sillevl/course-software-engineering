@@ -31,10 +31,7 @@
 - Microservices and archtectures
   - Docker
   - Docker Compose
-- SOLID principles
-  - Single Responsibility
-  - Open / Closed
-  - Liskov Substitution Principle
-  - Interface Segregation
-  - Dependency Inversion
+- [Object Oriented Design](08-solid/object-oriented_design.md)
+  - [Single Responsibility](08-solid/designing_classes_with_a_single_response.md)
+  - [Managing Dependencies](08-solid/managing_dependencies.md)
 - Unit testing
