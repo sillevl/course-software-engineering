@@ -153,3 +153,25 @@ The goal is to write software with the lowest cost per feature. The decision of 
 When the act of design prevents software from being delivered on time, you fail. However if design takes you a whole morning, it may pay of in the afternoon. The benefits will keep paying off for the lifetime of the application.
 
 The break-even point for design depends on the programmer. Inexperienced programmers who do a lot of anticipatory design might never reach a point where their efforts pay off. Skilled designers will produce much more efficient results.
+
+## Extras: SOLID
+
+Single Responsibility Principle:
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/UQqY3_6Epbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Dependency Inverstion Principle:
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/9oHY5TllWaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Open/Closed Principle:
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/-ptMtJAdj40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Liskov Substitution Principle:
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/dJQMqNOC4Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Interface Segregation Principle:
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/JVWZR23B_iE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
